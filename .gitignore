@@ -1,4 +1,6 @@
 data/
+data_npy
 saved_models/
 .idea
 results/
+data_chunks/

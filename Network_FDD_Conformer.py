@@ -133,17 +133,23 @@ class MyLoss_OFDM(torch.nn.Module):
         F[:, :, Nt:2 * Nt, K:2 * K] = F_real_part
         F[:, :, 0:Nt, K:2 * K] = F_imag_part
         F[:, :, Nt:2 * Nt, 0:K] = -F_imag_part
-        R = 0
         Hk = torch.matmul(Hs, F)
         noise = 1 / snr
-        for i in range(K):
-            signal = Hk[:, :, i, i] ** 2 + Hk[:, :, i, i + K] ** 2
-            interference = torch.zeros(num, Nc, device=H0.device)
-            for j in range(K):
-                if j != i:
-                    interference = interference + Hk[:, :, i, j] ** 2 + Hk[:, :, i, j + K] ** 2
-            SINR = signal / (noise + interference)
-            R = R + torch.sum(torch.log2(1 + SINR))
+        num = out.shape[0]
+        Hk_squared = Hk ** 2
+
+        signal_real = torch.diagonal(Hk_squared[:, :, 0:K, 0:K], dim1=2, dim2=3)
+        signal_imag = torch.diagonal(Hk_squared[:, :, 0:K, K:2 * K], dim1=2, dim2=3)
+        signal = signal_real + signal_imag
+
+        total_power_real = torch.sum(Hk_squared[:, :, 0:K, 0:K], dim=3)
+        total_power_imag = torch.sum(Hk_squared[:, :, 0:K, K:2 * K], dim=3)
+        total_power = total_power_real + total_power_imag
+
+        interference = total_power - signal
+
+        SINR = signal / (noise + interference)
+        R = torch.sum(torch.log2(1 + SINR))
         R = -R / num / Nc
         return R
 

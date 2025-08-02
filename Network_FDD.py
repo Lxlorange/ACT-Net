@@ -24,18 +24,10 @@ from scipy.linalg import block_diag
 import datetime
 from torch.nn.utils import *
 
-# --- 现有参数 (未修改) ---
-Nc = 32  # number of subcarriers
-N = 2  # Number of paths
-Nt = 64  # Number of Antennas at the BS
-Nr = 1  # Number of Antennas at the UE
-L = 8  # number of pilot OFDM symbols
-SNR_dB = 10  # SNR
-K = 2  # number of UEs
-snr = 10 ** (SNR_dB / 10) / K
 
+#下面六个函数，模拟了信道信息的量化与反量化。
 
-# --- 辅助函数 (未修改) ---
+#1&2 底层的辅助函数，用于在浮点数和其二进制表示之间进行转换。
 def Num2Bit(Num, B):
     Num_ = Num.type(torch.uint8)
 
@@ -49,8 +41,6 @@ def Num2Bit(Num, B):
     bit = integer2bit(Num_)
     bit = (bit[:, :, B:]).reshape(-1, Num_.shape[1] * B)
     return bit.type(torch.float32)
-
-
 def Bit2Num(Bit, B):
     Bit_ = Bit.type(torch.float32)
     Bit_ = torch.reshape(Bit_, [-1, int(Bit_.shape[1] / B), B])
@@ -59,7 +49,7 @@ def Bit2Num(Bit, B):
         num = num + Bit_[:, :, i] * 2 ** (B - 1 - i)
     return num
 
-
+# 3&4 用户端(PFN)的最后一层，它将网络提取出的连续特征（浮点数）量化成离散的0/1比特流，模拟了真实通信中反馈信道的比特约束
 class Quantization(torch.autograd.Function):
     @staticmethod
     def forward(ctx, x, B):
@@ -74,8 +64,6 @@ class Quantization(torch.autograd.Function):
         b, _ = grad_output.shape
         grad_num = torch.sum(grad_output.reshape(b, -1, ctx.constant), dim=2)
         return grad_num, None
-
-
 class Dequantization(torch.autograd.Function):
     @staticmethod
     def forward(ctx, x, B):
@@ -90,7 +78,7 @@ class Dequantization(torch.autograd.Function):
         grad_bit = grad_output.repeat_interleave(ctx.constant, dim=1)
         return grad_bit, None
 
-
+# 5&6 基站端(FDD-HBFN)的第一层，它接收到0/1比特流后，将其反量化为连续的浮点数值，以便后续的神经网络层进行处理。
 class QuantizationLayer(nn.Module):
     def __init__(self, B):
         super(QuantizationLayer, self).__init__()
@@ -98,8 +86,6 @@ class QuantizationLayer(nn.Module):
 
     def forward(self, x):
         return Quantization.apply(x, self.B)
-
-
 class DequantizationLayer(nn.Module):
     def __init__(self, B):
         super(DequantizationLayer, self).__init__()
@@ -108,7 +94,9 @@ class DequantizationLayer(nn.Module):
     def forward(self, x):
         return Dequantization.apply(x, self.B)
 
+#############################
 
+#损失函数
 class MyLoss_OFDM(torch.nn.Module):
     def __init__(self):
         super(MyLoss_OFDM, self).__init__()
@@ -145,11 +133,12 @@ class MyLoss_OFDM(torch.nn.Module):
         R = -R / num / Nc
         return R
 
-
+#############################
+# 激活函数mish
+# 被认为是ReLU激活函数的一个更平滑、性能更好的替代品。、
+# 论文中提到在每个隐藏层中使用它来为网络提供非线性映射能力，代码提供了函数式和模块式两种实现
 def mish(x):
     return x * (torch.tanh(F.softplus(x)))
-
-
 class Mish(nn.Module):
     def __init__(self):
         super().__init__()
@@ -157,8 +146,7 @@ class Mish(nn.Module):
     def forward(self, x):
         return x * (torch.tanh(F.softplus(x)))
 
-
-# --- 模型结构 (未修改) ---
+# 深度残差模块
 class RES_BLOCK(nn.Module):
     def __init__(self, channel_list):
         super(RES_BLOCK, self).__init__()
@@ -179,19 +167,7 @@ class RES_BLOCK(nn.Module):
         x = mish(x + x_ini)
         return x
 
-
-def DFT_matrix(N):
-    i, j = np.meshgrid(np.arange(N), np.arange(N))
-    omega = np.exp(- 2 * pi * 1J / N)
-    W = np.power(omega, i * j) / sqrt(N)
-    return np.mat(W)
-
-
-W = DFT_matrix(Nc)
-W_real = torch.from_numpy(np.real(W)).cuda().float()
-W_imag = torch.from_numpy(np.imag(W)).cuda().float()
-
-
+# 门控特征单元
 class GatedFeatureUnit(nn.Module):
     def __init__(self, in_features, out_features):
         super().__init__()
@@ -201,7 +177,10 @@ class GatedFeatureUnit(nn.Module):
     def forward(self, x):
         return self.gate(x) * self.transform(x)
 
-
+# 一个自定义的“复数卷积块”
+# 神经网络的标准卷积层通常只能处理实数。
+# 这个模块通过一个巧妙的方式来处理复数信号：它将输入的复数信号（即接收到的导频）分解为实部和虚部，
+# 然后用两个独立的卷积核分别对它们进行卷积，最后再将结果进行交叉组合。
 class ComplexConvBlock(nn.Module):
     def __init__(self, Nc, L):
         super().__init__()
@@ -218,7 +197,8 @@ class ComplexConvBlock(nn.Module):
         x = x.view(B, 2, Nc, L)
         return x
 
-
+# 用户端网络 - PFN
+# 这个类完整地实现了论文FDD框架图中的HPN和PFN两个模块的功能。它是运行在用户设备(UE)上的神经网络。
 class DNN_US_RF_OFDM(nn.Module):
     def __init__(self, parm_set):
         Nc, Nt, Nr, snr, B, K = parm_set
@@ -275,7 +255,10 @@ class DNN_US_RF_OFDM(nn.Module):
         x = self.QL(x)
         return x
 
+#####################################
 
+
+# 多尺度特征增强器  允许网络在同一层级上捕获不同感受野的特征
 class MultiScaleFeatureEnhancer(nn.Module):
     def __init__(self, input_dim):
         super(MultiScaleFeatureEnhancer, self).__init__()
@@ -292,7 +275,7 @@ class MultiScaleFeatureEnhancer(nn.Module):
         out = self.act(out)
         return out
 
-
+# 源自“RepVGG”架构的高性能卷积模块
 class RepVGGBlock(nn.Module):
     def __init__(self, in_channels, out_channels, kernel_size, stride=1, padding=0, deploy=False):
         super(RepVGGBlock, self).__init__()
@@ -358,6 +341,8 @@ class RepVGGBlock(nn.Module):
             return 0
         else:
             return torch.nn.functional.pad(kernel1x1, [1, 1, 1, 1])
+
+# Transformer编码器
 class PositionalEncoding(nn.Module):
     """为序列添加位置编码，使其感知顺序"""
 
@@ -380,8 +365,6 @@ class PositionalEncoding(nn.Module):
         """
         x = x + self.pe[:x.size(0)]
         return self.dropout(x)
-
-
 class FullTransformerBlock(nn.Module):
     """
     一个更稳健的、带有残差连接和位置编码的完整Transformer模块。
@@ -428,6 +411,8 @@ class FullTransformerBlock(nn.Module):
         return residual + x
 
 
+# 基站网络 - FDD-HBFN
+# 这个类实现了论文FDD框架图中的FDD-HBFN模块。它是运行在基站(BS)上的神经网络。
 class DNN_BS_hyb_OFDM(nn.Module):
     def __init__(self, parm_set):
         Nc, Nt, Nr, snr, B, K = parm_set
@@ -444,7 +429,7 @@ class DNN_BS_hyb_OFDM(nn.Module):
         self.FC3 = nn.Linear(1024, 2 * K * K * Nc + K * Nt)
         self.bn3 = nn.BatchNorm1d(2 * K * K * Nc)
         self.mish3 = Mish()
-        feature_dim = 32 # 原为2 * K * K
+        feature_dim = 2 * K * K
 
         self.repvgg_block = nn.Sequential(
             RepVGGBlock(in_channels=2 * K * K, out_channels=feature_dim, kernel_size=3, stride=1, padding=1),
