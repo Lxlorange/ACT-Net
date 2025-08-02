@@ -66,7 +66,7 @@ class DNN_BS_hyb_OFDM(nn.Module):
 
 结果：比2略长
 
-![progress_snapshot_32B2Lp8L2K_epoch170.png](assets/progress_snapshot_32B2Lp8L2K_epoch170.png)
+![progress_snapshot_32B2Lp8L2K_epoch170.png](assets/3progress_snapshot_32B2Lp8L2K_epoch170.png)
 
 
 ```txt
@@ -140,6 +140,10 @@ The best SE is: 8.407
 
 4.融合TransformerB到门控中
 
+
+![progress_snapshot_32B2Lp8L2K_epoch170.png](assets/4final_progress_32B2Lp8L2K.png)
+
+![progress_snapshot_32B2Lp8L2K_epoch170.png](assets/4final_progress_64B2Lp8L2K.png)
 
 ```txt
 B = 32
