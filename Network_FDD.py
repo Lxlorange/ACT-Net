@@ -429,7 +429,7 @@ class DNN_BS_hyb_OFDM(nn.Module):
         self.FC3 = nn.Linear(1024, 2 * K * K * Nc + K * Nt)
         self.bn3 = nn.BatchNorm1d(2 * K * K * Nc)
         self.mish3 = Mish()
-        feature_dim = 2 * K * K
+        feature_dim = 48 #2 * K * K
 
         self.repvgg_block = nn.Sequential(
             RepVGGBlock(in_channels=2 * K * K, out_channels=feature_dim, kernel_size=3, stride=1, padding=1),
@@ -443,7 +443,7 @@ class DNN_BS_hyb_OFDM(nn.Module):
             feature_dim=feature_dim,
             num_heads=4,
             dim_feedforward=feature_dim * 4,  # FFN中间层维度, 4倍是常见设置
-            num_layers=3,
+            num_layers=4,
             dropout=0.1
         )
 

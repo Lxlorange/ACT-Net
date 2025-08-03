@@ -213,3 +213,297 @@ The best SE is: 12.299
  12.23213151 12.19934502 12.12874813 12.21676388 12.17410657 12.22797475
  12.21137385 12.23107111 12.23214805 12.29154387 12.23952029 12.29923542]
 ```
+
+5. 超参 维度48 层数4
+
+```txt
+
+Epoch: 0 | Time: 0:01:10.203466 | Train SE: 5.979 | Test SE: 7.075
+New best model saved with Test SE: 7.0746
+Epoch: 1 | Time: 0:01:10.131829 | Train SE: 7.930 | Test SE: 9.113
+New best model saved with Test SE: 9.1128
+Epoch: 2 | Time: 0:01:10.291572 | Train SE: 9.726 | Test SE: 10.342
+New best model saved with Test SE: 10.3419
+Epoch: 3 | Time: 0:01:09.421359 | Train SE: 10.646 | Test SE: 10.803
+New best model saved with Test SE: 10.8030
+Epoch: 4 | Time: 0:01:09.621685 | Train SE: 10.978 | Test SE: 11.331
+New best model saved with Test SE: 11.3310
+Epoch: 5 | Time: 0:01:09.798002 | Train SE: 11.278 | Test SE: 10.928
+Epoch: 6 | Time: 0:01:10.285984 | Train SE: 11.496 | Test SE: 11.734
+New best model saved with Test SE: 11.7344
+Epoch: 7 | Time: 0:01:10.098878 | Train SE: 11.722 | Test SE: 11.833
+New best model saved with Test SE: 11.8335
+Epoch: 8 | Time: 0:01:08.725213 | Train SE: 11.855 | Test SE: 12.032
+New best model saved with Test SE: 12.0318
+Epoch: 9 | Time: 0:01:08.794342 | Train SE: 11.988 | Test SE: 12.061
+New best model saved with Test SE: 12.0615
+Epoch: 10 | Time: 0:01:09.146303 | Train SE: 12.097 | Test SE: 12.176
+
+<Figure size 640x480 with 1 Axes>
+New best model saved with Test SE: 12.1759
+Epoch: 11 | Time: 0:01:11.049455 | Train SE: 12.082 | Test SE: 12.148
+Epoch: 12 | Time: 0:01:09.765558 | Train SE: 12.036 | Test SE: 12.196
+New best model saved with Test SE: 12.1962
+Epoch: 13 | Time: 0:01:09.717739 | Train SE: 12.104 | Test SE: 12.228
+New best model saved with Test SE: 12.2282
+Epoch: 14 | Time: 0:01:09.997912 | Train SE: 12.188 | Test SE: 12.210
+Epoch: 15 | Time: 0:01:11.264984 | Train SE: 12.201 | Test SE: 12.198
+Epoch: 16 | Time: 0:01:10.343633 | Train SE: 12.204 | Test SE: 12.356
+New best model saved with Test SE: 12.3560
+Epoch: 17 | Time: 0:01:09.756171 | Train SE: 12.229 | Test SE: 12.367
+New best model saved with Test SE: 12.3669
+Epoch: 18 | Time: 0:01:09.967731 | Train SE: 12.132 | Test SE: 12.146
+Epoch: 19 | Time: 0:01:09.690392 | Train SE: 12.115 | Test SE: 12.268
+Epoch: 20 | Time: 0:01:09.618797 | Train SE: 12.250 | Test SE: 12.464
+
+<Figure size 640x480 with 1 Axes>
+New best model saved with Test SE: 12.4640
+Epoch: 21 | Time: 0:01:09.988308 | Train SE: 12.397 | Test SE: 12.512
+New best model saved with Test SE: 12.5121
+Epoch: 22 | Time: 0:01:09.710116 | Train SE: 12.458 | Test SE: 12.522
+New best model saved with Test SE: 12.5219
+Epoch: 23 | Time: 0:01:09.619540 | Train SE: 12.337 | Test SE: 12.445
+Epoch: 24 | Time: 0:01:09.869489 | Train SE: 12.450 | Test SE: 12.577
+New best model saved with Test SE: 12.5768
+Epoch: 25 | Time: 0:01:09.771648 | Train SE: 12.452 | Test SE: 12.465
+Epoch: 26 | Time: 0:01:09.512908 | Train SE: 12.403 | Test SE: 12.480
+Epoch: 27 | Time: 0:01:09.497893 | Train SE: 12.433 | Test SE: 12.440
+Epoch: 28 | Time: 0:01:09.625291 | Train SE: 12.352 | Test SE: 12.412
+Epoch: 29 | Time: 0:01:09.686929 | Train SE: 12.024 | Test SE: 11.776
+Epoch: 30 | Time: 0:01:09.510013 | Train SE: 11.637 | Test SE: 11.832
+
+<Figure size 640x480 with 1 Axes>
+Epoch: 31 | Time: 0:01:09.963043 | Train SE: 11.926 | Test SE: 12.172
+Epoch: 32 | Time: 0:01:09.686246 | Train SE: 12.128 | Test SE: 12.213
+Epoch: 33 | Time: 0:01:09.651223 | Train SE: 12.035 | Test SE: 11.952
+Epoch: 34 | Time: 0:01:09.545079 | Train SE: 11.960 | Test SE: 12.288
+Epoch: 35 | Time: 0:01:09.719763 | Train SE: 12.110 | Test SE: 12.270
+Epoch: 36 | Time: 0:01:09.625129 | Train SE: 12.105 | Test SE: 12.385
+Epoch: 37 | Time: 0:01:09.845864 | Train SE: 12.173 | Test SE: 12.381
+Epoch: 38 | Time: 0:01:09.789554 | Train SE: 12.109 | Test SE: 12.275
+Epoch: 39 | Time: 0:01:09.685421 | Train SE: 12.188 | Test SE: 12.326
+Epoch: 40 | Time: 0:01:09.568882 | Train SE: 12.210 | Test SE: 12.398
+
+<Figure size 640x480 with 1 Axes>
+Epoch: 41 | Time: 0:01:09.836954 | Train SE: 12.203 | Test SE: 12.443
+Epoch: 42 | Time: 0:01:09.858359 | Train SE: 12.193 | Test SE: 12.355
+Epoch: 43 | Time: 0:01:10.719807 | Train SE: 12.164 | Test SE: 12.320
+Epoch: 44 | Time: 0:01:10.940109 | Train SE: 12.164 | Test SE: 12.380
+Epoch: 45 | Time: 0:01:10.547123 | Train SE: 12.316 | Test SE: 12.560
+Epoch: 46 | Time: 0:01:10.486876 | Train SE: 12.209 | Test SE: 12.233
+Epoch: 47 | Time: 0:01:10.290883 | Train SE: 12.039 | Test SE: 12.274
+Epoch: 48 | Time: 0:01:10.534297 | Train SE: 12.024 | Test SE: 12.120
+Epoch: 49 | Time: 0:01:11.252729 | Train SE: 11.990 | Test SE: 12.090
+Epoch: 50 | Time: 0:01:11.323867 | Train SE: 12.070 | Test SE: 12.398
+
+<Figure size 640x480 with 1 Axes>
+Epoch: 51 | Time: 0:01:10.718490 | Train SE: 12.184 | Test SE: 12.262
+Epoch: 52 | Time: 0:01:10.553263 | Train SE: 12.261 | Test SE: 12.471
+Epoch: 53 | Time: 0:01:09.859451 | Train SE: 12.334 | Test SE: 12.541
+Epoch: 54 | Time: 0:01:09.671928 | Train SE: 12.317 | Test SE: 12.494
+Epoch: 55 | Time: 0:01:09.928826 | Train SE: 12.370 | Test SE: 12.528
+Epoch: 56 | Time: 0:01:09.933974 | Train SE: 12.378 | Test SE: 12.524
+Epoch: 57 | Time: 0:01:09.860323 | Train SE: 12.310 | Test SE: 12.377
+Epoch: 58 | Time: 0:01:09.735544 | Train SE: 12.203 | Test SE: 12.482
+Epoch: 59 | Time: 0:01:09.979598 | Train SE: 12.333 | Test SE: 12.568
+Epoch: 60 | Time: 0:01:09.748698 | Train SE: 12.410 | Test SE: 12.546
+
+<Figure size 640x480 with 1 Axes>
+Epoch: 61 | Time: 0:01:09.918937 | Train SE: 12.375 | Test SE: 12.593
+New best model saved with Test SE: 12.5930
+Epoch: 62 | Time: 0:01:10.349012 | Train SE: 12.393 | Test SE: 12.584
+Epoch: 63 | Time: 0:01:10.004290 | Train SE: 12.492 | Test SE: 12.618
+New best model saved with Test SE: 12.6180
+Epoch: 64 | Time: 0:01:09.773706 | Train SE: 12.404 | Test SE: 12.633
+New best model saved with Test SE: 12.6326
+Epoch: 65 | Time: 0:01:09.827135 | Train SE: 12.411 | Test SE: 12.533
+Epoch: 66 | Time: 0:01:10.049968 | Train SE: 12.438 | Test SE: 12.653
+New best model saved with Test SE: 12.6527
+Epoch: 67 | Time: 0:01:09.795760 | Train SE: 12.470 | Test SE: 12.588
+Epoch: 68 | Time: 0:01:09.596522 | Train SE: 12.409 | Test SE: 12.597
+Epoch: 69 | Time: 0:01:09.845787 | Train SE: 12.288 | Test SE: 12.489
+Epoch: 70 | Time: 0:01:10.060836 | Train SE: 12.421 | Test SE: 12.628
+
+<Figure size 640x480 with 1 Axes>
+Epoch: 71 | Time: 0:01:10.728041 | Train SE: 12.533 | Test SE: 12.683
+New best model saved with Test SE: 12.6829
+Epoch: 72 | Time: 0:01:10.811715 | Train SE: 12.487 | Test SE: 12.640
+Epoch: 73 | Time: 0:01:10.868495 | Train SE: 12.542 | Test SE: 12.697
+New best model saved with Test SE: 12.6969
+Epoch: 74 | Time: 0:01:10.864022 | Train SE: 12.494 | Test SE: 12.668
+Epoch: 75 | Time: 0:01:10.291677 | Train SE: 12.570 | Test SE: 12.722
+New best model saved with Test SE: 12.7222
+Epoch: 76 | Time: 0:01:09.207572 | Train SE: 12.462 | Test SE: 12.610
+Epoch: 77 | Time: 0:01:09.065308 | Train SE: 12.299 | Test SE: 12.582
+Epoch: 78 | Time: 0:01:08.949666 | Train SE: 12.423 | Test SE: 12.501
+Epoch: 79 | Time: 0:01:10.035810 | Train SE: 12.459 | Test SE: 12.407
+Epoch: 80 | Time: 0:01:10.710619 | Train SE: 12.343 | Test SE: 12.505
+
+<Figure size 640x480 with 1 Axes>
+Epoch: 81 | Time: 0:01:10.455144 | Train SE: 12.487 | Test SE: 12.707
+Epoch: 82 | Time: 0:01:10.095647 | Train SE: 12.521 | Test SE: 12.610
+Epoch: 83 | Time: 0:01:09.888927 | Train SE: 12.374 | Test SE: 12.472
+Epoch: 84 | Time: 0:01:09.809564 | Train SE: 12.490 | Test SE: 12.659
+Epoch: 85 | Time: 0:01:09.663471 | Train SE: 12.608 | Test SE: 12.772
+New best model saved with Test SE: 12.7722
+Epoch: 86 | Time: 0:01:09.739853 | Train SE: 12.562 | Test SE: 12.557
+Epoch: 87 | Time: 0:01:09.830320 | Train SE: 12.449 | Test SE: 12.655
+Epoch: 88 | Time: 0:01:09.962990 | Train SE: 12.508 | Test SE: 12.188
+Epoch: 89 | Time: 0:01:09.776901 | Train SE: 12.485 | Test SE: 12.727
+Epoch: 90 | Time: 0:01:09.894214 | Train SE: 12.531 | Test SE: 12.635
+
+<Figure size 640x480 with 1 Axes>
+Epoch: 91 | Time: 0:01:10.005135 | Train SE: 12.561 | Test SE: 12.665
+Epoch: 92 | Time: 0:01:09.665252 | Train SE: 12.490 | Test SE: 12.547
+Epoch: 93 | Time: 0:01:09.727046 | Train SE: 12.461 | Test SE: 12.596
+Epoch: 94 | Time: 0:01:09.709627 | Train SE: 12.498 | Test SE: 12.608
+Epoch: 95 | Time: 0:01:09.767481 | Train SE: 12.582 | Test SE: 12.641
+Epoch: 96 | Time: 0:01:09.701612 | Train SE: 12.538 | Test SE: 12.691
+Epoch: 97 | Time: 0:01:09.834085 | Train SE: 12.603 | Test SE: 12.682
+Epoch: 98 | Time: 0:01:09.825531 | Train SE: 12.581 | Test SE: 12.678
+Epoch: 99 | Time: 0:01:09.799028 | Train SE: 12.469 | Test SE: 12.476
+Epoch: 100 | Time: 0:01:10.316181 | Train SE: 12.570 | Test SE: 12.738
+
+<Figure size 640x480 with 1 Axes>
+Epoch: 101 | Time: 0:01:11.102431 | Train SE: 12.660 | Test SE: 12.693
+Epoch: 102 | Time: 0:01:10.276469 | Train SE: 12.555 | Test SE: 12.628
+Epoch: 103 | Time: 0:01:10.461101 | Train SE: 12.564 | Test SE: 12.640
+Epoch: 104 | Time: 0:01:09.998707 | Train SE: 12.572 | Test SE: 12.647
+Epoch: 105 | Time: 0:01:09.783226 | Train SE: 12.581 | Test SE: 12.687
+Epoch: 106 | Time: 0:01:09.842836 | Train SE: 12.626 | Test SE: 12.689
+Epoch: 107 | Time: 0:01:09.839909 | Train SE: 12.629 | Test SE: 12.701
+Epoch: 108 | Time: 0:01:09.614329 | Train SE: 12.643 | Test SE: 12.722
+Epoch: 109 | Time: 0:01:10.691558 | Train SE: 12.658 | Test SE: 12.722
+Epoch: 110 | Time: 0:01:10.783447 | Train SE: 12.662 | Test SE: 12.736
+
+<Figure size 640x480 with 1 Axes>
+Epoch: 111 | Time: 0:01:09.897274 | Train SE: 12.675 | Test SE: 12.723
+Epoch: 112 | Time: 0:01:09.697793 | Train SE: 12.707 | Test SE: 12.786
+New best model saved with Test SE: 12.7859
+Epoch: 113 | Time: 0:01:09.952941 | Train SE: 12.722 | Test SE: 12.717
+Epoch: 114 | Time: 0:01:11.232505 | Train SE: 12.645 | Test SE: 12.676
+Epoch: 115 | Time: 0:01:10.450090 | Train SE: 12.618 | Test SE: 12.659
+Epoch: 116 | Time: 0:01:11.102191 | Train SE: 12.611 | Test SE: 12.666
+Epoch: 117 | Time: 0:01:11.342217 | Train SE: 12.641 | Test SE: 12.726
+Epoch: 118 | Time: 0:01:10.871995 | Train SE: 12.649 | Test SE: 12.709
+Epoch: 119 | Time: 0:01:10.423225 | Train SE: 12.659 | Test SE: 12.705
+Epoch: 120 | Time: 0:01:10.336976 | Train SE: 12.585 | Test SE: 12.535
+
+<Figure size 640x480 with 1 Axes>
+Epoch: 121 | Time: 0:01:11.109338 | Train SE: 12.534 | Test SE: 12.643
+Epoch: 122 | Time: 0:01:08.723964 | Train SE: 12.539 | Test SE: 12.609
+Epoch: 123 | Time: 0:01:08.621618 | Train SE: 12.557 | Test SE: 12.607
+Epoch: 124 | Time: 0:01:08.487743 | Train SE: 12.532 | Test SE: 12.578
+Epoch: 125 | Time: 0:01:08.518733 | Train SE: 12.476 | Test SE: 12.507
+Epoch: 126 | Time: 0:01:08.635361 | Train SE: 12.464 | Test SE: 12.511
+Epoch: 127 | Time: 0:01:09.394799 | Train SE: 12.448 | Test SE: 12.576
+Epoch: 128 | Time: 0:01:08.684134 | Train SE: 12.417 | Test SE: 12.505
+Epoch: 129 | Time: 0:01:08.840645 | Train SE: 12.439 | Test SE: 12.464
+Epoch: 130 | Time: 0:01:08.758913 | Train SE: 12.461 | Test SE: 12.551
+
+<Figure size 640x480 with 1 Axes>
+Epoch: 131 | Time: 0:01:09.293917 | Train SE: 12.435 | Test SE: 12.512
+Epoch: 132 | Time: 0:01:09.215380 | Train SE: 12.466 | Test SE: 12.584
+Epoch: 133 | Time: 0:01:09.173595 | Train SE: 12.486 | Test SE: 12.518
+Epoch: 134 | Time: 0:01:08.866244 | Train SE: 12.518 | Test SE: 12.647
+Epoch: 135 | Time: 0:01:08.978197 | Train SE: 12.599 | Test SE: 12.678
+Epoch: 136 | Time: 0:01:08.407718 | Train SE: 12.610 | Test SE: 12.647
+Epoch: 137 | Time: 0:01:08.421980 | Train SE: 12.579 | Test SE: 12.615
+Epoch: 138 | Time: 0:01:08.729072 | Train SE: 12.549 | Test SE: 12.611
+Epoch: 139 | Time: 0:01:08.607742 | Train SE: 12.604 | Test SE: 12.705
+Epoch: 140 | Time: 0:01:08.792792 | Train SE: 12.624 | Test SE: 12.687
+
+<Figure size 640x480 with 1 Axes>
+Epoch: 141 | Time: 0:01:08.855540 | Train SE: 12.576 | Test SE: 12.632
+Epoch: 142 | Time: 0:01:09.683075 | Train SE: 12.591 | Test SE: 12.715
+Epoch: 143 | Time: 0:01:09.483131 | Train SE: 12.606 | Test SE: 12.662
+Epoch: 144 | Time: 0:01:08.469147 | Train SE: 12.609 | Test SE: 12.712
+Epoch: 145 | Time: 0:01:08.911029 | Train SE: 12.624 | Test SE: 12.738
+Epoch: 146 | Time: 0:01:08.591518 | Train SE: 12.686 | Test SE: 12.718
+Epoch: 147 | Time: 0:01:08.411367 | Train SE: 12.610 | Test SE: 12.688
+Epoch: 148 | Time: 0:01:08.740133 | Train SE: 12.605 | Test SE: 12.658
+Epoch: 149 | Time: 0:01:08.585247 | Train SE: 12.616 | Test SE: 12.699
+Epoch: 150 | Time: 0:01:08.313475 | Train SE: 12.729 | Test SE: 12.787
+
+<Figure size 640x480 with 1 Axes>
+New best model saved with Test SE: 12.7873
+Epoch: 151 | Time: 0:01:08.652761 | Train SE: 12.761 | Test SE: 12.815
+New best model saved with Test SE: 12.8150
+Epoch: 152 | Time: 0:01:09.474264 | Train SE: 12.777 | Test SE: 12.802
+Epoch: 153 | Time: 0:01:09.268568 | Train SE: 12.813 | Test SE: 12.824
+New best model saved with Test SE: 12.8238
+Epoch: 154 | Time: 0:01:09.836703 | Train SE: 12.807 | Test SE: 12.837
+New best model saved with Test SE: 12.8372
+Epoch: 155 | Time: 0:01:09.742977 | Train SE: 12.773 | Test SE: 12.809
+Epoch: 156 | Time: 0:01:09.847134 | Train SE: 12.751 | Test SE: 12.773
+Epoch: 157 | Time: 0:01:09.817328 | Train SE: 12.738 | Test SE: 12.794
+Epoch: 158 | Time: 0:01:09.847021 | Train SE: 12.781 | Test SE: 12.855
+New best model saved with Test SE: 12.8551
+Epoch: 159 | Time: 0:01:10.276927 | Train SE: 12.812 | Test SE: 12.817
+Epoch: 160 | Time: 0:01:12.473364 | Train SE: 12.809 | Test SE: 12.830
+
+<Figure size 640x480 with 1 Axes>
+Epoch: 161 | Time: 0:01:10.798813 | Train SE: 12.820 | Test SE: 12.866
+New best model saved with Test SE: 12.8664
+Epoch: 162 | Time: 0:01:09.780434 | Train SE: 12.823 | Test SE: 12.870
+New best model saved with Test SE: 12.8696
+Epoch: 163 | Time: 0:01:09.847835 | Train SE: 12.803 | Test SE: 12.811
+Epoch: 164 | Time: 0:01:09.397007 | Train SE: 12.794 | Test SE: 12.824
+Epoch: 165 | Time: 0:01:09.583898 | Train SE: 12.797 | Test SE: 12.782
+Epoch: 166 | Time: 0:01:09.634564 | Train SE: 12.784 | Test SE: 12.803
+Epoch: 167 | Time: 0:01:09.745036 | Train SE: 12.757 | Test SE: 12.793
+Epoch: 168 | Time: 0:01:09.458996 | Train SE: 12.780 | Test SE: 12.824
+Epoch: 169 | Time: 0:01:09.705639 | Train SE: 12.782 | Test SE: 12.784
+Epoch: 170 | Time: 0:01:09.600298 | Train SE: 12.778 | Test SE: 12.830
+
+<Figure size 640x480 with 1 Axes>
+Epoch: 171 | Time: 0:01:10.205857 | Train SE: 12.794 | Test SE: 12.810
+Epoch: 172 | Time: 0:01:10.033754 | Train SE: 12.833 | Test SE: 12.878
+New best model saved with Test SE: 12.8783
+Epoch: 173 | Time: 0:01:09.778782 | Train SE: 12.852 | Test SE: 12.880
+New best model saved with Test SE: 12.8798
+Epoch: 174 | Time: 0:01:09.596021 | Train SE: 12.857 | Test SE: 12.854
+Epoch: 175 | Time: 0:01:09.476890 | Train SE: 12.778 | Test SE: 12.824
+Epoch: 176 | Time: 0:01:09.692480 | Train SE: 12.842 | Test SE: 12.865
+Epoch: 177 | Time: 0:01:09.692674 | Train SE: 12.865 | Test SE: 12.831
+Epoch: 178 | Time: 0:01:09.357198 | Train SE: 12.853 | Test SE: 12.885
+New best model saved with Test SE: 12.8846
+Epoch: 179 | Time: 0:01:09.731378 | Train SE: 12.787 | Test SE: 12.831
+
+<Figure size 640x480 with 1 Axes>
+The best SE is: 12.885
+[ 7.07458225  9.11282263 10.34190392 10.80295012 11.33099256 10.92759998
+ 11.73436959 11.83348334 12.03181419 12.06145163 12.17593932 12.14824247
+ 12.19623728 12.22820685 12.2103066  12.1980298  12.35595984 12.36685801
+ 12.14649441 12.26819174 12.4640245  12.51210656 12.52193451 12.44540892
+ 12.5768306  12.46547422 12.48024809 12.43964901 12.41163673 11.7762471
+ 11.83161395 12.17172694 12.21256003 11.95190117 12.28835952 12.26998107
+ 12.38506005 12.38143034 12.27510266 12.32607119 12.39830892 12.44322662
+ 12.35532563 12.3200644  12.38003476 12.560496   12.23255439 12.27380164
+ 12.12019382 12.09002411 12.39847844 12.26154673 12.47133851 12.5413727
+ 12.49429657 12.5283335  12.52350307 12.37699769 12.48164899 12.56824114
+ 12.54596977 12.59304154 12.58394134 12.61800871 12.6326071  12.53307147
+ 12.65274961 12.58803315 12.59658184 12.48932588 12.62839422 12.68288455
+ 12.63963408 12.69694955 12.66830623 12.72223864 12.60972495 12.58227756
+ 12.50086706 12.4068362  12.5045326  12.70720096 12.61036553 12.47158675
+ 12.6585885  12.77215722 12.55665116 12.65535111 12.18847291 12.72692947
+ 12.6352478  12.66474814 12.54709954 12.59556353 12.60839424 12.64135475
+ 12.69087191 12.6824506  12.67776539 12.47566409 12.73779294 12.69260411
+ 12.62763577 12.64030132 12.64713516 12.6867259  12.68904693 12.70085127
+ 12.72210631 12.72182772 12.73630235 12.72269783 12.78589604 12.7168561
+ 12.67555866 12.65945718 12.66608431 12.7258076  12.70861995 12.70474377
+ 12.53486805 12.64263649 12.60889623 12.60659595 12.57801332 12.50724008
+ 12.51132722 12.57568614 12.5048811  12.46435347 12.55055175 12.51172044
+ 12.58410313 12.51802611 12.64680953 12.6778631  12.6465966  12.61461408
+ 12.61074052 12.7052345  12.68735027 12.63222408 12.71506951 12.66160862
+ 12.71216381 12.73756428 12.71800432 12.68830097 12.6581012  12.6985081
+ 12.78727369 12.81501279 12.80199046 12.82382376 12.83717973 12.80879147
+ 12.77312689 12.79418216 12.85509627 12.81700761 12.83004811 12.86637061
+ 12.86962924 12.81129181 12.82412915 12.78242192 12.80278959 12.79274852
+ 12.82382793 12.78358307 12.83034952 12.81013622 12.8783426  12.87984707
+ 12.85409966 12.82400877 12.8654588  12.83130672 12.88458655 12.83066297]
+
+```
+
+
+
