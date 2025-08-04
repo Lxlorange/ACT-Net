@@ -506,4 +506,797 @@ The best SE is: 12.885
 ```
 
 
+6. 确认使用CBAM，种子1754215421
 
+```txt
+B = 32
+Epoch: 0 | Time: 0:01:12.200752 | Train SE: 5.792 | Test SE: 6.695
+New best model saved with Test SE: 6.6951
+Epoch: 1 | Time: 0:01:12.342603 | Train SE: 6.928 | Test SE: 7.028
+New best model saved with Test SE: 7.0281
+Epoch: 2 | Time: 0:01:12.046882 | Train SE: 7.288 | Test SE: 7.498
+New best model saved with Test SE: 7.4976
+Epoch: 3 | Time: 0:01:11.973607 | Train SE: 7.560 | Test SE: 7.658
+New best model saved with Test SE: 7.6576
+Epoch: 4 | Time: 0:01:12.260778 | Train SE: 7.788 | Test SE: 8.054
+New best model saved with Test SE: 8.0541
+Epoch: 5 | Time: 0:01:12.172516 | Train SE: 9.387 | Test SE: 10.280
+New best model saved with Test SE: 10.2797
+Epoch: 6 | Time: 0:01:12.042245 | Train SE: 10.483 | Test SE: 10.754
+New best model saved with Test SE: 10.7544
+Epoch: 7 | Time: 0:01:12.247434 | Train SE: 10.756 | Test SE: 11.031
+New best model saved with Test SE: 11.0315
+Epoch: 8 | Time: 0:01:12.698383 | Train SE: 11.037 | Test SE: 10.892
+Epoch: 9 | Time: 0:01:12.160604 | Train SE: 10.788 | Test SE: 10.627
+Epoch: 10 | Time: 0:01:12.075172 | Train SE: 10.854 | Test SE: 10.977
+
+<Figure size 640x480 with 1 Axes>
+Epoch: 11 | Time: 0:01:12.717099 | Train SE: 11.008 | Test SE: 11.051
+New best model saved with Test SE: 11.0506
+Epoch: 12 | Time: 0:01:12.172609 | Train SE: 11.036 | Test SE: 11.332
+New best model saved with Test SE: 11.3318
+Epoch: 13 | Time: 0:01:12.045859 | Train SE: 11.156 | Test SE: 11.469
+New best model saved with Test SE: 11.4691
+Epoch: 14 | Time: 0:01:12.523411 | Train SE: 11.390 | Test SE: 11.381
+Epoch: 15 | Time: 0:01:12.302045 | Train SE: 11.162 | Test SE: 11.495
+New best model saved with Test SE: 11.4946
+Epoch: 16 | Time: 0:01:12.134058 | Train SE: 11.419 | Test SE: 11.498
+New best model saved with Test SE: 11.4976
+Epoch: 17 | Time: 0:01:12.328945 | Train SE: 11.516 | Test SE: 11.666
+New best model saved with Test SE: 11.6663
+Epoch: 18 | Time: 0:01:12.310421 | Train SE: 11.521 | Test SE: 11.545
+Epoch: 19 | Time: 0:01:12.084229 | Train SE: 11.351 | Test SE: 11.632
+Epoch: 20 | Time: 0:01:12.085835 | Train SE: 11.622 | Test SE: 11.862
+
+<Figure size 640x480 with 1 Axes>
+New best model saved with Test SE: 11.8619
+Epoch: 21 | Time: 0:01:12.897817 | Train SE: 11.621 | Test SE: 11.890
+New best model saved with Test SE: 11.8899
+Epoch: 22 | Time: 0:01:12.035260 | Train SE: 11.648 | Test SE: 11.751
+Epoch: 23 | Time: 0:01:11.909458 | Train SE: 11.612 | Test SE: 11.753
+Epoch: 24 | Time: 0:01:12.352772 | Train SE: 11.557 | Test SE: 11.710
+Epoch: 25 | Time: 0:01:12.164082 | Train SE: 11.715 | Test SE: 11.931
+New best model saved with Test SE: 11.9314
+Epoch: 26 | Time: 0:01:12.063673 | Train SE: 11.848 | Test SE: 12.054
+New best model saved with Test SE: 12.0536
+Epoch: 27 | Time: 0:01:12.198396 | Train SE: 11.951 | Test SE: 11.917
+Epoch: 28 | Time: 0:01:12.215166 | Train SE: 11.765 | Test SE: 11.875
+Epoch: 29 | Time: 0:01:12.018521 | Train SE: 11.739 | Test SE: 11.759
+Epoch: 30 | Time: 0:01:11.999881 | Train SE: 11.686 | Test SE: 11.855
+
+<Figure size 640x480 with 1 Axes>
+Epoch: 31 | Time: 0:01:12.565750 | Train SE: 11.742 | Test SE: 11.888
+Epoch: 32 | Time: 0:01:12.025150 | Train SE: 11.742 | Test SE: 11.833
+Epoch: 33 | Time: 0:01:12.070147 | Train SE: 11.823 | Test SE: 12.049
+Epoch: 34 | Time: 0:01:12.382445 | Train SE: 11.958 | Test SE: 11.857
+Epoch: 35 | Time: 0:01:12.061657 | Train SE: 11.873 | Test SE: 11.987
+Epoch: 36 | Time: 0:01:11.973018 | Train SE: 11.843 | Test SE: 11.915
+Epoch: 37 | Time: 0:01:12.152860 | Train SE: 11.689 | Test SE: 11.933
+Epoch: 38 | Time: 0:01:12.198870 | Train SE: 11.844 | Test SE: 11.991
+Epoch: 39 | Time: 0:01:12.039394 | Train SE: 11.646 | Test SE: 11.919
+Epoch: 40 | Time: 0:01:11.911107 | Train SE: 11.760 | Test SE: 11.905
+
+<Figure size 640x480 with 1 Axes>
+Epoch: 41 | Time: 0:01:12.491104 | Train SE: 11.531 | Test SE: 11.925
+Epoch: 42 | Time: 0:01:12.007381 | Train SE: 11.701 | Test SE: 12.002
+Epoch: 43 | Time: 0:01:11.908063 | Train SE: 11.803 | Test SE: 12.011
+Epoch: 44 | Time: 0:01:12.218730 | Train SE: 11.719 | Test SE: 11.784
+Epoch: 45 | Time: 0:01:12.079564 | Train SE: 11.744 | Test SE: 11.862
+Epoch: 46 | Time: 0:01:12.239549 | Train SE: 11.859 | Test SE: 12.135
+New best model saved with Test SE: 12.1355
+Epoch: 47 | Time: 0:01:12.139855 | Train SE: 12.035 | Test SE: 12.173
+New best model saved with Test SE: 12.1726
+Epoch: 48 | Time: 0:01:12.257154 | Train SE: 12.095 | Test SE: 12.218
+New best model saved with Test SE: 12.2184
+Epoch: 49 | Time: 0:01:12.042242 | Train SE: 12.044 | Test SE: 12.170
+Epoch: 50 | Time: 0:01:12.074606 | Train SE: 12.087 | Test SE: 12.238
+
+<Figure size 640x480 with 1 Axes>
+New best model saved with Test SE: 12.2380
+Epoch: 51 | Time: 0:01:12.545863 | Train SE: 12.075 | Test SE: 12.142
+Epoch: 52 | Time: 0:01:12.046003 | Train SE: 11.963 | Test SE: 12.185
+Epoch: 53 | Time: 0:01:11.983656 | Train SE: 12.068 | Test SE: 12.224
+Epoch: 54 | Time: 0:01:12.336561 | Train SE: 11.872 | Test SE: 12.012
+Epoch: 55 | Time: 0:01:12.142644 | Train SE: 11.786 | Test SE: 11.980
+Epoch: 56 | Time: 0:01:12.003674 | Train SE: 11.899 | Test SE: 12.256
+New best model saved with Test SE: 12.2557
+Epoch: 57 | Time: 0:01:12.254103 | Train SE: 12.039 | Test SE: 12.101
+Epoch: 58 | Time: 0:01:12.337181 | Train SE: 11.986 | Test SE: 12.228
+Epoch: 59 | Time: 0:01:11.878829 | Train SE: 12.048 | Test SE: 12.289
+New best model saved with Test SE: 12.2887
+Epoch: 60 | Time: 0:01:11.956225 | Train SE: 12.168 | Test SE: 12.352
+
+<Figure size 640x480 with 1 Axes>
+New best model saved with Test SE: 12.3518
+Epoch: 61 | Time: 0:01:12.483590 | Train SE: 12.157 | Test SE: 12.306
+Epoch: 62 | Time: 0:01:11.980499 | Train SE: 12.221 | Test SE: 12.028
+Epoch: 63 | Time: 0:01:11.928439 | Train SE: 12.035 | Test SE: 12.162
+Epoch: 64 | Time: 0:01:12.318763 | Train SE: 12.113 | Test SE: 12.191
+Epoch: 65 | Time: 0:01:11.966622 | Train SE: 12.115 | Test SE: 12.325
+Epoch: 66 | Time: 0:01:11.874486 | Train SE: 12.111 | Test SE: 12.315
+Epoch: 67 | Time: 0:01:12.149791 | Train SE: 12.166 | Test SE: 12.273
+Epoch: 68 | Time: 0:01:12.158350 | Train SE: 12.199 | Test SE: 12.285
+Epoch: 69 | Time: 0:01:11.977046 | Train SE: 12.086 | Test SE: 12.264
+Epoch: 70 | Time: 0:01:12.107567 | Train SE: 12.017 | Test SE: 11.990
+
+<Figure size 640x480 with 1 Axes>
+Epoch: 71 | Time: 0:01:12.728459 | Train SE: 11.992 | Test SE: 12.282
+Epoch: 72 | Time: 0:01:11.996327 | Train SE: 12.102 | Test SE: 12.151
+Epoch: 73 | Time: 0:01:11.974271 | Train SE: 11.977 | Test SE: 11.911
+Epoch: 74 | Time: 0:01:12.354996 | Train SE: 11.824 | Test SE: 11.948
+Epoch: 75 | Time: 0:01:12.100068 | Train SE: 11.933 | Test SE: 12.176
+Epoch: 76 | Time: 0:01:11.940133 | Train SE: 11.969 | Test SE: 12.084
+Epoch: 77 | Time: 0:01:12.246696 | Train SE: 12.006 | Test SE: 12.250
+Epoch: 78 | Time: 0:01:12.175472 | Train SE: 12.031 | Test SE: 12.221
+Epoch: 79 | Time: 0:01:12.049803 | Train SE: 12.033 | Test SE: 12.104
+Epoch: 80 | Time: 0:01:12.103837 | Train SE: 12.019 | Test SE: 12.215
+
+<Figure size 640x480 with 1 Axes>
+Epoch: 81 | Time: 0:01:12.519550 | Train SE: 12.071 | Test SE: 12.194
+Epoch: 82 | Time: 0:01:12.064395 | Train SE: 12.081 | Test SE: 12.258
+Epoch: 83 | Time: 0:01:12.130412 | Train SE: 12.031 | Test SE: 12.010
+Epoch: 84 | Time: 0:01:12.365631 | Train SE: 11.914 | Test SE: 11.925
+Epoch: 85 | Time: 0:01:12.135779 | Train SE: 11.845 | Test SE: 12.054
+Epoch: 86 | Time: 0:01:11.969158 | Train SE: 11.928 | Test SE: 12.090
+Epoch: 87 | Time: 0:01:12.231815 | Train SE: 11.937 | Test SE: 12.102
+Epoch: 88 | Time: 0:01:12.160114 | Train SE: 11.940 | Test SE: 11.997
+Epoch: 89 | Time: 0:01:11.996162 | Train SE: 11.806 | Test SE: 11.927
+Epoch: 90 | Time: 0:01:11.937715 | Train SE: 11.767 | Test SE: 12.058
+
+<Figure size 640x480 with 1 Axes>
+Epoch: 91 | Time: 0:01:12.406490 | Train SE: 11.911 | Test SE: 12.194
+Epoch: 92 | Time: 0:01:11.860949 | Train SE: 11.977 | Test SE: 12.086
+Epoch: 93 | Time: 0:01:11.815618 | Train SE: 11.988 | Test SE: 12.056
+Epoch: 94 | Time: 0:01:12.178904 | Train SE: 12.025 | Test SE: 12.151
+Epoch: 95 | Time: 0:01:12.023296 | Train SE: 11.956 | Test SE: 12.122
+Epoch: 96 | Time: 0:01:12.267677 | Train SE: 11.961 | Test SE: 12.166
+Epoch: 97 | Time: 0:01:12.241417 | Train SE: 11.970 | Test SE: 12.182
+Epoch: 98 | Time: 0:01:12.146111 | Train SE: 12.082 | Test SE: 12.206
+Epoch: 99 | Time: 0:01:12.009164 | Train SE: 12.044 | Test SE: 12.167
+Epoch: 100 | Time: 0:01:12.149575 | Train SE: 12.102 | Test SE: 12.203
+
+<Figure size 640x480 with 1 Axes>
+Epoch: 101 | Time: 0:01:12.560744 | Train SE: 12.091 | Test SE: 12.154
+Epoch: 102 | Time: 0:01:12.025805 | Train SE: 11.980 | Test SE: 12.063
+Epoch: 103 | Time: 0:01:11.967332 | Train SE: 12.078 | Test SE: 12.206
+Epoch: 104 | Time: 0:01:12.430366 | Train SE: 12.076 | Test SE: 12.040
+Epoch: 105 | Time: 0:01:12.144719 | Train SE: 11.989 | Test SE: 12.102
+Epoch: 106 | Time: 0:01:11.995977 | Train SE: 11.894 | Test SE: 12.068
+Epoch: 107 | Time: 0:01:12.246908 | Train SE: 11.963 | Test SE: 12.030
+Epoch: 108 | Time: 0:01:12.231402 | Train SE: 12.034 | Test SE: 12.155
+Epoch: 109 | Time: 0:01:12.274061 | Train SE: 12.072 | Test SE: 12.191
+Epoch: 110 | Time: 0:01:12.111779 | Train SE: 12.007 | Test SE: 12.128
+
+<Figure size 640x480 with 1 Axes>
+Epoch: 111 | Time: 0:01:12.373429 | Train SE: 12.046 | Test SE: 12.165
+Epoch: 112 | Time: 0:01:11.973828 | Train SE: 12.062 | Test SE: 12.235
+Epoch: 113 | Time: 0:01:11.899811 | Train SE: 12.092 | Test SE: 12.218
+Epoch: 114 | Time: 0:01:12.368294 | Train SE: 12.066 | Test SE: 12.191
+Epoch: 115 | Time: 0:01:12.012688 | Train SE: 12.059 | Test SE: 12.178
+Epoch: 116 | Time: 0:01:11.915558 | Train SE: 12.047 | Test SE: 12.284
+Epoch: 117 | Time: 0:01:12.219921 | Train SE: 12.173 | Test SE: 12.274
+Epoch: 118 | Time: 0:01:12.073942 | Train SE: 12.169 | Test SE: 12.185
+Epoch: 119 | Time: 0:01:12.043599 | Train SE: 12.070 | Test SE: 12.092
+Epoch: 120 | Time: 0:01:12.128682 | Train SE: 12.056 | Test SE: 12.261
+
+<Figure size 640x480 with 1 Axes>
+Epoch: 121 | Time: 0:01:12.623775 | Train SE: 12.132 | Test SE: 12.250
+Epoch: 122 | Time: 0:01:12.212305 | Train SE: 12.084 | Test SE: 12.251
+Epoch: 123 | Time: 0:01:12.010653 | Train SE: 12.143 | Test SE: 12.254
+Epoch: 124 | Time: 0:01:12.466029 | Train SE: 12.113 | Test SE: 12.254
+Epoch: 125 | Time: 0:01:12.168777 | Train SE: 12.129 | Test SE: 12.194
+Epoch: 126 | Time: 0:01:12.024245 | Train SE: 12.109 | Test SE: 12.181
+Epoch: 127 | Time: 0:01:12.337180 | Train SE: 12.106 | Test SE: 12.259
+Epoch: 128 | Time: 0:01:12.346538 | Train SE: 12.132 | Test SE: 12.151
+Epoch: 129 | Time: 0:01:12.113773 | Train SE: 12.000 | Test SE: 12.108
+Epoch: 130 | Time: 0:01:12.210517 | Train SE: 12.031 | Test SE: 12.135
+
+<Figure size 640x480 with 1 Axes>
+Epoch: 131 | Time: 0:01:12.536288 | Train SE: 11.993 | Test SE: 12.094
+Epoch: 132 | Time: 0:01:12.130549 | Train SE: 12.023 | Test SE: 12.057
+Epoch: 133 | Time: 0:01:12.083112 | Train SE: 12.057 | Test SE: 12.235
+Epoch: 134 | Time: 0:01:12.736356 | Train SE: 12.066 | Test SE: 12.199
+Epoch: 135 | Time: 0:01:12.005419 | Train SE: 12.106 | Test SE: 12.306
+Epoch: 136 | Time: 0:01:11.831486 | Train SE: 12.162 | Test SE: 12.264
+Epoch: 137 | Time: 0:01:12.243417 | Train SE: 12.173 | Test SE: 12.331
+Epoch: 138 | Time: 0:01:12.212600 | Train SE: 12.195 | Test SE: 12.223
+Epoch: 139 | Time: 0:01:12.018015 | Train SE: 12.159 | Test SE: 12.269
+Epoch: 140 | Time: 0:01:12.027353 | Train SE: 12.152 | Test SE: 12.249
+
+<Figure size 640x480 with 1 Axes>
+Epoch: 141 | Time: 0:01:12.373801 | Train SE: 12.160 | Test SE: 12.315
+Epoch: 142 | Time: 0:01:11.985368 | Train SE: 12.201 | Test SE: 12.293
+Epoch: 143 | Time: 0:01:12.044468 | Train SE: 12.214 | Test SE: 12.278
+Epoch: 144 | Time: 0:01:12.393395 | Train SE: 12.183 | Test SE: 12.282
+Epoch: 145 | Time: 0:01:12.122148 | Train SE: 12.183 | Test SE: 12.192
+Epoch: 146 | Time: 0:01:12.185664 | Train SE: 12.162 | Test SE: 12.328
+Epoch: 147 | Time: 0:01:12.439416 | Train SE: 12.248 | Test SE: 12.344
+Epoch: 148 | Time: 0:01:12.224305 | Train SE: 12.159 | Test SE: 12.288
+Epoch: 149 | Time: 0:01:12.037055 | Train SE: 12.202 | Test SE: 12.361
+New best model saved with Test SE: 12.3607
+Epoch: 150 | Time: 0:01:12.286330 | Train SE: 12.265 | Test SE: 12.398
+
+<Figure size 640x480 with 1 Axes>
+New best model saved with Test SE: 12.3980
+Epoch: 151 | Time: 0:01:12.574047 | Train SE: 12.318 | Test SE: 12.405
+New best model saved with Test SE: 12.4054
+Epoch: 152 | Time: 0:01:12.099189 | Train SE: 12.322 | Test SE: 12.419
+New best model saved with Test SE: 12.4188
+Epoch: 153 | Time: 0:01:12.146702 | Train SE: 12.294 | Test SE: 12.386
+Epoch: 154 | Time: 0:01:12.369823 | Train SE: 12.261 | Test SE: 12.375
+Epoch: 155 | Time: 0:01:12.091178 | Train SE: 12.306 | Test SE: 12.399
+Epoch: 156 | Time: 0:01:11.945244 | Train SE: 12.342 | Test SE: 12.431
+New best model saved with Test SE: 12.4311
+Epoch: 157 | Time: 0:01:12.304472 | Train SE: 12.312 | Test SE: 12.396
+Epoch: 158 | Time: 0:01:12.020973 | Train SE: 12.303 | Test SE: 12.358
+Epoch: 159 | Time: 0:01:12.422208 | Train SE: 12.308 | Test SE: 12.412
+Epoch: 160 | Time: 0:01:12.242231 | Train SE: 12.319 | Test SE: 12.417
+
+<Figure size 640x480 with 1 Axes>
+Epoch: 161 | Time: 0:01:12.481233 | Train SE: 12.340 | Test SE: 12.388
+Epoch: 162 | Time: 0:01:12.197796 | Train SE: 12.330 | Test SE: 12.437
+New best model saved with Test SE: 12.4368
+Epoch: 163 | Time: 0:01:12.343476 | Train SE: 12.318 | Test SE: 12.409
+Epoch: 164 | Time: 0:01:12.555155 | Train SE: 12.324 | Test SE: 12.392
+Epoch: 165 | Time: 0:01:11.986251 | Train SE: 12.330 | Test SE: 12.420
+Epoch: 166 | Time: 0:01:11.981392 | Train SE: 12.303 | Test SE: 12.413
+Epoch: 167 | Time: 0:01:12.393477 | Train SE: 12.333 | Test SE: 12.440
+New best model saved with Test SE: 12.4397
+Epoch: 168 | Time: 0:01:12.239030 | Train SE: 12.354 | Test SE: 12.472
+New best model saved with Test SE: 12.4725
+Epoch: 169 | Time: 0:01:12.039791 | Train SE: 12.359 | Test SE: 12.454
+Epoch: 170 | Time: 0:01:12.322533 | Train SE: 12.380 | Test SE: 12.465
+
+<Figure size 640x480 with 1 Axes>
+Epoch: 171 | Time: 0:01:12.778505 | Train SE: 12.346 | Test SE: 12.456
+Epoch: 172 | Time: 0:01:12.059567 | Train SE: 12.397 | Test SE: 12.485
+New best model saved with Test SE: 12.4848
+Epoch: 173 | Time: 0:01:12.063768 | Train SE: 12.366 | Test SE: 12.439
+Epoch: 174 | Time: 0:01:12.296448 | Train SE: 12.407 | Test SE: 12.491
+New best model saved with Test SE: 12.4906
+Epoch: 175 | Time: 0:01:12.017346 | Train SE: 12.384 | Test SE: 12.457
+Epoch: 176 | Time: 0:01:11.934149 | Train SE: 12.351 | Test SE: 12.449
+Epoch: 177 | Time: 0:01:12.247349 | Train SE: 12.359 | Test SE: 12.459
+Epoch: 178 | Time: 0:01:12.154666 | Train SE: 12.384 | Test SE: 12.468
+Epoch: 179 | Time: 0:01:12.093679 | Train SE: 12.361 | Test SE: 12.486
+
+<Figure size 640x480 with 1 Axes>
+The best SE is: 12.491
+[ 6.69514121  7.02807548  7.49757881  7.65757018  8.0540521  10.27969525
+ 10.75439579 11.03147562 10.89241679 10.62732699 10.9766444  11.05061579
+ 11.33176386 11.46908162 11.38077843 11.49463487 11.49758635 11.66626177
+ 11.54465847 11.6323797  11.86187682 11.88992877 11.75065508 11.75307553
+ 11.70964127 11.93139882 12.05362015 11.91735709 11.87451613 11.75856836
+ 11.85490773 11.8880991  11.83265996 12.04944158 11.85749402 11.98723488
+ 11.91519318 11.93273029 11.99105399 11.91900573 11.90479157 11.92542832
+ 12.00162942 12.01061525 11.78364589 11.86232624 12.13546882 12.17255602
+ 12.21839473 12.170157   12.23804362 12.14212554 12.1854815  12.22388732
+ 12.0118073  11.98013277 12.25566154 12.10141027 12.22779889 12.28872521
+ 12.35176616 12.30551343 12.02849019 12.16173058 12.19091096 12.3251271
+ 12.31462278 12.27280481 12.28506908 12.26424813 11.99046924 12.28180869
+ 12.15106151 11.91068003 11.94764726 12.17635946 12.08355856 12.25013905
+ 12.22106645 12.10405574 12.21501815 12.19409316 12.25830133 12.00992937
+ 11.92483218 12.05353975 12.08965669 12.10245883 11.99714727 11.92740648
+ 12.05832362 12.19394925 12.08606761 12.05586503 12.15139687 12.12238476
+ 12.16586003 12.18165674 12.20620294 12.16651876 12.20302525 12.15367851
+ 12.06333637 12.20550513 12.03963337 12.10183887 12.06846457 12.03030331
+ 12.15457368 12.19088829 12.12841985 12.16483517 12.23478479 12.21750178
+ 12.19088302 12.1782202  12.28439395 12.27411776 12.18517177 12.09170501
+ 12.26131473 12.24987226 12.25073419 12.25386989 12.25397341 12.19438994
+ 12.18149011 12.25859809 12.15125976 12.10806565 12.13476167 12.09402003
+ 12.05659127 12.23483245 12.19946556 12.30567613 12.26412058 12.33053408
+ 12.22305887 12.26948152 12.24891768 12.31463063 12.29316101 12.27837603
+ 12.28180749 12.19193983 12.32792497 12.34441848 12.2876899  12.36074026
+ 12.3979609  12.40539422 12.4188175  12.38590589 12.37488828 12.39885426
+ 12.43107839 12.39566336 12.35790741 12.4116569  12.41655107 12.38788128
+ 12.43682213 12.40929468 12.39185975 12.41957531 12.41301634 12.43966386
+ 12.47248888 12.45394781 12.46483798 12.45620782 12.48476236 12.43909359
+ 12.49059696 12.45662963 12.4490891  12.45924125 12.46791189 12.48635516]
+```
+
+```txt
+[TempCheck] GPU:54°C
+Epoch: 0 | Time: 0:01:13.150955 | Train SE: 6.039 | Test SE: 7.416
+New best model saved with Test SE: 7.4157
+[TempCheck] GPU:75°C
+Epoch: 1 | Time: 0:01:10.906033 | Train SE: 9.303 | Test SE: 10.391
+New best model saved with Test SE: 10.3911
+[TempCheck] GPU:75°C
+Epoch: 2 | Time: 0:01:11.461286 | Train SE: 10.762 | Test SE: 11.146
+New best model saved with Test SE: 11.1462
+[TempCheck] GPU:79°C
+Epoch: 3 | Time: 0:01:11.385196 | Train SE: 11.149 | Test SE: 11.404
+New best model saved with Test SE: 11.4039
+[TempCheck] GPU:79°C
+Epoch: 4 | Time: 0:01:11.428080 | Train SE: 11.390 | Test SE: 11.637
+New best model saved with Test SE: 11.6366
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 5 | Time: 0:02:11.238195 | Train SE: 11.640 | Test SE: 11.774
+New best model saved with Test SE: 11.7740
+[TempCheck] GPU:78°C
+Epoch: 6 | Time: 0:01:11.227693 | Train SE: 11.757 | Test SE: 11.918
+New best model saved with Test SE: 11.9180
+[TempCheck] GPU:80°C
+Epoch: 7 | Time: 0:01:12.155271 | Train SE: 11.778 | Test SE: 11.951
+New best model saved with Test SE: 11.9509
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 8 | Time: 0:02:11.431460 | Train SE: 11.946 | Test SE: 12.045
+New best model saved with Test SE: 12.0445
+[TempCheck] GPU:79°C
+Epoch: 9 | Time: 0:01:11.346845 | Train SE: 12.001 | Test SE: 12.132
+New best model saved with Test SE: 12.1324
+[TempCheck] GPU:80°C
+Epoch: 10 | Time: 0:01:13.224511 | Train SE: 11.982 | Test SE: 12.126
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:78°C
+Epoch: 11 | Time: 0:01:12.440672 | Train SE: 12.096 | Test SE: 12.277
+New best model saved with Test SE: 12.2765
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 12 | Time: 0:02:11.351223 | Train SE: 12.179 | Test SE: 12.359
+New best model saved with Test SE: 12.3592
+[TempCheck] GPU:78°C
+Epoch: 13 | Time: 0:01:12.396507 | Train SE: 12.283 | Test SE: 12.391
+New best model saved with Test SE: 12.3914
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 14 | Time: 0:02:12.338876 | Train SE: 12.197 | Test SE: 12.324
+[TempCheck] GPU:79°C
+Epoch: 15 | Time: 0:01:14.154790 | Train SE: 12.157 | Test SE: 12.152
+[TempCheck] GPU:80°C
+Epoch: 16 | Time: 0:01:13.992685 | Train SE: 12.156 | Test SE: 12.347
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 17 | Time: 0:02:14.275370 | Train SE: 12.215 | Test SE: 12.280
+[TempCheck] GPU:78°C
+Epoch: 18 | Time: 0:01:13.943850 | Train SE: 12.282 | Test SE: 12.051
+[TempCheck] GPU:80°C
+Epoch: 19 | Time: 0:01:13.428738 | Train SE: 12.169 | Test SE: 12.255
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 20 | Time: 0:02:13.310773 | Train SE: 12.295 | Test SE: 12.414
+
+<Figure size 640x480 with 1 Axes>
+New best model saved with Test SE: 12.4137
+[TempCheck] GPU:73°C
+Epoch: 21 | Time: 0:01:13.820598 | Train SE: 12.268 | Test SE: 12.311
+[TempCheck] GPU:80°C
+Epoch: 22 | Time: 0:01:13.246550 | Train SE: 12.152 | Test SE: 12.296
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 23 | Time: 0:02:12.827577 | Train SE: 12.193 | Test SE: 12.303
+[TempCheck] GPU:77°C
+Epoch: 24 | Time: 0:01:13.020964 | Train SE: 12.075 | Test SE: 12.223
+[TempCheck] GPU:80°C
+Epoch: 25 | Time: 0:01:11.581999 | Train SE: 12.155 | Test SE: 12.298
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 26 | Time: 0:02:14.612612 | Train SE: 12.212 | Test SE: 12.318
+[TempCheck] GPU:78°C
+Epoch: 27 | Time: 0:01:13.369382 | Train SE: 12.127 | Test SE: 12.201
+[TempCheck] GPU:80°C
+Epoch: 28 | Time: 0:01:13.354130 | Train SE: 11.981 | Test SE: 12.079
+[TempCheck] GPU:80°C
+Epoch: 29 | Time: 0:01:13.322994 | Train SE: 11.929 | Test SE: 12.168
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 30 | Time: 0:02:13.040673 | Train SE: 12.057 | Test SE: 12.146
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:73°C
+Epoch: 31 | Time: 0:01:13.624689 | Train SE: 11.994 | Test SE: 12.195
+[TempCheck] GPU:79°C
+Epoch: 32 | Time: 0:01:13.373677 | Train SE: 12.083 | Test SE: 12.148
+[TempCheck] GPU:80°C
+Epoch: 33 | Time: 0:01:12.951627 | Train SE: 12.194 | Test SE: 12.399
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 34 | Time: 0:02:12.641849 | Train SE: 12.271 | Test SE: 12.414
+New best model saved with Test SE: 12.4140
+[TempCheck] GPU:78°C
+Epoch: 35 | Time: 0:01:12.890714 | Train SE: 12.113 | Test SE: 12.233
+[TempCheck] GPU:80°C
+Epoch: 36 | Time: 0:01:12.096400 | Train SE: 12.120 | Test SE: 12.233
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 37 | Time: 0:02:12.875305 | Train SE: 12.136 | Test SE: 12.338
+[TempCheck] GPU:78°C
+Epoch: 38 | Time: 0:01:11.350381 | Train SE: 12.263 | Test SE: 12.393
+[TempCheck] GPU:80°C
+Epoch: 39 | Time: 0:01:11.602616 | Train SE: 12.289 | Test SE: 12.376
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 40 | Time: 0:02:11.105580 | Train SE: 12.220 | Test SE: 12.380
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:78°C
+Epoch: 41 | Time: 0:01:11.477998 | Train SE: 12.106 | Test SE: 12.279
+[TempCheck] GPU:80°C
+Epoch: 42 | Time: 0:01:11.632947 | Train SE: 12.169 | Test SE: 12.215
+[TempCheck] GPU:80°C
+Epoch: 43 | Time: 0:01:11.473013 | Train SE: 11.945 | Test SE: 12.103
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 44 | Time: 0:02:11.295731 | Train SE: 12.109 | Test SE: 12.332
+[TempCheck] GPU:78°C
+Epoch: 45 | Time: 0:01:11.395250 | Train SE: 12.202 | Test SE: 12.314
+[TempCheck] GPU:80°C
+Epoch: 46 | Time: 0:01:11.373293 | Train SE: 12.297 | Test SE: 12.461
+New best model saved with Test SE: 12.4610
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 47 | Time: 0:02:12.117052 | Train SE: 12.394 | Test SE: 12.540
+New best model saved with Test SE: 12.5400
+[TempCheck] GPU:78°C
+Epoch: 48 | Time: 0:01:11.336496 | Train SE: 12.462 | Test SE: 12.561
+New best model saved with Test SE: 12.5610
+[TempCheck] GPU:80°C
+Epoch: 49 | Time: 0:01:11.270371 | Train SE: 12.339 | Test SE: 12.510
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 50 | Time: 0:02:11.264910 | Train SE: 12.299 | Test SE: 12.458
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:78°C
+Epoch: 51 | Time: 0:01:11.383824 | Train SE: 12.402 | Test SE: 12.435
+[TempCheck] GPU:80°C
+Epoch: 52 | Time: 0:01:11.432639 | Train SE: 12.359 | Test SE: 12.495
+[TempCheck] GPU:80°C
+Epoch: 53 | Time: 0:01:11.825542 | Train SE: 12.381 | Test SE: 12.405
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 54 | Time: 0:02:10.994874 | Train SE: 12.339 | Test SE: 12.470
+[TempCheck] GPU:78°C
+Epoch: 55 | Time: 0:01:11.410753 | Train SE: 12.432 | Test SE: 12.560
+[TempCheck] GPU:80°C
+Epoch: 56 | Time: 0:01:11.398443 | Train SE: 12.473 | Test SE: 12.597
+New best model saved with Test SE: 12.5967
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 57 | Time: 0:02:11.809802 | Train SE: 12.408 | Test SE: 12.501
+[TempCheck] GPU:77°C
+Epoch: 58 | Time: 0:01:11.561487 | Train SE: 12.374 | Test SE: 12.505
+[TempCheck] GPU:80°C
+Epoch: 59 | Time: 0:01:14.811028 | Train SE: 12.395 | Test SE: 12.443
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 60 | Time: 0:02:13.388762 | Train SE: 12.338 | Test SE: 12.491
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:79°C
+Epoch: 61 | Time: 0:01:11.564149 | Train SE: 12.381 | Test SE: 12.274
+[TempCheck] GPU:80°C
+Epoch: 62 | Time: 0:01:11.367903 | Train SE: 12.098 | Test SE: 12.109
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 63 | Time: 0:02:11.115668 | Train SE: 12.140 | Test SE: 12.212
+[TempCheck] GPU:78°C
+Epoch: 64 | Time: 0:01:11.321183 | Train SE: 12.113 | Test SE: 12.185
+[TempCheck] GPU:79°C
+Epoch: 65 | Time: 0:01:11.556676 | Train SE: 12.064 | Test SE: 12.232
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 66 | Time: 0:02:11.357753 | Train SE: 12.004 | Test SE: 12.035
+[TempCheck] GPU:78°C
+Epoch: 67 | Time: 0:01:11.685914 | Train SE: 11.936 | Test SE: 12.264
+[TempCheck] GPU:80°C
+Epoch: 68 | Time: 0:01:13.688425 | Train SE: 12.020 | Test SE: 12.293
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 69 | Time: 0:02:12.952357 | Train SE: 12.162 | Test SE: 12.321
+[TempCheck] GPU:77°C
+Epoch: 70 | Time: 0:01:13.369615 | Train SE: 12.164 | Test SE: 12.318
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:76°C
+Epoch: 71 | Time: 0:01:13.783221 | Train SE: 12.065 | Test SE: 12.090
+[TempCheck] GPU:80°C
+Epoch: 72 | Time: 0:01:13.329978 | Train SE: 11.938 | Test SE: 12.194
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 73 | Time: 0:02:13.068395 | Train SE: 12.012 | Test SE: 12.079
+[TempCheck] GPU:77°C
+Epoch: 74 | Time: 0:01:13.054026 | Train SE: 12.005 | Test SE: 12.201
+[TempCheck] GPU:80°C
+Epoch: 75 | Time: 0:01:13.116900 | Train SE: 12.119 | Test SE: 12.312
+[TempCheck] GPU:80°C
+Epoch: 76 | Time: 0:01:13.405357 | Train SE: 12.262 | Test SE: 12.250
+[TempCheck] GPU:80°C
+Epoch: 77 | Time: 0:01:14.654989 | Train SE: 12.215 | Test SE: 12.400
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 78 | Time: 0:02:13.150067 | Train SE: 12.191 | Test SE: 12.342
+[TempCheck] GPU:77°C
+Epoch: 79 | Time: 0:01:13.322275 | Train SE: 12.210 | Test SE: 12.375
+[TempCheck] GPU:80°C
+Epoch: 80 | Time: 0:01:13.346305 | Train SE: 12.209 | Test SE: 12.304
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:80°C
+Epoch: 81 | Time: 0:01:13.672388 | Train SE: 12.182 | Test SE: 12.198
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 82 | Time: 0:02:12.862850 | Train SE: 12.079 | Test SE: 12.273
+[TempCheck] GPU:77°C
+Epoch: 83 | Time: 0:01:12.797202 | Train SE: 12.097 | Test SE: 12.233
+[TempCheck] GPU:80°C
+Epoch: 84 | Time: 0:01:11.507252 | Train SE: 12.069 | Test SE: 12.200
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 85 | Time: 0:02:11.127735 | Train SE: 12.059 | Test SE: 12.223
+[TempCheck] GPU:78°C
+Epoch: 86 | Time: 0:01:11.457716 | Train SE: 12.082 | Test SE: 12.262
+[TempCheck] GPU:80°C
+Epoch: 87 | Time: 0:01:11.903403 | Train SE: 12.108 | Test SE: 12.322
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 88 | Time: 0:02:11.087896 | Train SE: 12.082 | Test SE: 12.284
+[TempCheck] GPU:78°C
+Epoch: 89 | Time: 0:01:11.112113 | Train SE: 12.096 | Test SE: 12.325
+[TempCheck] GPU:80°C
+Epoch: 90 | Time: 0:01:11.686470 | Train SE: 12.177 | Test SE: 12.388
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:80°C
+Epoch: 91 | Time: 0:01:11.735413 | Train SE: 12.168 | Test SE: 12.314
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 92 | Time: 0:02:11.263250 | Train SE: 12.132 | Test SE: 12.276
+[TempCheck] GPU:78°C
+Epoch: 93 | Time: 0:01:11.697335 | Train SE: 12.144 | Test SE: 12.198
+[TempCheck] GPU:80°C
+Epoch: 94 | Time: 0:01:11.516800 | Train SE: 12.006 | Test SE: 12.226
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 95 | Time: 0:02:11.735412 | Train SE: 12.001 | Test SE: 12.159
+[TempCheck] GPU:78°C
+Epoch: 96 | Time: 0:01:13.343837 | Train SE: 11.956 | Test SE: 12.139
+[TempCheck] GPU:80°C
+Epoch: 97 | Time: 0:01:13.712811 | Train SE: 12.017 | Test SE: 12.048
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 98 | Time: 0:02:13.188761 | Train SE: 11.990 | Test SE: 12.330
+[TempCheck] GPU:77°C
+Epoch: 99 | Time: 0:01:12.944913 | Train SE: 12.050 | Test SE: 12.245
+[TempCheck] GPU:80°C
+Epoch: 100 | Time: 0:01:13.349604 | Train SE: 12.230 | Test SE: 12.430
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:80°C
+Epoch: 101 | Time: 0:01:13.769936 | Train SE: 12.215 | Test SE: 12.354
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 102 | Time: 0:02:12.993430 | Train SE: 12.188 | Test SE: 12.321
+[TempCheck] GPU:77°C
+Epoch: 103 | Time: 0:01:13.317811 | Train SE: 12.143 | Test SE: 12.265
+[TempCheck] GPU:79°C
+Epoch: 104 | Time: 0:01:13.369316 | Train SE: 12.165 | Test SE: 12.365
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 105 | Time: 0:02:12.991707 | Train SE: 12.254 | Test SE: 12.405
+[TempCheck] GPU:78°C
+Epoch: 106 | Time: 0:01:13.832984 | Train SE: 12.297 | Test SE: 12.293
+[TempCheck] GPU:80°C
+Epoch: 107 | Time: 0:01:14.943066 | Train SE: 12.239 | Test SE: 12.419
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 108 | Time: 0:02:14.092489 | Train SE: 12.243 | Test SE: 12.368
+[TempCheck] GPU:79°C
+Epoch: 109 | Time: 0:01:13.511255 | Train SE: 12.241 | Test SE: 12.350
+[TempCheck] GPU:80°C
+Epoch: 110 | Time: 0:01:12.144702 | Train SE: 12.207 | Test SE: 12.334
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:79°C
+Epoch: 111 | Time: 0:01:12.106117 | Train SE: 12.168 | Test SE: 12.328
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 112 | Time: 0:02:11.432631 | Train SE: 12.199 | Test SE: 12.344
+[TempCheck] GPU:80°C
+Epoch: 113 | Time: 0:01:11.407040 | Train SE: 12.260 | Test SE: 12.462
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 114 | Time: 0:02:13.652941 | Train SE: 12.185 | Test SE: 12.291
+[TempCheck] GPU:79°C
+Epoch: 115 | Time: 0:01:13.526567 | Train SE: 12.131 | Test SE: 12.168
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 116 | Time: 0:02:13.197655 | Train SE: 12.025 | Test SE: 12.251
+[TempCheck] GPU:78°C
+Epoch: 117 | Time: 0:01:13.138349 | Train SE: 12.158 | Test SE: 12.350
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 118 | Time: 0:02:12.151621 | Train SE: 12.231 | Test SE: 12.408
+[TempCheck] GPU:78°C
+Epoch: 119 | Time: 0:01:11.262662 | Train SE: 12.285 | Test SE: 12.379
+[TempCheck] GPU:80°C
+Epoch: 120 | Time: 0:01:12.870138 | Train SE: 12.247 | Test SE: 12.388
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:79°C
+Epoch: 121 | Time: 0:01:14.204057 | Train SE: 12.266 | Test SE: 12.381
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 122 | Time: 0:02:12.883995 | Train SE: 12.259 | Test SE: 12.422
+[TempCheck] GPU:77°C
+Epoch: 123 | Time: 0:01:13.260855 | Train SE: 12.305 | Test SE: 12.436
+[TempCheck] GPU:80°C
+Epoch: 124 | Time: 0:01:13.750264 | Train SE: 12.326 | Test SE: 12.477
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 125 | Time: 0:02:13.031894 | Train SE: 12.375 | Test SE: 12.519
+[TempCheck] GPU:78°C
+Epoch: 126 | Time: 0:01:13.804141 | Train SE: 12.351 | Test SE: 12.469
+[TempCheck] GPU:80°C
+Epoch: 127 | Time: 0:01:14.264755 | Train SE: 12.308 | Test SE: 12.423
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 128 | Time: 0:02:12.095110 | Train SE: 12.286 | Test SE: 12.439
+[TempCheck] GPU:78°C
+Epoch: 129 | Time: 0:01:12.164883 | Train SE: 12.340 | Test SE: 12.425
+[TempCheck] GPU:80°C
+Epoch: 130 | Time: 0:01:12.884028 | Train SE: 12.249 | Test SE: 12.254
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 131 | Time: 0:02:13.428622 | Train SE: 12.081 | Test SE: 12.224
+[TempCheck] GPU:78°C
+Epoch: 132 | Time: 0:01:12.665814 | Train SE: 12.093 | Test SE: 12.306
+[TempCheck] GPU:80°C
+Epoch: 133 | Time: 0:01:13.249681 | Train SE: 12.130 | Test SE: 12.366
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 134 | Time: 0:02:11.240298 | Train SE: 12.146 | Test SE: 12.346
+[TempCheck] GPU:78°C
+Epoch: 135 | Time: 0:01:11.979203 | Train SE: 12.180 | Test SE: 12.374
+[TempCheck] GPU:80°C
+Epoch: 136 | Time: 0:01:13.798802 | Train SE: 12.232 | Test SE: 12.450
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 137 | Time: 0:02:13.388646 | Train SE: 12.228 | Test SE: 12.393
+[TempCheck] GPU:77°C
+Epoch: 138 | Time: 0:01:13.141602 | Train SE: 12.193 | Test SE: 12.438
+[TempCheck] GPU:79°C
+Epoch: 139 | Time: 0:01:13.537815 | Train SE: 12.265 | Test SE: 12.454
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 140 | Time: 0:02:13.047471 | Train SE: 12.200 | Test SE: 12.359
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:77°C
+Epoch: 141 | Time: 0:01:14.182924 | Train SE: 12.224 | Test SE: 12.449
+[TempCheck] GPU:80°C
+Epoch: 142 | Time: 0:01:14.235628 | Train SE: 12.290 | Test SE: 12.454
+[TempCheck] GPU:80°C
+Epoch: 143 | Time: 0:01:14.326062 | Train SE: 12.317 | Test SE: 12.484
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 144 | Time: 0:02:12.954665 | Train SE: 12.332 | Test SE: 12.509
+[TempCheck] GPU:78°C
+Epoch: 145 | Time: 0:01:13.310495 | Train SE: 12.345 | Test SE: 12.493
+[TempCheck] GPU:80°C
+Epoch: 146 | Time: 0:01:13.571540 | Train SE: 12.370 | Test SE: 12.534
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 147 | Time: 0:02:14.038931 | Train SE: 12.357 | Test SE: 12.507
+[TempCheck] GPU:78°C
+Epoch: 148 | Time: 0:01:13.465581 | Train SE: 12.335 | Test SE: 12.473
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 149 | Time: 0:02:13.646783 | Train SE: 12.236 | Test SE: 12.485
+[TempCheck] GPU:79°C
+Epoch: 150 | Time: 0:01:13.577216 | Train SE: 12.389 | Test SE: 12.543
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:80°C
+Epoch: 151 | Time: 0:01:15.259855 | Train SE: 12.441 | Test SE: 12.491
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 152 | Time: 0:02:13.749818 | Train SE: 12.420 | Test SE: 12.578
+[TempCheck] GPU:78°C
+Epoch: 153 | Time: 0:01:13.370701 | Train SE: 12.421 | Test SE: 12.561
+[TempCheck] GPU:80°C
+Epoch: 154 | Time: 0:01:13.472314 | Train SE: 12.442 | Test SE: 12.596
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 155 | Time: 0:02:14.117193 | Train SE: 12.435 | Test SE: 12.602
+New best model saved with Test SE: 12.6021
+[TempCheck] GPU:78°C
+Epoch: 156 | Time: 0:01:13.664801 | Train SE: 12.476 | Test SE: 12.571
+[TempCheck] GPU:80°C
+Epoch: 157 | Time: 0:01:13.770356 | Train SE: 12.439 | Test SE: 12.580
+[TempCheck] GPU:80°C
+Epoch: 158 | Time: 0:01:13.896301 | Train SE: 12.444 | Test SE: 12.572
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 159 | Time: 0:02:13.396794 | Train SE: 12.473 | Test SE: 12.571
+[TempCheck] GPU:77°C
+Epoch: 160 | Time: 0:01:13.909028 | Train SE: 12.488 | Test SE: 12.582
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:80°C
+Epoch: 161 | Time: 0:01:13.929147 | Train SE: 12.474 | Test SE: 12.602
+New best model saved with Test SE: 12.6024
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 162 | Time: 0:02:14.673022 | Train SE: 12.479 | Test SE: 12.548
+[TempCheck] GPU:79°C
+Epoch: 163 | Time: 0:01:14.485636 | Train SE: 12.423 | Test SE: 12.553
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 164 | Time: 0:02:13.188667 | Train SE: 12.438 | Test SE: 12.532
+[TempCheck] GPU:77°C
+Epoch: 165 | Time: 0:01:14.245634 | Train SE: 12.443 | Test SE: 12.572
+[TempCheck] GPU:79°C
+Epoch: 166 | Time: 0:01:13.597564 | Train SE: 12.450 | Test SE: 12.590
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 167 | Time: 0:02:13.354633 | Train SE: 12.431 | Test SE: 12.494
+[TempCheck] GPU:77°C
+Epoch: 168 | Time: 0:01:13.474095 | Train SE: 12.381 | Test SE: 12.549
+[TempCheck] GPU:80°C
+Epoch: 169 | Time: 0:01:13.485024 | Train SE: 12.423 | Test SE: 12.524
+[TempCheck] GPU:80°C
+Epoch: 170 | Time: 0:01:13.976562 | Train SE: 12.407 | Test SE: 12.536
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:79°C
+Epoch: 171 | Time: 0:01:14.715095 | Train SE: 12.420 | Test SE: 12.566
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 172 | Time: 0:02:13.639468 | Train SE: 12.414 | Test SE: 12.528
+[TempCheck] GPU:78°C
+Epoch: 173 | Time: 0:01:13.881791 | Train SE: 12.401 | Test SE: 12.548
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 174 | Time: 0:02:13.211138 | Train SE: 12.423 | Test SE: 12.539
+[TempCheck] GPU:78°C
+Epoch: 175 | Time: 0:01:14.935504 | Train SE: 12.424 | Test SE: 12.532
+[TempCheck] GPU:80°C
+Epoch: 176 | Time: 0:01:14.853707 | Train SE: 12.420 | Test SE: 12.546
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 177 | Time: 0:02:14.122717 | Train SE: 12.413 | Test SE: 12.540
+[TempCheck] GPU:79°C
+Epoch: 178 | Time: 0:01:13.543025 | Train SE: 12.381 | Test SE: 12.522
+[TempCheck] GPU:79°C
+Epoch: 179 | Time: 0:01:13.515156 | Train SE: 12.403 | Test SE: 12.541
+
+<Figure size 640x480 with 1 Axes>
+The best SE is: 12.602
+[ 7.41568953 10.39108915 11.14621561 11.40385711 11.63663292 11.77404983
+ 11.91799662 11.95086303 12.04452467 12.13241708 12.12576089 12.27651212
+ 12.35918474 12.39136195 12.3238101  12.15172479 12.34744041 12.27969856
+ 12.05056643 12.25503109 12.41367617 12.31063728 12.29648585 12.30341213
+ 12.22347784 12.29811714 12.3181504  12.2009141  12.07898421 12.16762073
+ 12.14622221 12.19457326 12.1481792  12.39896328 12.41402528 12.23288753
+ 12.23305953 12.33835843 12.39346738 12.3757009  12.38046644 12.27893431
+ 12.21472654 12.10346842 12.33187912 12.31361041 12.46104372 12.53996339
+ 12.56096153 12.50954409 12.45811949 12.43517461 12.49517443 12.40462601
+ 12.46994965 12.55967915 12.59671924 12.50054085 12.50484815 12.4430738
+ 12.49125941 12.27370563 12.10872447 12.21205382 12.18466494 12.23216772
+ 12.03487484 12.26431289 12.29285336 12.32123079 12.3181618  12.08999925
+ 12.19354875 12.07945521 12.20075531 12.31205812 12.24962385 12.39985337
+ 12.34207985 12.37500184 12.3035073  12.19798892 12.27296062 12.233219
+ 12.20042183 12.22347393 12.26217012 12.32209902 12.28370945 12.32474799
+ 12.38801336 12.31419055 12.27635748 12.1984138  12.2262995  12.15896411
+ 12.13884156 12.04783125 12.32970717 12.24487348 12.43021057 12.35356886
+ 12.32101986 12.26531725 12.36469889 12.40535023 12.2932061  12.41947355
+ 12.3684958  12.34996519 12.3339637  12.32806978 12.34401848 12.46182561
+ 12.290751   12.16783464 12.25070741 12.35005369 12.40830698 12.37851839
+ 12.38799212 12.38109531 12.42235496 12.43593984 12.4772876  12.51870565
+ 12.46871114 12.42327044 12.43914671 12.42533815 12.25426331 12.22445924
+ 12.30602434 12.36610916 12.34623966 12.3744693  12.44958272 12.39278367
+ 12.43830235 12.45442064 12.35891538 12.4486738  12.45362139 12.48393819
+ 12.50889566 12.49278059 12.53367214 12.50692947 12.47322886 12.48531597
+ 12.54349751 12.49114246 12.57816441 12.56059408 12.59574137 12.60205743
+ 12.57134464 12.58009748 12.57220826 12.57118793 12.58220048 12.60238342
+ 12.54834642 12.55341499 12.53232913 12.57188714 12.59029672 12.49398451
+ 12.54867961 12.52431846 12.5360868  12.56643891 12.52791359 12.54827456
+ 12.53917341 12.53197489 12.5464304  12.54029949 12.52182682 12.54077666]
+
+```
