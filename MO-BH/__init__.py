@@ -63,7 +63,7 @@ def calculate_sum_rate_mu_miso(H_list_users, F_RF, F_BB_list, noise_power):
 
 if __name__ == '__main__':
     user_indices_to_use = list(range(cfg.K))
-    mat_filepath = '../data/H_UPA.mat'  # 请确保路径正确
+    mat_filepath = '../data/H_UPA_new.mat'  # 请确保路径正确
     num_samples_to_test = 50
 
     H_dataset = load_and_slice_channel_from_mat(mat_filepath, num_samples_to_test, user_indices_to_use)
