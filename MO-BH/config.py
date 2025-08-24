@@ -27,9 +27,9 @@ SNR_dB = 10
 SNR_linear = 10**(SNR_dB / 10)
 
 # --- 算法迭代参数 ---
-MAX_ITER_ALTMIN = 10
-MAX_ITER_MANIFOLD = 20
-MAX_ITER_WMMSE = 10       # 新增: WMMSE算法迭代次数
+MAX_ITER_ALTMIN = 20
+MAX_ITER_MANIFOLD = 50
+MAX_ITER_WMMSE = 20    # 新增: WMMSE算法迭代次数
 
 # --- 信道估计与反馈参数 ---
 # FDD下行导频OFDM符号数 (来自论文图11a标题)
