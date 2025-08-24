@@ -103,33 +103,49 @@ class MyLoss_OFDM(torch.nn.Module):
 
     def forward(self, H0, out, parm_set):
         Nc, Nt, Nr, snr, B, K = parm_set
-        H = H0.permute(0, 2, 1, 3)
-        num = out.shape[0]
-        H_real = H[:, :, :, 0:Nt]
-        H_imag = H[:, :, :, Nt:2 * Nt]
-        Hs = torch.zeros([num, Nc, K * 2, Nt * 2], device=H0.device)
-        Hs[:, :, 0:K, 0:Nt] = H_real
-        Hs[:, :, K:2 * K, Nt:2 * Nt] = H_real
-        Hs[:, :, 0:K, Nt:2 * Nt] = H_imag
-        Hs[:, :, K:2 * K, 0:Nt] = -H_imag
-        F = torch.zeros([num, Nc, Nt * 2, K * 2], device=H0.device)
-        F_real_part = out[:, 0:K * Nt * Nc].reshape(num, Nc, Nt, K)
-        F_imag_part = out[:, K * Nt * Nc:2 * K * Nt * Nc].reshape(num, Nc, Nt, K)
-        F[:, :, 0:Nt, 0:K] = F_real_part
-        F[:, :, Nt:2 * Nt, K:2 * K] = F_real_part
-        F[:, :, 0:Nt, K:2 * K] = F_imag_part
-        F[:, :, Nt:2 * Nt, 0:K] = -F_imag_part
+
+        # H0 shape: [batch, K, Nr, Nc, 2*Nt] -> [batch, K, Nc, Nr, 2*Nt]
+        H = H0.permute(0, 1, 3, 2, 4)
+        num = H.shape[0]
+
+        H_real = H[..., 0:Nt]
+        H_imag = H[..., Nt:2 * Nt]
+        H_complex = torch.complex(H_real, H_imag)  # Shape: [batch, K, Nc, Nr, Nt]
+
+        F_real = out[:, 0:K * Nt * Nc].reshape(num, Nc, Nt, K)
+        F_imag = out[:, K * Nt * Nc:2 * K * Nt * Nc].reshape(num, Nc, Nt, K)
+        F_complex = torch.complex(F_real, F_imag).permute(0, 3, 1, 2)  # Shape: [batch, K, Nc, Nt]
+
         R = 0
-        Hk = torch.matmul(Hs, F)
-        noise = 1 / snr
-        for i in range(K):
-            signal = Hk[:, :, i, i] ** 2 + Hk[:, :, i, i + K] ** 2
-            interference = torch.zeros(num, Nc, device=H0.device)
+        noise_power = 1 / snr
+
+        # 遍历每个用户
+        for k in range(K):
+            Hk = H_complex[:, k, :, :, :]  # Channel for user k, Shape: [batch, Nc, Nr, Nt]
+            Fk = F_complex[:, k, :, :]  # Beamformer for user k, Shape: [batch, Nc, Nt]
+            Fk = Fk.unsqueeze(-1)  # Shape: [batch, Nc, Nt, 1]
+
+            # 计算信号项: H_k * F_k
+            signal_cov = torch.matmul(Hk, Fk)
+            signal_cov = torch.matmul(signal_cov, signal_cov.mH)  # .mH is conjugate transpose
+
+            # 计算干扰项
+            interference_cov = torch.zeros(num, Nc, Nr, Nr, device=H0.device, dtype=torch.complex64)
             for j in range(K):
-                if j != i:
-                    interference = interference + Hk[:, :, i, j] ** 2 + Hk[:, :, i, j + K] ** 2
-            SINR = signal / (noise + interference)
-            R = R + torch.sum(torch.log2(1 + SINR))
+                if k != j:
+                    Fj = F_complex[:, j, :, :].unsqueeze(-1)
+                    inter_term = torch.matmul(Hk, Fj)
+                    interference_cov += torch.matmul(inter_term, inter_term.mH)
+
+            # 计算总协方差矩阵并计算速率
+            # R = log2(det(I + Q_interference^-1 * Q_signal))
+            # I + interference_cov / noise_power
+            Q_inter_inv = torch.inverse(
+                interference_cov + noise_power * torch.eye(Nr, device=H0.device).unsqueeze(0).unsqueeze(0))
+            log_det_term = torch.log2(torch.det(
+                torch.eye(Nr, device=H0.device).unsqueeze(0).unsqueeze(0) + torch.matmul(Q_inter_inv, signal_cov)).real)
+            R += torch.sum(log_det_term)
+
         R = -R / num / Nc
         return R
 
@@ -206,8 +222,8 @@ class DNN_US_RF_OFDM(nn.Module):
         global L
         L = 32
         self.pilot = nn.Linear(Nt, L, bias=False)
-        self.res = RES_BLOCK([2 * L, 256, 512])
-        self.FC2 = nn.Linear(2 * Nc * L, 1024)
+        self.res = RES_BLOCK([2 * L * Nr, 256, 512])
+        self.FC2 = nn.Linear(32 * Nc * L, 1024)
         self.bn2 = nn.BatchNorm1d(1024)
         self.relu2 = nn.ReLU()
         self.gated_fc3 = GatedFeatureUnit(1024, 512)
@@ -227,29 +243,45 @@ class DNN_US_RF_OFDM(nn.Module):
                 nn.init.constant_(m.weight, 1)
                 nn.init.constant_(m.bias, 0)
 
+    # 在 DNN_US_RF_OFDM 类中
     def forward(self, h, parm_set):
         Nc, Nt, Nr, snr, B, K = parm_set
         device = h.device
-        h_real = h[:, :, 0:Nt].reshape(-1, Nc, Nt, 1)
-        h_imag = h[:, :, Nt:2 * Nt].reshape(-1, Nc, Nt, 1)
+        num = h.shape[0]  # batch*K
+
         F_real = torch.cos(self.pilot.weight) / sqrt(Nt) * sqrt(K)
         F_imag = torch.sin(self.pilot.weight) / sqrt(Nt) * sqrt(K)
-        L_real = (torch.matmul(F_real, h_real) - torch.matmul(F_imag, h_imag)).reshape(-1, 1, Nc, L)
-        L_imag = (torch.matmul(F_real, h_imag) + torch.matmul(F_imag, h_real)).reshape(-1, 1, Nc, L)
-        L_sum = torch.cat((L_real, L_imag), 1)
-        num = h.shape[0]
-        noise = torch.randn(num, 2, Nc, L, device=device) / sqrt(2 * snr)
-        L_sum = L_sum + noise
-        L_sum = self.complex_conv(L_sum)
-        x = L_sum.transpose(1, 2).reshape(-1, 2 * L, Nc, 1)
+        F_complex = torch.complex(F_real, F_imag)  # Shape: [L, Nt]
+
+        # 2. 正确处理多天线(MIMO)的信道数据
+        # h的输入形状是 [batch*K, Nr, Nc, 2*Nt]
+        h_real = h[..., 0:Nt]
+        h_imag = h[..., Nt:2 * Nt]
+        h_complex = torch.complex(h_real, h_imag)  # Shape: [batch*K, Nr, Nc, Nt]
+
+        # 3. 模拟多天线接收过程 (矩阵乘法)
+        L_complex = torch.einsum('binc,cl->binl', h_complex, F_complex.mH)
+
+        # 4. 添加噪声
+        noise = (torch.randn_like(L_complex) + 1j * torch.randn_like(L_complex)) / sqrt(2 * snr)
+        L_complex = L_complex + noise
+
+        # 5. 重塑数据以送入后续的实数CNN网络
+        # 将Nr和L维度合并到"通道"维度
+        # [B,Nr,L,Nc] -> [B, 2*Nr*L, Nc]
+        L_real = L_complex.real.permute(0, 1, 3, 2)  # -> [batch*K, Nr, L, Nc]
+        L_imag = L_complex.imag.permute(0, 1, 3, 2)  # -> [batch*K, Nr, L, Nc]
+        x = torch.cat([L_real, L_imag], dim=1)  # -> [batch*K, 2*Nr, L, Nc]
+        x = x.reshape(num, 2 * Nr * L, Nc, 1)  # -> [batch*K, 2*Nr*L, Nc, 1] - This is the correct input for the CNN
         x = self.res(x)
-        x = x.reshape(-1, 2 * L * Nc)
-        x = self.FC2(x);
-        x = self.bn2(x);
+        x = x.reshape(num, -1)
+
+        x = self.FC2(x)
+        x = self.bn2(x)
         x = self.relu2(x)
-        x = self.gated_fc3(x);
+        x = self.gated_fc3(x)
         x = self.bn3(x)
-        x = self.FC4(x);
+        x = self.FC4(x)
         x = self.bn4(x)
         x = torch.sigmoid(x)
         x = self.QL(x)

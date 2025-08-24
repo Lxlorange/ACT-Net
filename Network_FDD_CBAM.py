@@ -24,16 +24,6 @@ from scipy.linalg import block_diag
 import datetime
 from torch.nn.utils import *
 
-# --- 现有参数 (未修改) ---
-Nc = 32  # number of subcarriers
-N = 2  # Number of paths
-Nt = 64  # Number of Antennas at the BS
-Nr = 1  # Number of Antennas at the UE
-L = 8  # number of pilot OFDM symbols
-SNR_dB = 10  # SNR
-K = 2  # number of UEs
-snr = 10 ** (SNR_dB / 10) / K
-
 
 # --- 辅助函数 (未修改) ---
 def Num2Bit(Num, B):
@@ -249,11 +239,6 @@ def DFT_matrix(N):
     return np.mat(W)
 
 
-W = DFT_matrix(Nc)
-W_real = torch.from_numpy(np.real(W)).cuda().float()
-W_imag = torch.from_numpy(np.imag(W)).cuda().float()
-
-
 class GatedFeatureUnit(nn.Module):
     def __init__(self, in_features, out_features):
         super().__init__()
@@ -317,6 +302,13 @@ class DNN_US_RF_OFDM(nn.Module):
         device = h.device
         h_real = h[:, :, 0:Nt].reshape(-1, Nc, Nt, 1)
         h_imag = h[:, :, Nt:2 * Nt].reshape(-1, Nc, Nt, 1)
+
+        # 为什么不是
+        # global L 
+        # Pp = L(32) 或 320 都可以
+        # F_real = torch.cos(self.pilot.weight) * torch.sqrt(torch.tensor(Pp / (L * Nt), device=device))
+        # F_imag = torch.sin(self.pilot.weight) * torch.sqrt(torch.tensor(Pp / (L * Nt), device=device))
+        
         F_real = torch.cos(self.pilot.weight) / sqrt(Nt) * sqrt(K)
         F_imag = torch.sin(self.pilot.weight) / sqrt(Nt) * sqrt(K)
         L_real = (torch.matmul(F_real, h_real) - torch.matmul(F_imag, h_imag)).reshape(-1, 1, Nc, L)
@@ -512,6 +504,14 @@ class DNN_BS_hyb_OFDM(nn.Module):
         self.mish3 = Mish()
         feature_dim = 2 * K * K
 
+        if feature_dim % 4 == 0:
+            num_heads = 4
+        elif feature_dim % 3 == 0:
+            num_heads = 3
+        elif feature_dim % 2 == 0:
+            num_heads = 2
+        else:
+            num_heads = 1
         self.repvgg_block = nn.Sequential(
             RepVGGBlock(in_channels=2 * K * K, out_channels=feature_dim, kernel_size=3, stride=1, padding=1),
             nn.BatchNorm2d(feature_dim),
@@ -522,7 +522,7 @@ class DNN_BS_hyb_OFDM(nn.Module):
         )
         self.full_transformer = FullTransformerBlock(
             feature_dim=feature_dim,
-            num_heads=4,
+            num_heads=num_heads,
             dim_feedforward=feature_dim * 4,  # FFN中间层维度, 4倍是常见设置
             num_layers=3,
             dropout=0.1

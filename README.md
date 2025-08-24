@@ -1300,3 +1300,2003 @@ The best SE is: 12.602
  12.53917341 12.53197489 12.5464304  12.54029949 12.52182682 12.54077666]
 
 ```
+
+
+7. B=3
+
+```txt
+已设置种子为1754386931
+[TempCheck] GPU:66°C
+Epoch: 0 | Time: 0:01:17.987240 | Train SE: 4.738 | Test SE: 5.190
+New best model saved with Test SE: 5.1897
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 1 | Time: 0:02:13.040032 | Train SE: 4.731 | Test SE: 4.740
+[TempCheck] GPU:79°C
+Epoch: 2 | Time: 0:01:13.245890 | Train SE: 4.519 | Test SE: 3.990
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 3 | Time: 0:02:12.953438 | Train SE: 4.685 | Test SE: 4.875
+[TempCheck] GPU:79°C
+Epoch: 4 | Time: 0:01:13.720074 | Train SE: 4.664 | Test SE: 4.428
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 5 | Time: 0:02:12.887852 | Train SE: 4.534 | Test SE: 4.737
+[TempCheck] GPU:80°C
+Epoch: 6 | Time: 0:01:12.595676 | Train SE: 4.416 | Test SE: 4.203
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 7 | Time: 0:02:11.704106 | Train SE: 5.016 | Test SE: 5.707
+New best model saved with Test SE: 5.7072
+[TempCheck] GPU:77°C
+Epoch: 8 | Time: 0:01:12.509765 | Train SE: 5.150 | Test SE: 5.456
+[TempCheck] GPU:80°C
+Epoch: 9 | Time: 0:01:13.129851 | Train SE: 5.290 | Test SE: 5.792
+New best model saved with Test SE: 5.7924
+[TempCheck] GPU:83°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 10 | Time: 0:02:11.044052 | Train SE: 5.075 | Test SE: 4.108
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:80°C
+Epoch: 11 | Time: 0:01:11.482958 | Train SE: 5.037 | Test SE: 5.692
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 12 | Time: 0:02:10.542815 | Train SE: 4.939 | Test SE: 4.732
+[TempCheck] GPU:79°C
+Epoch: 13 | Time: 0:01:11.050434 | Train SE: 4.791 | Test SE: 4.850
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 14 | Time: 0:02:10.977487 | Train SE: 4.779 | Test SE: 5.006
+[TempCheck] GPU:80°C
+Epoch: 15 | Time: 0:01:11.135427 | Train SE: 4.830 | Test SE: 4.034
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 16 | Time: 0:02:11.037040 | Train SE: 4.471 | Test SE: 5.357
+[TempCheck] GPU:80°C
+Epoch: 17 | Time: 0:01:11.446929 | Train SE: 4.766 | Test SE: 4.916
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 18 | Time: 0:02:10.070184 | Train SE: 4.732 | Test SE: 4.660
+[TempCheck] GPU:79°C
+Epoch: 19 | Time: 0:01:12.127659 | Train SE: 4.772 | Test SE: 5.202
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 20 | Time: 0:02:12.100468 | Train SE: 4.505 | Test SE: 4.645
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:76°C
+Epoch: 21 | Time: 0:01:12.626390 | Train SE: 4.344 | Test SE: 4.795
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 22 | Time: 0:02:12.318941 | Train SE: 4.303 | Test SE: 4.975
+[TempCheck] GPU:79°C
+Epoch: 23 | Time: 0:01:12.608151 | Train SE: 4.266 | Test SE: 4.959
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 24 | Time: 0:02:11.905979 | Train SE: 4.490 | Test SE: 4.292
+[TempCheck] GPU:79°C
+Epoch: 25 | Time: 0:01:11.985046 | Train SE: 4.594 | Test SE: 4.586
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 26 | Time: 0:02:12.061256 | Train SE: 4.624 | Test SE: 4.801
+[TempCheck] GPU:78°C
+Epoch: 27 | Time: 0:01:12.783549 | Train SE: 4.599 | Test SE: 4.652
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 28 | Time: 0:02:12.419684 | Train SE: 4.618 | Test SE: 5.123
+[TempCheck] GPU:78°C
+Epoch: 29 | Time: 0:01:12.139316 | Train SE: 4.526 | Test SE: 4.380
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 30 | Time: 0:02:11.490146 | Train SE: 4.413 | Test SE: 4.693
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:78°C
+Epoch: 31 | Time: 0:01:13.243203 | Train SE: 4.345 | Test SE: 4.933
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 32 | Time: 0:02:12.448837 | Train SE: 4.368 | Test SE: 4.677
+[TempCheck] GPU:78°C
+Epoch: 33 | Time: 0:01:12.810407 | Train SE: 4.321 | Test SE: 4.586
+[TempCheck] GPU:80°C
+Epoch: 34 | Time: 0:01:13.129500 | Train SE: 4.622 | Test SE: 4.757
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 35 | Time: 0:02:12.696521 | Train SE: 4.584 | Test SE: 4.879
+[TempCheck] GPU:78°C
+Epoch: 36 | Time: 0:01:12.206316 | Train SE: 4.496 | Test SE: 4.831
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 37 | Time: 0:02:11.818577 | Train SE: 4.376 | Test SE: 4.339
+[TempCheck] GPU:78°C
+Epoch: 38 | Time: 0:01:12.424550 | Train SE: 4.268 | Test SE: 4.643
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 39 | Time: 0:02:11.886790 | Train SE: 4.300 | Test SE: 4.700
+[TempCheck] GPU:77°C
+Epoch: 40 | Time: 0:01:12.055736 | Train SE: 4.284 | Test SE: 4.758
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:80°C
+Epoch: 41 | Time: 0:01:12.536129 | Train SE: 4.402 | Test SE: 4.744
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 42 | Time: 0:02:09.777191 | Train SE: 4.481 | Test SE: 4.604
+[TempCheck] GPU:79°C
+Epoch: 43 | Time: 0:01:10.370830 | Train SE: 4.472 | Test SE: 4.644
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 44 | Time: 0:02:10.572672 | Train SE: 4.538 | Test SE: 4.646
+[TempCheck] GPU:79°C
+Epoch: 45 | Time: 0:01:10.864362 | Train SE: 4.505 | Test SE: 4.571
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 46 | Time: 0:02:09.820434 | Train SE: 4.562 | Test SE: 4.470
+[TempCheck] GPU:78°C
+Epoch: 47 | Time: 0:01:10.284201 | Train SE: 4.597 | Test SE: 4.711
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 48 | Time: 0:02:09.736897 | Train SE: 4.627 | Test SE: 5.094
+[TempCheck] GPU:78°C
+Epoch: 49 | Time: 0:01:10.294239 | Train SE: 4.817 | Test SE: 4.818
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 50 | Time: 0:02:10.191243 | Train SE: 4.419 | Test SE: 4.559
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:75°C
+Epoch: 51 | Time: 0:01:10.770933 | Train SE: 4.501 | Test SE: 4.619
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 52 | Time: 0:02:09.823458 | Train SE: 4.505 | Test SE: 4.307
+[TempCheck] GPU:78°C
+Epoch: 53 | Time: 0:01:10.277216 | Train SE: 4.554 | Test SE: 4.807
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 54 | Time: 0:02:09.783553 | Train SE: 4.623 | Test SE: 4.731
+[TempCheck] GPU:78°C
+Epoch: 55 | Time: 0:01:10.209864 | Train SE: 4.590 | Test SE: 4.469
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 56 | Time: 0:02:09.716149 | Train SE: 4.695 | Test SE: 4.612
+[TempCheck] GPU:78°C
+Epoch: 57 | Time: 0:01:10.458892 | Train SE: 4.683 | Test SE: 4.596
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 58 | Time: 0:02:09.720486 | Train SE: 4.712 | Test SE: 5.056
+[TempCheck] GPU:78°C
+Epoch: 59 | Time: 0:01:10.846213 | Train SE: 4.770 | Test SE: 4.964
+[TempCheck] GPU:80°C
+Epoch: 60 | Time: 0:01:10.640035 | Train SE: 4.692 | Test SE: 4.736
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:79°C
+Epoch: 61 | Time: 0:01:11.136428 | Train SE: 4.809 | Test SE: 5.215
+[TempCheck] GPU:83°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 62 | Time: 0:02:09.788515 | Train SE: 4.780 | Test SE: 4.430
+[TempCheck] GPU:79°C
+Epoch: 63 | Time: 0:01:10.434476 | Train SE: 4.755 | Test SE: 5.002
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 64 | Time: 0:02:09.807197 | Train SE: 4.591 | Test SE: 4.900
+[TempCheck] GPU:78°C
+Epoch: 65 | Time: 0:01:10.352840 | Train SE: 4.688 | Test SE: 4.744
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 66 | Time: 0:02:09.737940 | Train SE: 4.849 | Test SE: 4.995
+[TempCheck] GPU:78°C
+Epoch: 67 | Time: 0:01:10.251450 | Train SE: 4.836 | Test SE: 4.676
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 68 | Time: 0:02:10.317646 | Train SE: 4.840 | Test SE: 4.560
+[TempCheck] GPU:78°C
+Epoch: 69 | Time: 0:01:10.553340 | Train SE: 4.826 | Test SE: 4.806
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 70 | Time: 0:02:09.854950 | Train SE: 4.876 | Test SE: 4.798
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:75°C
+Epoch: 71 | Time: 0:01:10.556738 | Train SE: 4.548 | Test SE: 4.718
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 72 | Time: 0:02:09.663822 | Train SE: 4.591 | Test SE: 4.445
+[TempCheck] GPU:78°C
+Epoch: 73 | Time: 0:01:10.296273 | Train SE: 4.410 | Test SE: 4.598
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 74 | Time: 0:02:09.697889 | Train SE: 4.522 | Test SE: 4.824
+[TempCheck] GPU:78°C
+Epoch: 75 | Time: 0:01:10.484792 | Train SE: 4.639 | Test SE: 5.087
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 76 | Time: 0:02:09.774301 | Train SE: 4.582 | Test SE: 4.727
+[TempCheck] GPU:78°C
+Epoch: 77 | Time: 0:01:10.226782 | Train SE: 4.664 | Test SE: 4.565
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 78 | Time: 0:02:10.125135 | Train SE: 4.725 | Test SE: 5.135
+[TempCheck] GPU:78°C
+Epoch: 79 | Time: 0:01:10.387203 | Train SE: 4.809 | Test SE: 5.015
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 80 | Time: 0:02:09.774057 | Train SE: 4.748 | Test SE: 4.712
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:78°C
+Epoch: 81 | Time: 0:01:10.566216 | Train SE: 4.890 | Test SE: 4.849
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 82 | Time: 0:02:09.691869 | Train SE: 4.959 | Test SE: 5.346
+[TempCheck] GPU:78°C
+Epoch: 83 | Time: 0:01:10.324346 | Train SE: 4.988 | Test SE: 4.862
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 84 | Time: 0:02:09.554359 | Train SE: 4.899 | Test SE: 4.865
+[TempCheck] GPU:78°C
+Epoch: 85 | Time: 0:01:10.418710 | Train SE: 4.912 | Test SE: 4.861
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 86 | Time: 0:02:10.166303 | Train SE: 4.929 | Test SE: 4.700
+[TempCheck] GPU:78°C
+Epoch: 87 | Time: 0:01:10.550371 | Train SE: 4.964 | Test SE: 4.896
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 88 | Time: 0:02:09.717785 | Train SE: 4.955 | Test SE: 5.133
+[TempCheck] GPU:78°C
+Epoch: 89 | Time: 0:01:10.279673 | Train SE: 4.807 | Test SE: 4.694
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 90 | Time: 0:02:09.721081 | Train SE: 4.813 | Test SE: 4.561
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:75°C
+Epoch: 91 | Time: 0:01:10.515055 | Train SE: 4.669 | Test SE: 4.592
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 92 | Time: 0:02:09.641677 | Train SE: 4.468 | Test SE: 4.898
+[TempCheck] GPU:78°C
+Epoch: 93 | Time: 0:01:10.429861 | Train SE: 4.631 | Test SE: 4.526
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 94 | Time: 0:02:09.677863 | Train SE: 4.666 | Test SE: 4.719
+[TempCheck] GPU:78°C
+Epoch: 95 | Time: 0:01:10.266140 | Train SE: 4.762 | Test SE: 4.727
+[TempCheck] GPU:80°C
+Epoch: 96 | Time: 0:01:11.161436 | Train SE: 4.883 | Test SE: 4.812
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 97 | Time: 0:02:09.871767 | Train SE: 4.849 | Test SE: 5.049
+[TempCheck] GPU:78°C
+Epoch: 98 | Time: 0:01:10.427330 | Train SE: 4.833 | Test SE: 4.912
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 99 | Time: 0:02:10.092161 | Train SE: 4.804 | Test SE: 5.039
+[TempCheck] GPU:78°C
+Epoch: 100 | Time: 0:01:11.399664 | Train SE: 4.894 | Test SE: 4.747
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:78°C
+Epoch: 101 | Time: 0:01:16.373532 | Train SE: 4.902 | Test SE: 4.891
+[TempCheck] GPU:83°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 102 | Time: 0:02:23.357922 | Train SE: 4.918 | Test SE: 4.769
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 103 | Time: 0:02:22.675047 | Train SE: 4.910 | Test SE: 4.855
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 104 | Time: 0:02:23.091885 | Train SE: 4.878 | Test SE: 4.755
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 105 | Time: 0:02:23.542496 | Train SE: 4.887 | Test SE: 4.911
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 106 | Time: 0:02:23.581817 | Train SE: 4.916 | Test SE: 4.849
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 107 | Time: 0:02:23.779508 | Train SE: 4.942 | Test SE: 5.101
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 108 | Time: 0:02:22.430903 | Train SE: 5.015 | Test SE: 5.014
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 109 | Time: 0:02:23.156552 | Train SE: 4.791 | Test SE: 4.993
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 110 | Time: 0:02:23.851146 | Train SE: 4.853 | Test SE: 5.000
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:79°C
+Epoch: 111 | Time: 0:01:24.107644 | Train SE: 4.915 | Test SE: 4.817
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 112 | Time: 0:02:23.180684 | Train SE: 4.997 | Test SE: 5.118
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 113 | Time: 0:02:27.987156 | Train SE: 4.944 | Test SE: 4.899
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 114 | Time: 0:02:33.418577 | Train SE: 4.930 | Test SE: 4.996
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 115 | Time: 0:02:24.285585 | Train SE: 4.984 | Test SE: 4.979
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 116 | Time: 0:02:22.958181 | Train SE: 5.013 | Test SE: 4.970
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 117 | Time: 0:02:23.257779 | Train SE: 5.025 | Test SE: 4.884
+[TempCheck] GPU:80°C
+Epoch: 118 | Time: 0:01:23.258976 | Train SE: 5.066 | Test SE: 5.087
+[TempCheck] GPU:83°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 119 | Time: 0:02:34.035647 | Train SE: 5.049 | Test SE: 4.897
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 120 | Time: 0:02:33.859081 | Train SE: 5.064 | Test SE: 4.996
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 121 | Time: 0:02:29.876251 | Train SE: 5.103 | Test SE: 4.963
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 122 | Time: 0:02:31.655018 | Train SE: 5.073 | Test SE: 5.077
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 123 | Time: 0:02:29.483459 | Train SE: 5.116 | Test SE: 4.985
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 124 | Time: 0:02:32.618742 | Train SE: 5.128 | Test SE: 4.936
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 125 | Time: 0:02:23.766203 | Train SE: 5.107 | Test SE: 4.991
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 126 | Time: 0:02:23.479974 | Train SE: 5.065 | Test SE: 4.947
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 127 | Time: 0:02:23.876634 | Train SE: 5.077 | Test SE: 5.010
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 128 | Time: 0:02:24.113016 | Train SE: 5.115 | Test SE: 5.028
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 129 | Time: 0:02:33.150531 | Train SE: 5.071 | Test SE: 4.912
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 130 | Time: 0:02:33.100384 | Train SE: 5.067 | Test SE: 4.738
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:80°C
+Epoch: 131 | Time: 0:01:30.497898 | Train SE: 5.080 | Test SE: 4.857
+[TempCheck] GPU:83°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 132 | Time: 0:02:29.353810 | Train SE: 5.061 | Test SE: 4.798
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 133 | Time: 0:02:23.409418 | Train SE: 5.083 | Test SE: 4.891
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 134 | Time: 0:02:23.236716 | Train SE: 4.967 | Test SE: 4.791
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 135 | Time: 0:02:22.719803 | Train SE: 4.946 | Test SE: 4.834
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 136 | Time: 0:02:25.588005 | Train SE: 4.966 | Test SE: 4.791
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 137 | Time: 0:02:23.159694 | Train SE: 4.913 | Test SE: 4.903
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 138 | Time: 0:02:23.659095 | Train SE: 4.914 | Test SE: 4.679
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 139 | Time: 0:02:22.864887 | Train SE: 4.972 | Test SE: 5.026
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 140 | Time: 0:02:25.339354 | Train SE: 5.016 | Test SE: 4.935
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:78°C
+Epoch: 141 | Time: 0:01:28.222598 | Train SE: 5.016 | Test SE: 4.762
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 142 | Time: 0:02:29.101594 | Train SE: 4.965 | Test SE: 4.875
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 143 | Time: 0:02:33.349883 | Train SE: 4.921 | Test SE: 5.100
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 144 | Time: 0:02:24.853222 | Train SE: 4.811 | Test SE: 4.749
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 145 | Time: 0:02:26.671766 | Train SE: 4.674 | Test SE: 4.788
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 146 | Time: 0:02:27.427123 | Train SE: 4.806 | Test SE: 4.837
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 147 | Time: 0:02:28.058699 | Train SE: 4.873 | Test SE: 4.827
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 148 | Time: 0:02:30.297359 | Train SE: 4.939 | Test SE: 4.834
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 149 | Time: 0:02:29.767530 | Train SE: 4.968 | Test SE: 5.119
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 150 | Time: 0:02:29.949707 | Train SE: 4.984 | Test SE: 4.799
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:79°C
+Epoch: 151 | Time: 0:01:32.143808 | Train SE: 5.002 | Test SE: 4.924
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 152 | Time: 0:02:30.959149 | Train SE: 5.014 | Test SE: 4.777
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 153 | Time: 0:02:25.048793 | Train SE: 5.048 | Test SE: 4.886
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 154 | Time: 0:02:23.004713 | Train SE: 5.035 | Test SE: 4.875
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 155 | Time: 0:02:22.524941 | Train SE: 5.039 | Test SE: 4.869
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 156 | Time: 0:02:25.500593 | Train SE: 5.018 | Test SE: 4.990
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 157 | Time: 0:02:27.450732 | Train SE: 5.027 | Test SE: 4.791
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 158 | Time: 0:02:26.351211 | Train SE: 5.042 | Test SE: 4.656
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 159 | Time: 0:02:24.103499 | Train SE: 5.053 | Test SE: 4.903
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 160 | Time: 0:02:24.950419 | Train SE: 5.027 | Test SE: 4.680
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:78°C
+Epoch: 161 | Time: 0:01:24.994554 | Train SE: 5.029 | Test SE: 4.879
+[TempCheck] GPU:83°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 162 | Time: 0:02:16.935767 | Train SE: 5.015 | Test SE: 4.914
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 163 | Time: 0:02:09.904816 | Train SE: 5.020 | Test SE: 4.734
+[TempCheck] GPU:79°C
+Epoch: 164 | Time: 0:01:11.434414 | Train SE: 5.027 | Test SE: 4.654
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 165 | Time: 0:02:14.024166 | Train SE: 5.033 | Test SE: 4.716
+[TempCheck] GPU:78°C
+Epoch: 166 | Time: 0:01:14.268137 | Train SE: 5.034 | Test SE: 4.691
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 167 | Time: 0:02:12.650507 | Train SE: 5.014 | Test SE: 4.817
+[TempCheck] GPU:79°C
+Epoch: 168 | Time: 0:01:13.042510 | Train SE: 5.021 | Test SE: 4.864
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 169 | Time: 0:02:12.412365 | Train SE: 5.017 | Test SE: 4.583
+[TempCheck] GPU:79°C
+Epoch: 170 | Time: 0:01:13.111742 | Train SE: 5.013 | Test SE: 4.916
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:78°C
+Epoch: 171 | Time: 0:01:19.740502 | Train SE: 5.019 | Test SE: 4.741
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 172 | Time: 0:02:15.437096 | Train SE: 5.042 | Test SE: 4.582
+[TempCheck] GPU:80°C
+Epoch: 173 | Time: 0:01:14.790752 | Train SE: 5.039 | Test SE: 4.757
+[TempCheck] GPU:83°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 174 | Time: 0:02:13.353405 | Train SE: 5.042 | Test SE: 4.737
+[TempCheck] GPU:80°C
+Epoch: 175 | Time: 0:01:13.717271 | Train SE: 5.061 | Test SE: 4.738
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 176 | Time: 0:02:13.312789 | Train SE: 5.050 | Test SE: 4.788
+[TempCheck] GPU:79°C
+Epoch: 177 | Time: 0:01:14.679421 | Train SE: 5.035 | Test SE: 4.774
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 178 | Time: 0:02:11.914229 | Train SE: 5.053 | Test SE: 4.862
+[TempCheck] GPU:79°C
+Epoch: 179 | Time: 0:01:12.122127 | Train SE: 5.065 | Test SE: 4.790
+
+<Figure size 640x480 with 1 Axes>
+The best SE is: 5.792
+[5.1896891  4.7399478  3.99033285 4.8752594  4.42818047 4.73683567
+ 4.20288215 5.70724944 5.45552408 5.79243313 4.10836219 5.69242301
+ 4.73189695 4.84996338 5.00638555 4.03367912 5.35677731 4.91573521
+ 4.66049241 5.20175318 4.64547361 4.79525535 4.97490836 4.95869846
+ 4.29171003 4.58556803 4.80082359 4.65194018 5.1231005  4.38028302
+ 4.69299079 4.93282615 4.67739627 4.58553351 4.75683439 4.87928947
+ 4.83099322 4.33870823 4.64258642 4.69987195 4.75826081 4.74448239
+ 4.60377139 4.64359707 4.6456691  4.57071663 4.46984857 4.7108942
+ 5.09374292 4.81812797 4.55857114 4.61850315 4.30701931 4.80744255
+ 4.73080719 4.46870602 4.61182803 4.59641689 5.05632432 4.96418477
+ 4.73556498 5.21495006 4.42971711 5.00203891 4.89994366 4.74437853
+ 4.99505497 4.67617629 4.55969559 4.80566592 4.79831479 4.7180582
+ 4.44537066 4.59765824 4.82388327 5.0868166  4.72677807 4.56507409
+ 5.13485975 5.01548423 4.71213474 4.84902071 5.34626669 4.86187946
+ 4.86520329 4.86054553 4.70035574 4.8960716  5.13305553 4.6936231
+ 4.56144813 4.59215362 4.89783983 4.52614847 4.7185292  4.72739491
+ 4.81241249 5.04946071 4.91183027 5.03854684 4.7471822  4.8905116
+ 4.76868169 4.85522556 4.75481423 4.9110436  4.84872409 5.10050772
+ 5.01380039 4.99258052 5.00002629 4.81669521 5.11827865 4.89908552
+ 4.9961349  4.97889373 4.9703138  4.88430631 5.08691461 4.89712584
+ 4.99618268 4.96331383 5.07695628 4.98523285 4.9357728  4.99149046
+ 4.94748056 5.00965532 5.02755884 4.91201978 4.73832464 4.85733277
+ 4.79847243 4.89103005 4.79072685 4.83366342 4.79057064 4.9032464
+ 4.67919865 5.0256421  4.93529769 4.76151147 4.87507817 5.10037904
+ 4.74897072 4.78781335 4.83693522 4.827118   4.83356106 5.11866926
+ 4.79878454 4.9242754  4.77707838 4.8858282  4.87482506 4.86906413
+ 4.98972335 4.79107521 4.65559636 4.90256774 4.67950467 4.87859989
+ 4.91358339 4.73402756 4.65381758 4.71599721 4.69061078 4.81686349
+ 4.86396116 4.58343606 4.91554053 4.74135277 4.58230609 4.75651717
+ 4.73734055 4.73825675 4.78847315 4.77410815 4.86210858 4.78973519]
+```
+
+8. K=3, b=32
+
+```txt
+已设置种子为1755088318
+[TempCheck] GPU:63°C
+Epoch: 0 | Time: 0:01:37.564164 | Train SE: 6.117 | Test SE: 6.961
+New best model saved with Test SE: 6.9610
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 1 | Time: 0:02:33.186678 | Train SE: 7.287 | Test SE: 7.634
+New best model saved with Test SE: 7.6341
+[TempCheck] GPU:83°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 2 | Time: 0:02:33.032731 | Train SE: 7.868 | Test SE: 8.138
+New best model saved with Test SE: 8.1379
+[TempCheck] GPU:83°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 3 | Time: 0:02:34.381798 | Train SE: 8.341 | Test SE: 8.636
+New best model saved with Test SE: 8.6362
+[TempCheck] GPU:84°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 4 | Time: 0:02:33.270335 | Train SE: 8.772 | Test SE: 8.915
+New best model saved with Test SE: 8.9148
+[TempCheck] GPU:84°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 5 | Time: 0:02:32.570266 | Train SE: 9.015 | Test SE: 9.180
+New best model saved with Test SE: 9.1796
+[TempCheck] GPU:84°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 6 | Time: 0:02:34.021981 | Train SE: 9.306 | Test SE: 9.596
+New best model saved with Test SE: 9.5959
+[TempCheck] GPU:84°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 7 | Time: 0:02:34.666768 | Train SE: 9.730 | Test SE: 9.934
+New best model saved with Test SE: 9.9337
+[TempCheck] GPU:84°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 8 | Time: 0:02:34.222121 | Train SE: 10.020 | Test SE: 10.234
+New best model saved with Test SE: 10.2344
+[TempCheck] GPU:84°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 9 | Time: 0:02:36.773531 | Train SE: 10.424 | Test SE: 10.665
+New best model saved with Test SE: 10.6647
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 10 | Time: 0:02:34.009835 | Train SE: 10.752 | Test SE: 10.987
+
+<Figure size 640x480 with 1 Axes>
+New best model saved with Test SE: 10.9874
+[TempCheck] GPU:83°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 11 | Time: 0:02:35.140157 | Train SE: 11.157 | Test SE: 11.225
+New best model saved with Test SE: 11.2247
+[TempCheck] GPU:84°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 12 | Time: 0:02:35.683219 | Train SE: 11.344 | Test SE: 11.516
+New best model saved with Test SE: 11.5158
+[TempCheck] GPU:84°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 13 | Time: 0:02:37.263593 | Train SE: 11.621 | Test SE: 11.766
+New best model saved with Test SE: 11.7657
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 14 | Time: 0:02:35.756271 | Train SE: 11.791 | Test SE: 11.837
+New best model saved with Test SE: 11.8371
+[TempCheck] GPU:84°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 15 | Time: 0:02:35.242608 | Train SE: 11.912 | Test SE: 11.964
+New best model saved with Test SE: 11.9639
+[TempCheck] GPU:83°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 16 | Time: 0:02:35.519300 | Train SE: 12.048 | Test SE: 12.126
+New best model saved with Test SE: 12.1260
+[TempCheck] GPU:83°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 17 | Time: 0:02:35.704228 | Train SE: 12.078 | Test SE: 12.191
+New best model saved with Test SE: 12.1907
+[TempCheck] GPU:83°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 18 | Time: 0:02:35.919494 | Train SE: 12.289 | Test SE: 12.368
+New best model saved with Test SE: 12.3679
+[TempCheck] GPU:83°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 19 | Time: 0:02:37.131306 | Train SE: 12.351 | Test SE: 12.372
+New best model saved with Test SE: 12.3723
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 20 | Time: 0:02:35.734364 | Train SE: 12.241 | Test SE: 12.324
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:80°C
+Epoch: 21 | Time: 0:01:36.560847 | Train SE: 12.376 | Test SE: 12.345
+[TempCheck] GPU:85°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 22 | Time: 0:02:36.160816 | Train SE: 12.448 | Test SE: 12.548
+New best model saved with Test SE: 12.5483
+[TempCheck] GPU:84°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 23 | Time: 0:02:35.652885 | Train SE: 12.480 | Test SE: 12.375
+[TempCheck] GPU:84°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 24 | Time: 0:02:32.344098 | Train SE: 12.391 | Test SE: 12.482
+[TempCheck] GPU:83°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 25 | Time: 0:02:37.733460 | Train SE: 12.417 | Test SE: 12.480
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 26 | Time: 0:02:36.719613 | Train SE: 12.375 | Test SE: 12.514
+[TempCheck] GPU:83°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 27 | Time: 0:02:36.454270 | Train SE: 12.236 | Test SE: 12.294
+[TempCheck] GPU:84°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 28 | Time: 0:02:34.862214 | Train SE: 12.184 | Test SE: 12.382
+[TempCheck] GPU:83°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 29 | Time: 0:02:35.785173 | Train SE: 12.323 | Test SE: 12.510
+[TempCheck] GPU:83°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 30 | Time: 0:02:35.802671 | Train SE: 12.480 | Test SE: 12.708
+
+<Figure size 640x480 with 1 Axes>
+New best model saved with Test SE: 12.7084
+[TempCheck] GPU:79°C
+Epoch: 31 | Time: 0:01:37.916723 | Train SE: 12.519 | Test SE: 12.453
+[TempCheck] GPU:83°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 32 | Time: 0:02:34.303817 | Train SE: 12.478 | Test SE: 12.676
+[TempCheck] GPU:83°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 33 | Time: 0:02:34.970575 | Train SE: 12.606 | Test SE: 12.743
+New best model saved with Test SE: 12.7433
+[TempCheck] GPU:83°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 34 | Time: 0:02:35.221905 | Train SE: 12.713 | Test SE: 12.838
+New best model saved with Test SE: 12.8385
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 35 | Time: 0:02:34.744740 | Train SE: 12.626 | Test SE: 12.680
+[TempCheck] GPU:83°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 36 | Time: 0:02:34.664277 | Train SE: 12.516 | Test SE: 12.680
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 37 | Time: 0:02:35.750409 | Train SE: 12.574 | Test SE: 12.747
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 38 | Time: 0:02:34.637926 | Train SE: 12.616 | Test SE: 12.709
+[TempCheck] GPU:82°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 39 | Time: 0:02:34.828831 | Train SE: 12.647 | Test SE: 12.789
+[TempCheck] GPU:81°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 40 | Time: 0:02:38.859045 | Train SE: 12.754 | Test SE: 13.000
+
+<Figure size 640x480 with 1 Axes>
+New best model saved with Test SE: 12.9997
+[TempCheck] GPU:79°C
+Epoch: 41 | Time: 0:01:50.927986 | Train SE: 12.871 | Test SE: 13.050
+New best model saved with Test SE: 13.0501
+[TempCheck] GPU:84°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 42 | Time: 0:02:50.347743 | Train SE: 12.967 | Test SE: 13.130
+New best model saved with Test SE: 13.1296
+[TempCheck] GPU:83°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 43 | Time: 0:02:50.207621 | Train SE: 13.056 | Test SE: 13.181
+New best model saved with Test SE: 13.1806
+[TempCheck] GPU:83°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 44 | Time: 0:02:51.245562 | Train SE: 13.007 | Test SE: 13.219
+New best model saved with Test SE: 13.2189
+[TempCheck] GPU:83°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 45 | Time: 0:02:51.756841 | Train SE: 13.154 | Test SE: 13.234
+New best model saved with Test SE: 13.2345
+[TempCheck] GPU:84°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 46 | Time: 0:02:48.631707 | Train SE: 13.201 | Test SE: 13.366
+New best model saved with Test SE: 13.3664
+[TempCheck] GPU:84°C
+[TempCheck] GPU 过热，暂停 60 秒冷却
+Epoch: 47 | Time: 0:02:42.549502 | Train SE: 13.299 | Test SE: 13.394
+New best model saved with Test SE: 13.3941
+[TempCheck] GPU:80°C
+Epoch: 48 | Time: 0:02:01.783686 | Train SE: 13.304 | Test SE: 13.262
+[TempCheck] GPU:68°C
+Epoch: 49 | Time: 0:01:59.573267 | Train SE: 13.261 | Test SE: 13.427
+New best model saved with Test SE: 13.4269
+[TempCheck] GPU:64°C
+Epoch: 50 | Time: 0:01:59.457526 | Train SE: 13.286 | Test SE: 13.322
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:63°C
+Epoch: 51 | Time: 0:01:59.650721 | Train SE: 13.314 | Test SE: 13.494
+New best model saved with Test SE: 13.4940
+[TempCheck] GPU:64°C
+Epoch: 52 | Time: 0:01:59.340355 | Train SE: 13.407 | Test SE: 13.477
+[TempCheck] GPU:65°C
+Epoch: 53 | Time: 0:01:58.950445 | Train SE: 13.406 | Test SE: 13.459
+[TempCheck] GPU:67°C
+Epoch: 54 | Time: 0:01:37.454632 | Train SE: 13.274 | Test SE: 13.297
+[TempCheck] GPU:76°C
+Epoch: 55 | Time: 0:01:32.123325 | Train SE: 13.172 | Test SE: 13.359
+[TempCheck] GPU:79°C
+Epoch: 56 | Time: 0:01:31.947431 | Train SE: 13.243 | Test SE: 13.479
+[TempCheck] GPU:80°C
+Epoch: 57 | Time: 0:01:32.843641 | Train SE: 13.433 | Test SE: 13.669
+New best model saved with Test SE: 13.6694
+[TempCheck] GPU:80°C
+Epoch: 58 | Time: 0:01:32.327390 | Train SE: 13.522 | Test SE: 13.527
+[TempCheck] GPU:76°C
+Epoch: 59 | Time: 0:01:33.904458 | Train SE: 13.501 | Test SE: 13.654
+[TempCheck] GPU:76°C
+Epoch: 60 | Time: 0:01:32.281885 | Train SE: 13.522 | Test SE: 13.667
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:75°C
+Epoch: 61 | Time: 0:01:32.474330 | Train SE: 13.513 | Test SE: 13.555
+[TempCheck] GPU:76°C
+Epoch: 62 | Time: 0:01:34.052051 | Train SE: 13.554 | Test SE: 13.800
+New best model saved with Test SE: 13.7997
+[TempCheck] GPU:76°C
+Epoch: 63 | Time: 0:01:35.589069 | Train SE: 13.646 | Test SE: 13.733
+[TempCheck] GPU:77°C
+Epoch: 64 | Time: 0:01:35.644770 | Train SE: 13.635 | Test SE: 13.667
+[TempCheck] GPU:77°C
+Epoch: 65 | Time: 0:01:33.983287 | Train SE: 13.567 | Test SE: 13.670
+[TempCheck] GPU:78°C
+Epoch: 66 | Time: 0:01:32.875522 | Train SE: 13.559 | Test SE: 13.721
+[TempCheck] GPU:77°C
+Epoch: 67 | Time: 0:01:33.610115 | Train SE: 13.650 | Test SE: 13.752
+[TempCheck] GPU:78°C
+Epoch: 68 | Time: 0:01:32.971795 | Train SE: 13.680 | Test SE: 13.760
+[TempCheck] GPU:78°C
+Epoch: 69 | Time: 0:01:33.139035 | Train SE: 13.643 | Test SE: 13.713
+[TempCheck] GPU:78°C
+Epoch: 70 | Time: 0:01:33.158469 | Train SE: 13.606 | Test SE: 13.770
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:78°C
+Epoch: 71 | Time: 0:01:33.075272 | Train SE: 13.668 | Test SE: 13.687
+[TempCheck] GPU:78°C
+Epoch: 72 | Time: 0:01:33.033272 | Train SE: 13.557 | Test SE: 13.552
+[TempCheck] GPU:78°C
+Epoch: 73 | Time: 0:01:33.009776 | Train SE: 13.549 | Test SE: 13.666
+[TempCheck] GPU:78°C
+Epoch: 74 | Time: 0:01:32.829916 | Train SE: 13.562 | Test SE: 13.680
+[TempCheck] GPU:78°C
+Epoch: 75 | Time: 0:01:33.108751 | Train SE: 13.530 | Test SE: 13.647
+[TempCheck] GPU:78°C
+Epoch: 76 | Time: 0:01:32.884345 | Train SE: 13.573 | Test SE: 13.747
+[TempCheck] GPU:78°C
+Epoch: 77 | Time: 0:01:35.103895 | Train SE: 13.633 | Test SE: 13.786
+[TempCheck] GPU:77°C
+Epoch: 78 | Time: 0:01:35.110285 | Train SE: 13.691 | Test SE: 13.819
+New best model saved with Test SE: 13.8190
+[TempCheck] GPU:78°C
+Epoch: 79 | Time: 0:01:34.582291 | Train SE: 13.646 | Test SE: 13.684
+[TempCheck] GPU:78°C
+Epoch: 80 | Time: 0:01:34.612494 | Train SE: 13.616 | Test SE: 13.780
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:75°C
+Epoch: 81 | Time: 0:01:32.386027 | Train SE: 13.622 | Test SE: 13.692
+[TempCheck] GPU:78°C
+Epoch: 82 | Time: 0:01:31.853806 | Train SE: 13.653 | Test SE: 13.751
+[TempCheck] GPU:77°C
+Epoch: 83 | Time: 0:01:32.044187 | Train SE: 13.623 | Test SE: 13.756
+[TempCheck] GPU:78°C
+Epoch: 84 | Time: 0:01:31.763777 | Train SE: 13.655 | Test SE: 13.790
+[TempCheck] GPU:77°C
+Epoch: 85 | Time: 0:01:32.226358 | Train SE: 13.759 | Test SE: 13.887
+New best model saved with Test SE: 13.8868
+[TempCheck] GPU:77°C
+Epoch: 86 | Time: 0:01:32.271775 | Train SE: 13.712 | Test SE: 13.727
+[TempCheck] GPU:77°C
+Epoch: 87 | Time: 0:01:31.777048 | Train SE: 13.540 | Test SE: 13.728
+[TempCheck] GPU:77°C
+Epoch: 88 | Time: 0:01:32.129383 | Train SE: 13.633 | Test SE: 13.873
+[TempCheck] GPU:77°C
+Epoch: 89 | Time: 0:01:31.788898 | Train SE: 13.735 | Test SE: 13.823
+[TempCheck] GPU:77°C
+Epoch: 90 | Time: 0:01:31.834748 | Train SE: 13.669 | Test SE: 13.881
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:74°C
+Epoch: 91 | Time: 0:01:32.069570 | Train SE: 13.695 | Test SE: 13.733
+[TempCheck] GPU:77°C
+Epoch: 92 | Time: 0:01:31.650811 | Train SE: 13.668 | Test SE: 13.742
+[TempCheck] GPU:77°C
+Epoch: 93 | Time: 0:01:31.970732 | Train SE: 13.647 | Test SE: 13.738
+[TempCheck] GPU:77°C
+Epoch: 94 | Time: 0:01:31.753176 | Train SE: 13.572 | Test SE: 13.812
+[TempCheck] GPU:77°C
+Epoch: 95 | Time: 0:01:31.702969 | Train SE: 13.538 | Test SE: 13.615
+[TempCheck] GPU:77°C
+Epoch: 96 | Time: 0:01:32.269221 | Train SE: 13.622 | Test SE: 13.950
+New best model saved with Test SE: 13.9501
+[TempCheck] GPU:77°C
+Epoch: 97 | Time: 0:01:31.820581 | Train SE: 13.813 | Test SE: 14.087
+New best model saved with Test SE: 14.0873
+[TempCheck] GPU:76°C
+Epoch: 98 | Time: 0:01:31.889663 | Train SE: 13.945 | Test SE: 14.128
+New best model saved with Test SE: 14.1276
+[TempCheck] GPU:77°C
+Epoch: 99 | Time: 0:01:31.944702 | Train SE: 13.884 | Test SE: 14.000
+[TempCheck] GPU:77°C
+Epoch: 100 | Time: 0:01:31.635224 | Train SE: 13.864 | Test SE: 13.925
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:75°C
+Epoch: 101 | Time: 0:01:32.320732 | Train SE: 13.817 | Test SE: 13.818
+[TempCheck] GPU:77°C
+Epoch: 102 | Time: 0:01:31.742987 | Train SE: 13.626 | Test SE: 13.726
+[TempCheck] GPU:77°C
+Epoch: 103 | Time: 0:01:31.803585 | Train SE: 13.586 | Test SE: 13.706
+[TempCheck] GPU:77°C
+Epoch: 104 | Time: 0:01:31.817747 | Train SE: 13.586 | Test SE: 13.753
+[TempCheck] GPU:77°C
+Epoch: 105 | Time: 0:01:31.805540 | Train SE: 13.585 | Test SE: 13.758
+[TempCheck] GPU:77°C
+Epoch: 106 | Time: 0:01:33.326389 | Train SE: 13.704 | Test SE: 13.851
+[TempCheck] GPU:76°C
+Epoch: 107 | Time: 0:01:32.737823 | Train SE: 13.788 | Test SE: 13.820
+[TempCheck] GPU:77°C
+Epoch: 108 | Time: 0:01:32.012702 | Train SE: 13.779 | Test SE: 13.949
+[TempCheck] GPU:76°C
+Epoch: 109 | Time: 0:01:32.871708 | Train SE: 13.932 | Test SE: 14.104
+[TempCheck] GPU:77°C
+Epoch: 110 | Time: 0:01:32.450750 | Train SE: 13.957 | Test SE: 13.999
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:77°C
+Epoch: 111 | Time: 0:01:32.957232 | Train SE: 13.964 | Test SE: 14.070
+[TempCheck] GPU:77°C
+Epoch: 112 | Time: 0:01:34.545801 | Train SE: 13.956 | Test SE: 13.993
+[TempCheck] GPU:77°C
+Epoch: 113 | Time: 0:01:34.322104 | Train SE: 13.873 | Test SE: 13.931
+[TempCheck] GPU:76°C
+Epoch: 114 | Time: 0:01:34.907670 | Train SE: 13.855 | Test SE: 13.836
+[TempCheck] GPU:77°C
+Epoch: 115 | Time: 0:01:34.898736 | Train SE: 13.801 | Test SE: 13.905
+[TempCheck] GPU:77°C
+Epoch: 116 | Time: 0:01:36.428375 | Train SE: 13.781 | Test SE: 13.863
+[TempCheck] GPU:77°C
+Epoch: 117 | Time: 0:01:34.967313 | Train SE: 13.754 | Test SE: 13.848
+[TempCheck] GPU:77°C
+Epoch: 118 | Time: 0:01:35.159130 | Train SE: 13.765 | Test SE: 13.856
+[TempCheck] GPU:78°C
+Epoch: 119 | Time: 0:01:35.141596 | Train SE: 13.782 | Test SE: 13.941
+[TempCheck] GPU:78°C
+Epoch: 120 | Time: 0:01:34.721726 | Train SE: 13.846 | Test SE: 13.926
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:77°C
+Epoch: 121 | Time: 0:01:35.528582 | Train SE: 13.917 | Test SE: 14.023
+[TempCheck] GPU:77°C
+Epoch: 122 | Time: 0:01:34.979625 | Train SE: 13.967 | Test SE: 14.023
+[TempCheck] GPU:77°C
+Epoch: 123 | Time: 0:01:34.735162 | Train SE: 14.015 | Test SE: 14.142
+New best model saved with Test SE: 14.1420
+[TempCheck] GPU:77°C
+Epoch: 124 | Time: 0:01:34.268063 | Train SE: 14.040 | Test SE: 14.197
+New best model saved with Test SE: 14.1967
+[TempCheck] GPU:77°C
+Epoch: 125 | Time: 0:01:35.407547 | Train SE: 14.082 | Test SE: 14.151
+[TempCheck] GPU:78°C
+Epoch: 126 | Time: 0:01:34.553391 | Train SE: 14.039 | Test SE: 14.165
+[TempCheck] GPU:77°C
+Epoch: 127 | Time: 0:01:35.377364 | Train SE: 14.026 | Test SE: 14.138
+[TempCheck] GPU:77°C
+Epoch: 128 | Time: 0:01:34.948313 | Train SE: 14.043 | Test SE: 14.070
+[TempCheck] GPU:78°C
+Epoch: 129 | Time: 0:01:35.080839 | Train SE: 14.034 | Test SE: 14.088
+[TempCheck] GPU:77°C
+Epoch: 130 | Time: 0:01:34.968224 | Train SE: 14.046 | Test SE: 14.128
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:75°C
+Epoch: 131 | Time: 0:01:35.140269 | Train SE: 14.044 | Test SE: 14.111
+[TempCheck] GPU:77°C
+Epoch: 132 | Time: 0:01:34.935067 | Train SE: 14.014 | Test SE: 14.067
+[TempCheck] GPU:77°C
+Epoch: 133 | Time: 0:01:34.727204 | Train SE: 13.946 | Test SE: 13.972
+[TempCheck] GPU:77°C
+Epoch: 134 | Time: 0:01:35.292399 | Train SE: 13.962 | Test SE: 13.992
+[TempCheck] GPU:77°C
+Epoch: 135 | Time: 0:01:35.687000 | Train SE: 14.061 | Test SE: 14.106
+[TempCheck] GPU:77°C
+Epoch: 136 | Time: 0:01:35.256947 | Train SE: 14.109 | Test SE: 14.126
+[TempCheck] GPU:78°C
+Epoch: 137 | Time: 0:01:39.293937 | Train SE: 14.025 | Test SE: 14.112
+[TempCheck] GPU:77°C
+Epoch: 138 | Time: 0:01:34.687341 | Train SE: 14.051 | Test SE: 14.123
+[TempCheck] GPU:78°C
+Epoch: 139 | Time: 0:01:37.118791 | Train SE: 14.048 | Test SE: 14.130
+[TempCheck] GPU:77°C
+Epoch: 140 | Time: 0:01:43.075814 | Train SE: 14.111 | Test SE: 14.181
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:75°C
+Epoch: 141 | Time: 0:01:50.810595 | Train SE: 14.089 | Test SE: 14.075
+[TempCheck] GPU:76°C
+Epoch: 142 | Time: 0:01:43.762004 | Train SE: 14.080 | Test SE: 14.139
+[TempCheck] GPU:77°C
+Epoch: 143 | Time: 0:01:35.981974 | Train SE: 14.028 | Test SE: 14.005
+[TempCheck] GPU:77°C
+Epoch: 144 | Time: 0:01:36.456087 | Train SE: 13.928 | Test SE: 13.947
+[TempCheck] GPU:76°C
+Epoch: 145 | Time: 0:01:37.817088 | Train SE: 13.865 | Test SE: 13.906
+[TempCheck] GPU:77°C
+Epoch: 146 | Time: 0:01:36.809355 | Train SE: 13.869 | Test SE: 14.000
+[TempCheck] GPU:77°C
+Epoch: 147 | Time: 0:01:36.777523 | Train SE: 13.959 | Test SE: 14.066
+[TempCheck] GPU:77°C
+Epoch: 148 | Time: 0:01:38.680404 | Train SE: 14.039 | Test SE: 14.118
+[TempCheck] GPU:78°C
+Epoch: 149 | Time: 0:01:36.375843 | Train SE: 14.044 | Test SE: 14.015
+[TempCheck] GPU:77°C
+Epoch: 150 | Time: 0:01:35.735995 | Train SE: 14.078 | Test SE: 14.148
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:77°C
+Epoch: 151 | Time: 0:01:36.374532 | Train SE: 14.042 | Test SE: 14.123
+[TempCheck] GPU:77°C
+Epoch: 152 | Time: 0:01:36.934175 | Train SE: 14.118 | Test SE: 14.205
+New best model saved with Test SE: 14.2046
+[TempCheck] GPU:77°C
+Epoch: 153 | Time: 0:01:36.829181 | Train SE: 14.132 | Test SE: 14.196
+[TempCheck] GPU:77°C
+Epoch: 154 | Time: 0:01:36.869831 | Train SE: 14.196 | Test SE: 14.210
+New best model saved with Test SE: 14.2097
+[TempCheck] GPU:77°C
+Epoch: 155 | Time: 0:01:36.535237 | Train SE: 14.111 | Test SE: 14.084
+[TempCheck] GPU:77°C
+Epoch: 156 | Time: 0:01:35.538376 | Train SE: 13.951 | Test SE: 13.920
+[TempCheck] GPU:78°C
+Epoch: 157 | Time: 0:01:34.052699 | Train SE: 13.878 | Test SE: 13.989
+[TempCheck] GPU:77°C
+Epoch: 158 | Time: 0:01:35.262155 | Train SE: 13.945 | Test SE: 14.056
+[TempCheck] GPU:77°C
+Epoch: 159 | Time: 0:01:33.496172 | Train SE: 14.037 | Test SE: 14.076
+[TempCheck] GPU:78°C
+Epoch: 160 | Time: 0:01:31.796192 | Train SE: 14.021 | Test SE: 14.078
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:77°C
+Epoch: 161 | Time: 0:01:32.113553 | Train SE: 14.015 | Test SE: 14.035
+[TempCheck] GPU:77°C
+Epoch: 162 | Time: 0:01:31.863482 | Train SE: 14.060 | Test SE: 14.123
+[TempCheck] GPU:77°C
+Epoch: 163 | Time: 0:01:31.897210 | Train SE: 14.127 | Test SE: 14.100
+[TempCheck] GPU:75°C
+Epoch: 164 | Time: 0:01:32.050088 | Train SE: 14.072 | Test SE: 14.110
+[TempCheck] GPU:77°C
+Epoch: 165 | Time: 0:01:31.717106 | Train SE: 14.056 | Test SE: 14.009
+[TempCheck] GPU:77°C
+Epoch: 166 | Time: 0:01:31.728434 | Train SE: 14.015 | Test SE: 14.071
+[TempCheck] GPU:76°C
+Epoch: 167 | Time: 0:01:31.839193 | Train SE: 14.042 | Test SE: 14.023
+[TempCheck] GPU:77°C
+Epoch: 168 | Time: 0:01:31.628259 | Train SE: 14.011 | Test SE: 14.021
+[TempCheck] GPU:76°C
+Epoch: 169 | Time: 0:01:31.922693 | Train SE: 13.980 | Test SE: 13.950
+[TempCheck] GPU:76°C
+Epoch: 170 | Time: 0:01:31.815179 | Train SE: 13.899 | Test SE: 13.904
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:76°C
+Epoch: 171 | Time: 0:01:31.894288 | Train SE: 13.853 | Test SE: 13.841
+[TempCheck] GPU:76°C
+Epoch: 172 | Time: 0:01:31.982833 | Train SE: 13.757 | Test SE: 13.755
+[TempCheck] GPU:77°C
+Epoch: 173 | Time: 0:01:31.933785 | Train SE: 13.695 | Test SE: 13.776
+[TempCheck] GPU:76°C
+Epoch: 174 | Time: 0:01:31.830239 | Train SE: 13.828 | Test SE: 13.857
+[TempCheck] GPU:76°C
+Epoch: 175 | Time: 0:01:31.878291 | Train SE: 13.823 | Test SE: 13.789
+[TempCheck] GPU:76°C
+Epoch: 176 | Time: 0:01:31.572591 | Train SE: 13.858 | Test SE: 13.884
+[TempCheck] GPU:76°C
+Epoch: 177 | Time: 0:01:32.012316 | Train SE: 13.877 | Test SE: 13.871
+[TempCheck] GPU:76°C
+Epoch: 178 | Time: 0:01:31.649378 | Train SE: 13.903 | Test SE: 13.930
+[TempCheck] GPU:76°C
+Epoch: 179 | Time: 0:01:31.700629 | Train SE: 13.918 | Test SE: 13.956
+
+<Figure size 640x480 with 1 Axes>
+The best SE is: 14.210
+[ 6.96095014  7.6341182   8.1378535   8.63615885  8.91479185  9.17962437
+  9.59591742  9.93372345 10.23442519 10.66468992 10.9873945  11.22469206
+ 11.51581273 11.765716   11.83710811 11.96391885 12.12603946 12.19072764
+ 12.36792221 12.37227108 12.32369518 12.34492025 12.54829888 12.37522984
+ 12.48172109 12.47988858 12.51424139 12.29433703 12.38161056 12.51034684
+ 12.7083859  12.4534534  12.67643411 12.74333138 12.83849599 12.68025486
+ 12.6796875  12.74674232 12.70885515 12.78946416 12.99970992 13.05005834
+ 13.12956471 13.18059683 13.21890347 13.23445284 13.36637068 13.39409497
+ 13.26201649 13.4269207  13.3220026  13.49398036 13.4765738  13.45874524
+ 13.29661882 13.35886357 13.47926071 13.66941962 13.52688179 13.65446451
+ 13.66659167 13.55505066 13.79971364 13.73305466 13.66691914 13.6697732
+ 13.72071967 13.75238695 13.76025972 13.71299074 13.77027338 13.6874238
+ 13.55152807 13.66559052 13.67988636 13.64749568 13.74662781 13.78585577
+ 13.81898277 13.6840097  13.78016977 13.69153943 13.75147746 13.75598311
+ 13.78982675 13.88677185 13.7273241  13.72755358 13.87250555 13.8231946
+ 13.88063922 13.73309088 13.74190018 13.73814552 13.8116694  13.61541071
+ 13.95008895 14.08734381 14.12760146 14.00016716 13.92543423 13.81807759
+ 13.72649796 13.7055537  13.7526448  13.75837629 13.85116427 13.82013588
+ 13.94901397 14.10415034 13.9987056  14.06997154 13.99300814 13.9307827
+ 13.83647826 13.90515573 13.86316707 13.84799774 13.85553708 13.94110289
+ 13.92587733 14.02292666 14.0232569  14.14196796 14.19668999 14.1509954
+ 14.16452703 14.13768587 14.07003834 14.08819134 14.12767324 14.1108144
+ 14.0670845  13.97227817 13.99165628 14.10642123 14.12642627 14.11170082
+ 14.12274475 14.13013346 14.18089471 14.07470417 14.13890693 14.00504575
+ 13.9474484  13.90594888 14.00000484 14.0661715  14.11790867 14.0153537
+ 14.14817684 14.12272737 14.20457494 14.19635205 14.20966842 14.08413985
+ 13.9200701  13.98907056 14.05634696 14.07610128 14.07763953 14.03549845
+ 14.12347708 14.09982677 14.1101563  14.00916467 14.07058251 14.02342725
+ 14.02066014 13.95005851 13.90419521 13.84127483 13.75508301 13.77582095
+ 13.85740387 13.78912847 13.8841316  13.8706023  13.93020911 13.95561996]
+```
+
+
+9. snr = 25
+
+```txt
+已设置种子为1755203808
+[TempCheck] GPU:67°C
+Epoch: 0 | Time: 0:01:11.539400 | Train SE: 10.045 | Test SE: 11.928
+New best model saved with Test SE: 11.9277
+[TempCheck] GPU:78°C
+Epoch: 1 | Time: 0:01:11.338398 | Train SE: 12.609 | Test SE: 13.135
+New best model saved with Test SE: 13.1353
+[TempCheck] GPU:79°C
+Epoch: 2 | Time: 0:01:11.442965 | Train SE: 13.780 | Test SE: 14.692
+New best model saved with Test SE: 14.6925
+[TempCheck] GPU:79°C
+Epoch: 3 | Time: 0:01:11.279445 | Train SE: 15.241 | Test SE: 15.275
+New best model saved with Test SE: 15.2745
+[TempCheck] GPU:79°C
+Epoch: 4 | Time: 0:01:11.221215 | Train SE: 15.684 | Test SE: 16.294
+New best model saved with Test SE: 16.2937
+[TempCheck] GPU:79°C
+Epoch: 5 | Time: 0:01:11.979784 | Train SE: 16.315 | Test SE: 16.650
+New best model saved with Test SE: 16.6500
+[TempCheck] GPU:79°C
+Epoch: 6 | Time: 0:01:11.453766 | Train SE: 16.668 | Test SE: 17.009
+New best model saved with Test SE: 17.0087
+[TempCheck] GPU:77°C
+Epoch: 7 | Time: 0:01:11.330202 | Train SE: 16.786 | Test SE: 17.152
+New best model saved with Test SE: 17.1516
+[TempCheck] GPU:79°C
+Epoch: 8 | Time: 0:01:11.582010 | Train SE: 17.052 | Test SE: 17.439
+New best model saved with Test SE: 17.4394
+[TempCheck] GPU:79°C
+Epoch: 9 | Time: 0:01:11.493797 | Train SE: 17.318 | Test SE: 17.621
+New best model saved with Test SE: 17.6210
+[TempCheck] GPU:80°C
+Epoch: 10 | Time: 0:01:11.294347 | Train SE: 17.427 | Test SE: 17.777
+
+<Figure size 640x480 with 1 Axes>
+New best model saved with Test SE: 17.7774
+[TempCheck] GPU:80°C
+Epoch: 11 | Time: 0:01:11.646073 | Train SE: 17.663 | Test SE: 17.770
+[TempCheck] GPU:79°C
+Epoch: 12 | Time: 0:01:11.536311 | Train SE: 17.670 | Test SE: 17.750
+[TempCheck] GPU:79°C
+Epoch: 13 | Time: 0:01:11.294305 | Train SE: 17.722 | Test SE: 17.812
+New best model saved with Test SE: 17.8123
+[TempCheck] GPU:79°C
+Epoch: 14 | Time: 0:01:11.293423 | Train SE: 17.526 | Test SE: 17.453
+[TempCheck] GPU:80°C
+Epoch: 15 | Time: 0:01:11.521898 | Train SE: 17.552 | Test SE: 17.964
+New best model saved with Test SE: 17.9637
+[TempCheck] GPU:79°C
+Epoch: 16 | Time: 0:01:11.361475 | Train SE: 17.704 | Test SE: 17.789
+[TempCheck] GPU:79°C
+Epoch: 17 | Time: 0:01:11.299561 | Train SE: 17.756 | Test SE: 17.833
+[TempCheck] GPU:79°C
+Epoch: 18 | Time: 0:01:11.767176 | Train SE: 17.673 | Test SE: 17.866
+[TempCheck] GPU:79°C
+Epoch: 19 | Time: 0:01:11.412055 | Train SE: 17.256 | Test SE: 17.479
+[TempCheck] GPU:79°C
+Epoch: 20 | Time: 0:01:11.278806 | Train SE: 17.582 | Test SE: 18.001
+
+<Figure size 640x480 with 1 Axes>
+New best model saved with Test SE: 18.0013
+[TempCheck] GPU:78°C
+Epoch: 21 | Time: 0:01:11.472053 | Train SE: 17.764 | Test SE: 17.945
+[TempCheck] GPU:80°C
+Epoch: 22 | Time: 0:01:11.540218 | Train SE: 17.603 | Test SE: 17.714
+[TempCheck] GPU:79°C
+Epoch: 23 | Time: 0:01:11.342610 | Train SE: 17.484 | Test SE: 17.580
+[TempCheck] GPU:80°C
+Epoch: 24 | Time: 0:01:11.256034 | Train SE: 16.829 | Test SE: 17.090
+[TempCheck] GPU:79°C
+Epoch: 25 | Time: 0:01:11.614326 | Train SE: 16.837 | Test SE: 16.967
+[TempCheck] GPU:80°C
+Epoch: 26 | Time: 0:01:11.379641 | Train SE: 16.162 | Test SE: 17.099
+[TempCheck] GPU:79°C
+Epoch: 27 | Time: 0:01:11.225611 | Train SE: 17.051 | Test SE: 17.036
+[TempCheck] GPU:80°C
+Epoch: 28 | Time: 0:01:11.441934 | Train SE: 17.206 | Test SE: 17.680
+[TempCheck] GPU:79°C
+Epoch: 29 | Time: 0:01:11.430616 | Train SE: 17.374 | Test SE: 17.711
+[TempCheck] GPU:79°C
+Epoch: 30 | Time: 0:01:11.453493 | Train SE: 17.433 | Test SE: 17.945
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:79°C
+Epoch: 31 | Time: 0:01:11.538579 | Train SE: 17.708 | Test SE: 18.128
+New best model saved with Test SE: 18.1284
+[TempCheck] GPU:79°C
+Epoch: 32 | Time: 0:01:11.657232 | Train SE: 17.728 | Test SE: 17.779
+[TempCheck] GPU:80°C
+Epoch: 33 | Time: 0:01:11.293135 | Train SE: 17.532 | Test SE: 17.574
+[TempCheck] GPU:79°C
+Epoch: 34 | Time: 0:01:11.232828 | Train SE: 17.321 | Test SE: 17.677
+[TempCheck] GPU:79°C
+Epoch: 35 | Time: 0:01:11.402519 | Train SE: 17.504 | Test SE: 17.845
+[TempCheck] GPU:79°C
+Epoch: 36 | Time: 0:01:11.371190 | Train SE: 17.536 | Test SE: 17.648
+[TempCheck] GPU:79°C
+Epoch: 37 | Time: 0:01:11.266151 | Train SE: 17.609 | Test SE: 17.723
+[TempCheck] GPU:80°C
+Epoch: 38 | Time: 0:01:11.314218 | Train SE: 17.606 | Test SE: 17.823
+[TempCheck] GPU:79°C
+Epoch: 39 | Time: 0:01:11.492797 | Train SE: 17.628 | Test SE: 17.600
+[TempCheck] GPU:79°C
+Epoch: 40 | Time: 0:01:11.227284 | Train SE: 17.336 | Test SE: 17.576
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:79°C
+Epoch: 41 | Time: 0:01:11.383145 | Train SE: 17.274 | Test SE: 17.370
+[TempCheck] GPU:79°C
+Epoch: 42 | Time: 0:01:11.552713 | Train SE: 17.101 | Test SE: 17.523
+[TempCheck] GPU:79°C
+Epoch: 43 | Time: 0:01:11.582203 | Train SE: 17.095 | Test SE: 17.152
+[TempCheck] GPU:79°C
+Epoch: 44 | Time: 0:01:11.273552 | Train SE: 17.263 | Test SE: 17.289
+[TempCheck] GPU:79°C
+Epoch: 45 | Time: 0:01:11.442837 | Train SE: 17.140 | Test SE: 17.664
+[TempCheck] GPU:79°C
+Epoch: 46 | Time: 0:01:11.420340 | Train SE: 17.480 | Test SE: 17.120
+[TempCheck] GPU:79°C
+Epoch: 47 | Time: 0:01:11.239536 | Train SE: 17.247 | Test SE: 17.449
+[TempCheck] GPU:80°C
+Epoch: 48 | Time: 0:01:11.334620 | Train SE: 16.906 | Test SE: 16.691
+[TempCheck] GPU:79°C
+Epoch: 49 | Time: 0:01:11.477605 | Train SE: 16.956 | Test SE: 17.354
+[TempCheck] GPU:79°C
+Epoch: 50 | Time: 0:01:11.296955 | Train SE: 17.230 | Test SE: 17.256
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:79°C
+Epoch: 51 | Time: 0:01:11.362295 | Train SE: 16.796 | Test SE: 17.154
+[TempCheck] GPU:79°C
+Epoch: 52 | Time: 0:01:11.523017 | Train SE: 17.104 | Test SE: 17.491
+[TempCheck] GPU:80°C
+Epoch: 53 | Time: 0:01:11.288820 | Train SE: 17.430 | Test SE: 17.788
+[TempCheck] GPU:79°C
+Epoch: 54 | Time: 0:01:11.215548 | Train SE: 17.373 | Test SE: 17.392
+[TempCheck] GPU:80°C
+Epoch: 55 | Time: 0:01:11.460037 | Train SE: 17.070 | Test SE: 17.329
+[TempCheck] GPU:79°C
+Epoch: 56 | Time: 0:01:11.575696 | Train SE: 17.127 | Test SE: 17.268
+[TempCheck] GPU:79°C
+Epoch: 57 | Time: 0:01:11.212406 | Train SE: 17.221 | Test SE: 17.437
+[TempCheck] GPU:80°C
+Epoch: 58 | Time: 0:01:11.363154 | Train SE: 17.172 | Test SE: 17.714
+[TempCheck] GPU:80°C
+Epoch: 59 | Time: 0:01:11.533897 | Train SE: 17.557 | Test SE: 17.966
+[TempCheck] GPU:79°C
+Epoch: 60 | Time: 0:01:11.281077 | Train SE: 17.555 | Test SE: 17.883
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:77°C
+Epoch: 61 | Time: 0:01:11.391904 | Train SE: 17.636 | Test SE: 17.993
+[TempCheck] GPU:79°C
+Epoch: 62 | Time: 0:01:11.522878 | Train SE: 17.471 | Test SE: 17.646
+[TempCheck] GPU:79°C
+Epoch: 63 | Time: 0:01:11.345118 | Train SE: 17.543 | Test SE: 17.689
+[TempCheck] GPU:79°C
+Epoch: 64 | Time: 0:01:11.206279 | Train SE: 17.800 | Test SE: 18.080
+[TempCheck] GPU:79°C
+Epoch: 65 | Time: 0:01:11.419485 | Train SE: 17.872 | Test SE: 18.152
+New best model saved with Test SE: 18.1519
+[TempCheck] GPU:79°C
+Epoch: 66 | Time: 0:01:11.475275 | Train SE: 17.899 | Test SE: 17.767
+[TempCheck] GPU:79°C
+Epoch: 67 | Time: 0:01:11.268070 | Train SE: 17.796 | Test SE: 18.179
+New best model saved with Test SE: 18.1789
+[TempCheck] GPU:79°C
+Epoch: 68 | Time: 0:01:11.519671 | Train SE: 18.106 | Test SE: 18.318
+New best model saved with Test SE: 18.3183
+[TempCheck] GPU:79°C
+Epoch: 69 | Time: 0:01:11.563316 | Train SE: 18.070 | Test SE: 18.259
+[TempCheck] GPU:79°C
+Epoch: 70 | Time: 0:01:11.255368 | Train SE: 18.055 | Test SE: 18.061
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:79°C
+Epoch: 71 | Time: 0:01:11.414029 | Train SE: 17.962 | Test SE: 18.183
+[TempCheck] GPU:79°C
+Epoch: 72 | Time: 0:01:11.471368 | Train SE: 17.549 | Test SE: 17.342
+[TempCheck] GPU:80°C
+Epoch: 73 | Time: 0:01:11.378716 | Train SE: 17.186 | Test SE: 17.399
+[TempCheck] GPU:79°C
+Epoch: 74 | Time: 0:01:11.225325 | Train SE: 17.213 | Test SE: 17.577
+[TempCheck] GPU:79°C
+Epoch: 75 | Time: 0:01:11.519503 | Train SE: 17.443 | Test SE: 17.804
+[TempCheck] GPU:79°C
+Epoch: 76 | Time: 0:01:11.465683 | Train SE: 17.558 | Test SE: 17.925
+[TempCheck] GPU:79°C
+Epoch: 77 | Time: 0:01:11.274318 | Train SE: 17.551 | Test SE: 17.549
+[TempCheck] GPU:79°C
+Epoch: 78 | Time: 0:01:11.277211 | Train SE: 17.365 | Test SE: 17.838
+[TempCheck] GPU:80°C
+Epoch: 79 | Time: 0:01:11.632559 | Train SE: 17.553 | Test SE: 17.807
+[TempCheck] GPU:79°C
+Epoch: 80 | Time: 0:01:11.318918 | Train SE: 17.478 | Test SE: 17.580
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:80°C
+Epoch: 81 | Time: 0:01:11.644576 | Train SE: 16.943 | Test SE: 16.811
+[TempCheck] GPU:79°C
+Epoch: 82 | Time: 0:01:11.549691 | Train SE: 16.421 | Test SE: 17.117
+[TempCheck] GPU:80°C
+Epoch: 83 | Time: 0:01:11.337024 | Train SE: 16.787 | Test SE: 17.245
+[TempCheck] GPU:80°C
+Epoch: 84 | Time: 0:01:11.215221 | Train SE: 17.036 | Test SE: 17.513
+[TempCheck] GPU:79°C
+Epoch: 85 | Time: 0:01:11.357050 | Train SE: 17.248 | Test SE: 17.348
+[TempCheck] GPU:80°C
+Epoch: 86 | Time: 0:01:11.518404 | Train SE: 17.104 | Test SE: 17.572
+[TempCheck] GPU:80°C
+Epoch: 87 | Time: 0:01:11.269697 | Train SE: 17.107 | Test SE: 17.402
+[TempCheck] GPU:79°C
+Epoch: 88 | Time: 0:01:11.159621 | Train SE: 17.279 | Test SE: 17.451
+[TempCheck] GPU:80°C
+Epoch: 89 | Time: 0:01:11.443203 | Train SE: 17.210 | Test SE: 17.407
+[TempCheck] GPU:80°C
+Epoch: 90 | Time: 0:01:11.334341 | Train SE: 17.277 | Test SE: 17.662
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:77°C
+Epoch: 91 | Time: 0:01:11.444696 | Train SE: 17.477 | Test SE: 17.704
+[TempCheck] GPU:79°C
+Epoch: 92 | Time: 0:01:11.352802 | Train SE: 17.422 | Test SE: 17.734
+[TempCheck] GPU:79°C
+Epoch: 93 | Time: 0:01:11.313539 | Train SE: 17.458 | Test SE: 17.610
+[TempCheck] GPU:80°C
+Epoch: 94 | Time: 0:01:11.435167 | Train SE: 17.416 | Test SE: 17.796
+[TempCheck] GPU:80°C
+Epoch: 95 | Time: 0:01:11.250271 | Train SE: 17.496 | Test SE: 17.743
+[TempCheck] GPU:79°C
+Epoch: 96 | Time: 0:01:11.485948 | Train SE: 17.358 | Test SE: 17.768
+[TempCheck] GPU:79°C
+Epoch: 97 | Time: 0:01:11.314344 | Train SE: 17.454 | Test SE: 17.781
+[TempCheck] GPU:80°C
+Epoch: 98 | Time: 0:01:11.246112 | Train SE: 17.658 | Test SE: 17.937
+[TempCheck] GPU:79°C
+Epoch: 99 | Time: 0:01:11.438401 | Train SE: 17.813 | Test SE: 18.038
+[TempCheck] GPU:79°C
+Epoch: 100 | Time: 0:01:11.427230 | Train SE: 18.003 | Test SE: 18.219
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:77°C
+Epoch: 101 | Time: 0:01:11.430231 | Train SE: 18.156 | Test SE: 18.200
+[TempCheck] GPU:80°C
+Epoch: 102 | Time: 0:01:11.432941 | Train SE: 18.107 | Test SE: 18.359
+New best model saved with Test SE: 18.3594
+[TempCheck] GPU:79°C
+Epoch: 103 | Time: 0:01:11.500847 | Train SE: 18.198 | Test SE: 18.402
+New best model saved with Test SE: 18.4022
+[TempCheck] GPU:79°C
+Epoch: 104 | Time: 0:01:11.259253 | Train SE: 18.258 | Test SE: 18.450
+New best model saved with Test SE: 18.4503
+[TempCheck] GPU:79°C
+Epoch: 105 | Time: 0:01:11.249453 | Train SE: 18.280 | Test SE: 18.422
+[TempCheck] GPU:80°C
+Epoch: 106 | Time: 0:01:11.672184 | Train SE: 18.159 | Test SE: 18.250
+[TempCheck] GPU:79°C
+Epoch: 107 | Time: 0:01:11.337277 | Train SE: 18.202 | Test SE: 18.497
+New best model saved with Test SE: 18.4971
+[TempCheck] GPU:79°C
+Epoch: 108 | Time: 0:01:11.227139 | Train SE: 18.270 | Test SE: 18.480
+[TempCheck] GPU:79°C
+Epoch: 109 | Time: 0:01:11.472895 | Train SE: 18.230 | Test SE: 18.467
+[TempCheck] GPU:79°C
+Epoch: 110 | Time: 0:01:11.338069 | Train SE: 18.144 | Test SE: 18.375
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:79°C
+Epoch: 111 | Time: 0:01:11.414942 | Train SE: 18.248 | Test SE: 18.438
+[TempCheck] GPU:79°C
+Epoch: 112 | Time: 0:01:11.340358 | Train SE: 18.297 | Test SE: 18.508
+New best model saved with Test SE: 18.5085
+[TempCheck] GPU:79°C
+Epoch: 113 | Time: 0:01:11.480885 | Train SE: 18.328 | Test SE: 18.588
+New best model saved with Test SE: 18.5876
+[TempCheck] GPU:77°C
+Epoch: 114 | Time: 0:01:11.255269 | Train SE: 18.383 | Test SE: 18.595
+New best model saved with Test SE: 18.5953
+[TempCheck] GPU:79°C
+Epoch: 115 | Time: 0:01:11.222558 | Train SE: 18.053 | Test SE: 18.330
+[TempCheck] GPU:80°C
+Epoch: 116 | Time: 0:01:11.515253 | Train SE: 18.215 | Test SE: 18.454
+[TempCheck] GPU:79°C
+Epoch: 117 | Time: 0:01:11.252146 | Train SE: 18.245 | Test SE: 18.463
+[TempCheck] GPU:79°C
+Epoch: 118 | Time: 0:01:11.233958 | Train SE: 18.392 | Test SE: 18.552
+[TempCheck] GPU:80°C
+Epoch: 119 | Time: 0:01:11.684803 | Train SE: 18.395 | Test SE: 18.583
+[TempCheck] GPU:79°C
+Epoch: 120 | Time: 0:01:11.461608 | Train SE: 18.463 | Test SE: 18.653
+
+<Figure size 640x480 with 1 Axes>
+New best model saved with Test SE: 18.6525
+[TempCheck] GPU:79°C
+Epoch: 121 | Time: 0:01:11.520432 | Train SE: 18.488 | Test SE: 18.630
+[TempCheck] GPU:79°C
+Epoch: 122 | Time: 0:01:11.297925 | Train SE: 18.431 | Test SE: 18.631
+[TempCheck] GPU:79°C
+Epoch: 123 | Time: 0:01:11.464353 | Train SE: 18.556 | Test SE: 18.732
+New best model saved with Test SE: 18.7321
+[TempCheck] GPU:79°C
+Epoch: 124 | Time: 0:01:11.242658 | Train SE: 18.613 | Test SE: 18.776
+New best model saved with Test SE: 18.7764
+[TempCheck] GPU:79°C
+Epoch: 125 | Time: 0:01:11.175358 | Train SE: 18.577 | Test SE: 18.778
+New best model saved with Test SE: 18.7776
+[TempCheck] GPU:79°C
+Epoch: 126 | Time: 0:01:11.612856 | Train SE: 18.594 | Test SE: 18.717
+[TempCheck] GPU:79°C
+Epoch: 127 | Time: 0:01:11.340944 | Train SE: 18.678 | Test SE: 18.828
+New best model saved with Test SE: 18.8276
+[TempCheck] GPU:79°C
+Epoch: 128 | Time: 0:01:11.244345 | Train SE: 18.621 | Test SE: 18.667
+[TempCheck] GPU:80°C
+Epoch: 129 | Time: 0:01:11.388484 | Train SE: 18.539 | Test SE: 18.602
+[TempCheck] GPU:79°C
+Epoch: 130 | Time: 0:01:11.385204 | Train SE: 18.617 | Test SE: 18.751
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:79°C
+Epoch: 131 | Time: 0:01:11.424814 | Train SE: 18.624 | Test SE: 18.858
+New best model saved with Test SE: 18.8577
+[TempCheck] GPU:79°C
+Epoch: 132 | Time: 0:01:11.648171 | Train SE: 18.625 | Test SE: 18.763
+[TempCheck] GPU:79°C
+Epoch: 133 | Time: 0:01:11.443675 | Train SE: 18.639 | Test SE: 18.692
+[TempCheck] GPU:80°C
+Epoch: 134 | Time: 0:01:11.232903 | Train SE: 18.668 | Test SE: 18.815
+[TempCheck] GPU:79°C
+Epoch: 135 | Time: 0:01:11.232812 | Train SE: 18.634 | Test SE: 18.738
+[TempCheck] GPU:80°C
+Epoch: 136 | Time: 0:01:11.487765 | Train SE: 18.651 | Test SE: 18.853
+[TempCheck] GPU:79°C
+Epoch: 137 | Time: 0:01:11.255905 | Train SE: 18.701 | Test SE: 18.837
+[TempCheck] GPU:79°C
+Epoch: 138 | Time: 0:01:11.269259 | Train SE: 18.703 | Test SE: 18.884
+New best model saved with Test SE: 18.8836
+[TempCheck] GPU:80°C
+Epoch: 139 | Time: 0:01:11.363539 | Train SE: 18.745 | Test SE: 18.877
+[TempCheck] GPU:80°C
+Epoch: 140 | Time: 0:01:11.411533 | Train SE: 18.691 | Test SE: 18.784
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:79°C
+Epoch: 141 | Time: 0:01:11.493437 | Train SE: 18.665 | Test SE: 18.892
+New best model saved with Test SE: 18.8918
+[TempCheck] GPU:79°C
+Epoch: 142 | Time: 0:01:11.281337 | Train SE: 18.828 | Test SE: 18.876
+[TempCheck] GPU:80°C
+Epoch: 143 | Time: 0:01:11.511070 | Train SE: 18.834 | Test SE: 18.961
+New best model saved with Test SE: 18.9613
+[TempCheck] GPU:79°C
+Epoch: 144 | Time: 0:01:11.516978 | Train SE: 18.778 | Test SE: 18.808
+[TempCheck] GPU:79°C
+Epoch: 145 | Time: 0:01:11.309375 | Train SE: 18.582 | Test SE: 18.696
+[TempCheck] GPU:79°C
+Epoch: 146 | Time: 0:01:11.539809 | Train SE: 18.647 | Test SE: 18.854
+[TempCheck] GPU:80°C
+Epoch: 147 | Time: 0:01:11.355032 | Train SE: 18.775 | Test SE: 18.935
+[TempCheck] GPU:79°C
+Epoch: 148 | Time: 0:01:11.217280 | Train SE: 18.804 | Test SE: 18.814
+[TempCheck] GPU:79°C
+Epoch: 149 | Time: 0:01:11.410052 | Train SE: 18.720 | Test SE: 18.835
+[TempCheck] GPU:79°C
+Epoch: 150 | Time: 0:01:11.456195 | Train SE: 18.918 | Test SE: 19.025
+
+<Figure size 640x480 with 1 Axes>
+New best model saved with Test SE: 19.0254
+[TempCheck] GPU:76°C
+Epoch: 151 | Time: 0:01:11.553681 | Train SE: 18.879 | Test SE: 18.948
+[TempCheck] GPU:79°C
+Epoch: 152 | Time: 0:01:11.210488 | Train SE: 18.818 | Test SE: 18.899
+[TempCheck] GPU:79°C
+Epoch: 153 | Time: 0:01:11.508933 | Train SE: 18.839 | Test SE: 18.923
+[TempCheck] GPU:79°C
+Epoch: 154 | Time: 0:01:11.381693 | Train SE: 18.892 | Test SE: 19.017
+[TempCheck] GPU:79°C
+Epoch: 155 | Time: 0:01:11.183554 | Train SE: 18.908 | Test SE: 19.071
+New best model saved with Test SE: 19.0705
+[TempCheck] GPU:79°C
+Epoch: 156 | Time: 0:01:11.408876 | Train SE: 18.951 | Test SE: 19.039
+[TempCheck] GPU:79°C
+Epoch: 157 | Time: 0:01:11.554782 | Train SE: 18.880 | Test SE: 18.993
+[TempCheck] GPU:79°C
+Epoch: 158 | Time: 0:01:11.199792 | Train SE: 18.926 | Test SE: 19.026
+[TempCheck] GPU:79°C
+Epoch: 159 | Time: 0:01:11.272057 | Train SE: 18.894 | Test SE: 18.985
+[TempCheck] GPU:79°C
+Epoch: 160 | Time: 0:01:11.443325 | Train SE: 18.880 | Test SE: 18.943
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:77°C
+Epoch: 161 | Time: 0:01:11.506091 | Train SE: 18.895 | Test SE: 18.966
+[TempCheck] GPU:79°C
+Epoch: 162 | Time: 0:01:11.170235 | Train SE: 18.904 | Test SE: 19.006
+[TempCheck] GPU:79°C
+Epoch: 163 | Time: 0:01:11.497409 | Train SE: 18.913 | Test SE: 19.045
+[TempCheck] GPU:79°C
+Epoch: 164 | Time: 0:01:11.290510 | Train SE: 18.941 | Test SE: 19.069
+[TempCheck] GPU:79°C
+Epoch: 165 | Time: 0:01:11.248008 | Train SE: 18.903 | Test SE: 19.079
+New best model saved with Test SE: 19.0792
+[TempCheck] GPU:80°C
+Epoch: 166 | Time: 0:01:11.448557 | Train SE: 18.962 | Test SE: 19.013
+[TempCheck] GPU:79°C
+Epoch: 167 | Time: 0:01:11.349299 | Train SE: 18.906 | Test SE: 18.980
+[TempCheck] GPU:79°C
+Epoch: 168 | Time: 0:01:11.238314 | Train SE: 18.914 | Test SE: 18.971
+[TempCheck] GPU:79°C
+Epoch: 169 | Time: 0:01:11.300163 | Train SE: 18.854 | Test SE: 18.896
+[TempCheck] GPU:79°C
+Epoch: 170 | Time: 0:01:11.786083 | Train SE: 18.816 | Test SE: 18.898
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:79°C
+Epoch: 171 | Time: 0:01:11.482755 | Train SE: 18.782 | Test SE: 18.828
+[TempCheck] GPU:79°C
+Epoch: 172 | Time: 0:01:11.240822 | Train SE: 18.726 | Test SE: 18.837
+[TempCheck] GPU:79°C
+Epoch: 173 | Time: 0:01:11.515969 | Train SE: 18.621 | Test SE: 18.702
+[TempCheck] GPU:80°C
+Epoch: 174 | Time: 0:01:11.255629 | Train SE: 18.712 | Test SE: 18.898
+[TempCheck] GPU:80°C
+Epoch: 175 | Time: 0:01:11.240527 | Train SE: 18.820 | Test SE: 18.875
+[TempCheck] GPU:80°C
+Epoch: 176 | Time: 0:01:11.455355 | Train SE: 18.803 | Test SE: 18.935
+[TempCheck] GPU:79°C
+Epoch: 177 | Time: 0:01:11.410394 | Train SE: 18.865 | Test SE: 18.966
+[TempCheck] GPU:79°C
+Epoch: 178 | Time: 0:01:11.358217 | Train SE: 18.909 | Test SE: 19.009
+[TempCheck] GPU:79°C
+Epoch: 179 | Time: 0:01:11.378688 | Train SE: 18.926 | Test SE: 18.985
+
+<Figure size 640x480 with 1 Axes>
+The best SE is: 19.079
+[11.92770276 13.13530011 14.69246666 15.27453759 16.29369454 16.65000749
+ 17.00867348 17.1515501  17.43940911 17.62102008 17.777356   17.76953778
+ 17.74975114 17.81233411 17.45270967 17.96367002 17.78943729 17.83329644
+ 17.86633782 17.47883954 18.00132761 17.94479089 17.71358161 17.58009815
+ 17.08956389 16.96710315 17.09917507 17.03574219 17.68025985 17.71136312
+ 17.94485698 18.12837391 17.77877526 17.57404151 17.67715068 17.84521008
+ 17.64776864 17.72342377 17.82285123 17.60033627 17.57604518 17.37047162
+ 17.52282481 17.15175552 17.28935385 17.66386361 17.12003546 17.44917765
+ 16.69083571 17.35409341 17.25552087 17.15362577 17.49066324 17.78797188
+ 17.39215584 17.32920761 17.26822891 17.43679376 17.71418896 17.96580701
+ 17.8829463  17.9925262  17.64640617 17.68932219 18.07980614 18.15192947
+ 17.76735082 18.17891655 18.3183043  18.25899968 18.06095748 18.18273821
+ 17.3416379  17.39941053 17.57697935 17.80412908 17.92495461 17.54898562
+ 17.83798895 17.80667925 17.57976904 16.81139002 17.11744933 17.24469981
+ 17.51270781 17.34762049 17.57213826 17.40154376 17.45129662 17.40738034
+ 17.66203251 17.70378518 17.73437738 17.60978923 17.79578381 17.74305801
+ 17.76799445 17.78149114 17.93712516 18.03777332 18.21851416 18.19966192
+ 18.35944819 18.40223846 18.45027199 18.42151561 18.24994149 18.49707417
+ 18.47980185 18.46682224 18.37505283 18.43788285 18.50846    18.58764725
+ 18.59526997 18.329951   18.45363002 18.46269407 18.55248528 18.58253675
+ 18.65253096 18.62990689 18.63097768 18.73208108 18.77637057 18.77762127
+ 18.71714449 18.82756958 18.66722341 18.60151653 18.7510211  18.85773697
+ 18.76322498 18.69200845 18.81463876 18.73768997 18.85276198 18.83689389
+ 18.88357348 18.87720151 18.7843256  18.89182534 18.87582908 18.96134229
+ 18.80775957 18.69567747 18.85370574 18.93523827 18.81389241 18.83461599
+ 19.0253511  18.94760456 18.8990274  18.92323689 19.01696558 19.07051873
+ 19.03919539 18.99331565 19.02640886 18.98504896 18.94334188 18.96583934
+ 19.00606627 19.04465599 19.06912689 19.07915144 19.01267562 18.97997718
+ 18.97137661 18.89587164 18.897998   18.82831497 18.83667159 18.7022759
+ 18.89800386 18.87472882 18.93515849 18.96558642 19.00938072 18.98541145]
+```
+
+
+```txt
+已设置种子为1755190942
+[TempCheck] GPU:68°C
+Epoch: 0 | Time: 0:01:11.626636 | Train SE: 8.689 | Test SE: 10.453
+New best model saved with Test SE: 10.4529
+[TempCheck] GPU:78°C
+Epoch: 1 | Time: 0:01:11.411523 | Train SE: 11.174 | Test SE: 11.852
+New best model saved with Test SE: 11.8522
+[TempCheck] GPU:79°C
+Epoch: 2 | Time: 0:01:11.291258 | Train SE: 12.086 | Test SE: 12.397
+New best model saved with Test SE: 12.3974
+[TempCheck] GPU:79°C
+Epoch: 3 | Time: 0:01:11.480835 | Train SE: 12.599 | Test SE: 13.276
+New best model saved with Test SE: 13.2760
+[TempCheck] GPU:79°C
+Epoch: 4 | Time: 0:01:11.503031 | Train SE: 14.423 | Test SE: 15.518
+New best model saved with Test SE: 15.5180
+[TempCheck] GPU:79°C
+Epoch: 5 | Time: 0:01:11.269386 | Train SE: 15.618 | Test SE: 16.178
+New best model saved with Test SE: 16.1780
+[TempCheck] GPU:79°C
+Epoch: 6 | Time: 0:01:11.234733 | Train SE: 16.328 | Test SE: 16.659
+New best model saved with Test SE: 16.6589
+[TempCheck] GPU:79°C
+Epoch: 7 | Time: 0:01:11.611275 | Train SE: 16.750 | Test SE: 17.139
+New best model saved with Test SE: 17.1394
+[TempCheck] GPU:79°C
+Epoch: 8 | Time: 0:01:11.879223 | Train SE: 17.058 | Test SE: 17.536
+New best model saved with Test SE: 17.5361
+[TempCheck] GPU:79°C
+Epoch: 9 | Time: 0:01:11.388833 | Train SE: 17.163 | Test SE: 17.384
+[TempCheck] GPU:79°C
+Epoch: 10 | Time: 0:01:11.423607 | Train SE: 17.233 | Test SE: 17.586
+
+<Figure size 640x480 with 1 Axes>
+New best model saved with Test SE: 17.5859
+[TempCheck] GPU:77°C
+Epoch: 11 | Time: 0:01:11.638546 | Train SE: 17.384 | Test SE: 17.693
+New best model saved with Test SE: 17.6927
+[TempCheck] GPU:78°C
+Epoch: 12 | Time: 0:01:11.320932 | Train SE: 17.497 | Test SE: 17.844
+New best model saved with Test SE: 17.8442
+[TempCheck] GPU:79°C
+Epoch: 13 | Time: 0:01:11.366162 | Train SE: 17.554 | Test SE: 17.763
+[TempCheck] GPU:79°C
+Epoch: 14 | Time: 0:01:11.525448 | Train SE: 17.617 | Test SE: 17.877
+New best model saved with Test SE: 17.8775
+[TempCheck] GPU:79°C
+Epoch: 15 | Time: 0:01:11.350210 | Train SE: 17.707 | Test SE: 17.935
+New best model saved with Test SE: 17.9347
+[TempCheck] GPU:79°C
+Epoch: 16 | Time: 0:01:11.363935 | Train SE: 17.810 | Test SE: 17.883
+[TempCheck] GPU:79°C
+Epoch: 17 | Time: 0:01:11.525503 | Train SE: 17.768 | Test SE: 17.904
+[TempCheck] GPU:79°C
+Epoch: 18 | Time: 0:01:11.341461 | Train SE: 17.739 | Test SE: 17.790
+[TempCheck] GPU:80°C
+Epoch: 19 | Time: 0:01:11.279524 | Train SE: 17.712 | Test SE: 18.049
+New best model saved with Test SE: 18.0487
+[TempCheck] GPU:78°C
+Epoch: 20 | Time: 0:01:11.726082 | Train SE: 17.884 | Test SE: 18.184
+
+<Figure size 640x480 with 1 Axes>
+New best model saved with Test SE: 18.1840
+[TempCheck] GPU:79°C
+Epoch: 21 | Time: 0:01:11.773939 | Train SE: 17.934 | Test SE: 17.802
+[TempCheck] GPU:80°C
+Epoch: 22 | Time: 0:01:11.291725 | Train SE: 18.033 | Test SE: 18.204
+New best model saved with Test SE: 18.2044
+[TempCheck] GPU:79°C
+Epoch: 23 | Time: 0:01:11.353473 | Train SE: 18.020 | Test SE: 18.021
+[TempCheck] GPU:80°C
+Epoch: 24 | Time: 0:01:11.507117 | Train SE: 18.068 | Test SE: 18.443
+New best model saved with Test SE: 18.4427
+[TempCheck] GPU:79°C
+Epoch: 25 | Time: 0:01:11.308316 | Train SE: 18.167 | Test SE: 18.286
+[TempCheck] GPU:79°C
+Epoch: 26 | Time: 0:01:11.206223 | Train SE: 17.973 | Test SE: 17.944
+[TempCheck] GPU:80°C
+Epoch: 27 | Time: 0:01:11.427803 | Train SE: 17.239 | Test SE: 17.406
+[TempCheck] GPU:78°C
+Epoch: 28 | Time: 0:01:11.465616 | Train SE: 17.271 | Test SE: 17.751
+[TempCheck] GPU:79°C
+Epoch: 29 | Time: 0:01:11.286454 | Train SE: 17.634 | Test SE: 17.887
+[TempCheck] GPU:79°C
+Epoch: 30 | Time: 0:01:11.357206 | Train SE: 17.574 | Test SE: 17.478
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:79°C
+Epoch: 31 | Time: 0:01:11.644854 | Train SE: 16.523 | Test SE: 16.705
+[TempCheck] GPU:79°C
+Epoch: 32 | Time: 0:01:11.240669 | Train SE: 16.982 | Test SE: 17.280
+[TempCheck] GPU:80°C
+Epoch: 33 | Time: 0:01:11.577506 | Train SE: 17.094 | Test SE: 17.481
+[TempCheck] GPU:79°C
+Epoch: 34 | Time: 0:01:11.504719 | Train SE: 17.459 | Test SE: 17.749
+[TempCheck] GPU:79°C
+Epoch: 35 | Time: 0:01:11.292510 | Train SE: 17.722 | Test SE: 18.041
+[TempCheck] GPU:79°C
+Epoch: 36 | Time: 0:01:11.236454 | Train SE: 17.801 | Test SE: 17.947
+[TempCheck] GPU:79°C
+Epoch: 37 | Time: 0:01:11.428146 | Train SE: 17.939 | Test SE: 18.327
+[TempCheck] GPU:79°C
+Epoch: 38 | Time: 0:01:11.361183 | Train SE: 18.003 | Test SE: 18.176
+[TempCheck] GPU:79°C
+Epoch: 39 | Time: 0:01:11.258631 | Train SE: 17.875 | Test SE: 18.018
+[TempCheck] GPU:79°C
+Epoch: 40 | Time: 0:01:11.368330 | Train SE: 17.899 | Test SE: 18.135
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:77°C
+Epoch: 41 | Time: 0:01:11.675828 | Train SE: 18.069 | Test SE: 18.392
+[TempCheck] GPU:79°C
+Epoch: 42 | Time: 0:01:11.266611 | Train SE: 18.165 | Test SE: 18.329
+[TempCheck] GPU:80°C
+Epoch: 43 | Time: 0:01:11.201744 | Train SE: 18.159 | Test SE: 18.348
+[TempCheck] GPU:80°C
+Epoch: 44 | Time: 0:01:11.514985 | Train SE: 18.110 | Test SE: 18.419
+[TempCheck] GPU:79°C
+Epoch: 45 | Time: 0:01:11.388589 | Train SE: 18.258 | Test SE: 18.472
+New best model saved with Test SE: 18.4723
+[TempCheck] GPU:79°C
+Epoch: 46 | Time: 0:01:11.609168 | Train SE: 18.137 | Test SE: 18.140
+[TempCheck] GPU:79°C
+Epoch: 47 | Time: 0:01:11.450047 | Train SE: 18.150 | Test SE: 18.006
+[TempCheck] GPU:80°C
+Epoch: 48 | Time: 0:01:11.458513 | Train SE: 18.228 | Test SE: 18.354
+[TempCheck] GPU:80°C
+Epoch: 49 | Time: 0:01:11.247926 | Train SE: 18.067 | Test SE: 18.160
+[TempCheck] GPU:79°C
+Epoch: 50 | Time: 0:01:11.353488 | Train SE: 18.093 | Test SE: 18.171
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:78°C
+Epoch: 51 | Time: 0:01:11.745555 | Train SE: 18.104 | Test SE: 18.239
+[TempCheck] GPU:80°C
+Epoch: 52 | Time: 0:01:11.314928 | Train SE: 17.926 | Test SE: 18.122
+[TempCheck] GPU:80°C
+Epoch: 53 | Time: 0:01:11.231620 | Train SE: 18.172 | Test SE: 18.386
+[TempCheck] GPU:80°C
+Epoch: 54 | Time: 0:01:11.598163 | Train SE: 18.198 | Test SE: 18.223
+[TempCheck] GPU:80°C
+Epoch: 55 | Time: 0:01:11.290159 | Train SE: 18.161 | Test SE: 18.227
+[TempCheck] GPU:80°C
+Epoch: 56 | Time: 0:01:11.221395 | Train SE: 18.258 | Test SE: 18.470
+[TempCheck] GPU:80°C
+Epoch: 57 | Time: 0:01:11.405122 | Train SE: 18.187 | Test SE: 18.264
+[TempCheck] GPU:79°C
+Epoch: 58 | Time: 0:01:11.651115 | Train SE: 18.368 | Test SE: 18.617
+New best model saved with Test SE: 18.6166
+[TempCheck] GPU:79°C
+Epoch: 59 | Time: 0:01:11.358380 | Train SE: 18.386 | Test SE: 18.532
+[TempCheck] GPU:79°C
+Epoch: 60 | Time: 0:01:11.323017 | Train SE: 18.100 | Test SE: 17.836
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:80°C
+Epoch: 61 | Time: 0:01:11.747740 | Train SE: 17.848 | Test SE: 18.166
+[TempCheck] GPU:80°C
+Epoch: 62 | Time: 0:01:11.326398 | Train SE: 17.895 | Test SE: 17.564
+[TempCheck] GPU:79°C
+Epoch: 63 | Time: 0:01:11.227277 | Train SE: 17.614 | Test SE: 17.902
+[TempCheck] GPU:80°C
+Epoch: 64 | Time: 0:01:11.471580 | Train SE: 17.799 | Test SE: 18.063
+[TempCheck] GPU:79°C
+Epoch: 65 | Time: 0:01:11.462752 | Train SE: 18.000 | Test SE: 18.146
+[TempCheck] GPU:80°C
+Epoch: 66 | Time: 0:01:11.259620 | Train SE: 18.209 | Test SE: 18.424
+[TempCheck] GPU:80°C
+Epoch: 67 | Time: 0:01:11.392256 | Train SE: 18.336 | Test SE: 18.479
+[TempCheck] GPU:80°C
+Epoch: 68 | Time: 0:01:11.420480 | Train SE: 18.270 | Test SE: 18.405
+[TempCheck] GPU:80°C
+Epoch: 69 | Time: 0:01:11.294754 | Train SE: 18.368 | Test SE: 18.552
+[TempCheck] GPU:80°C
+Epoch: 70 | Time: 0:01:11.341051 | Train SE: 18.277 | Test SE: 18.269
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:77°C
+Epoch: 71 | Time: 0:01:11.953506 | Train SE: 17.886 | Test SE: 17.973
+[TempCheck] GPU:79°C
+Epoch: 72 | Time: 0:01:11.328263 | Train SE: 17.874 | Test SE: 18.121
+[TempCheck] GPU:80°C
+Epoch: 73 | Time: 0:01:11.199180 | Train SE: 17.771 | Test SE: 18.140
+[TempCheck] GPU:80°C
+Epoch: 74 | Time: 0:01:11.430454 | Train SE: 18.166 | Test SE: 18.245
+[TempCheck] GPU:80°C
+Epoch: 75 | Time: 0:01:11.389425 | Train SE: 18.297 | Test SE: 18.509
+[TempCheck] GPU:80°C
+Epoch: 76 | Time: 0:01:11.294844 | Train SE: 18.377 | Test SE: 18.490
+[TempCheck] GPU:80°C
+Epoch: 77 | Time: 0:01:11.407446 | Train SE: 18.429 | Test SE: 18.502
+[TempCheck] GPU:79°C
+Epoch: 78 | Time: 0:01:11.418781 | Train SE: 18.172 | Test SE: 18.384
+[TempCheck] GPU:80°C
+Epoch: 79 | Time: 0:01:11.353636 | Train SE: 18.202 | Test SE: 18.259
+[TempCheck] GPU:80°C
+Epoch: 80 | Time: 0:01:11.255670 | Train SE: 18.135 | Test SE: 17.959
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:79°C
+Epoch: 81 | Time: 0:01:11.682620 | Train SE: 18.136 | Test SE: 18.422
+[TempCheck] GPU:80°C
+Epoch: 82 | Time: 0:01:11.289014 | Train SE: 18.288 | Test SE: 18.293
+[TempCheck] GPU:79°C
+Epoch: 83 | Time: 0:01:11.207771 | Train SE: 18.268 | Test SE: 18.359
+[TempCheck] GPU:79°C
+Epoch: 84 | Time: 0:01:11.759639 | Train SE: 18.271 | Test SE: 18.560
+[TempCheck] GPU:79°C
+Epoch: 85 | Time: 0:01:11.445359 | Train SE: 18.431 | Test SE: 18.503
+[TempCheck] GPU:80°C
+Epoch: 86 | Time: 0:01:11.258077 | Train SE: 18.366 | Test SE: 18.502
+[TempCheck] GPU:79°C
+Epoch: 87 | Time: 0:01:11.300800 | Train SE: 18.336 | Test SE: 18.421
+[TempCheck] GPU:79°C
+Epoch: 88 | Time: 0:01:11.428868 | Train SE: 18.413 | Test SE: 18.484
+[TempCheck] GPU:79°C
+Epoch: 89 | Time: 0:01:11.243594 | Train SE: 18.330 | Test SE: 18.445
+[TempCheck] GPU:79°C
+Epoch: 90 | Time: 0:01:11.253027 | Train SE: 18.457 | Test SE: 18.628
+
+<Figure size 640x480 with 1 Axes>
+New best model saved with Test SE: 18.6283
+[TempCheck] GPU:79°C
+Epoch: 91 | Time: 0:01:11.712711 | Train SE: 18.651 | Test SE: 18.754
+New best model saved with Test SE: 18.7538
+[TempCheck] GPU:79°C
+Epoch: 92 | Time: 0:01:11.318214 | Train SE: 18.548 | Test SE: 18.640
+[TempCheck] GPU:79°C
+Epoch: 93 | Time: 0:01:11.229992 | Train SE: 18.689 | Test SE: 18.492
+[TempCheck] GPU:79°C
+Epoch: 94 | Time: 0:01:11.374236 | Train SE: 18.570 | Test SE: 18.711
+[TempCheck] GPU:80°C
+Epoch: 95 | Time: 0:01:11.420513 | Train SE: 18.475 | Test SE: 18.492
+[TempCheck] GPU:80°C
+Epoch: 96 | Time: 0:01:11.466795 | Train SE: 18.300 | Test SE: 18.581
+[TempCheck] GPU:79°C
+Epoch: 97 | Time: 0:01:11.394532 | Train SE: 18.001 | Test SE: 18.268
+[TempCheck] GPU:79°C
+Epoch: 98 | Time: 0:01:11.535618 | Train SE: 18.178 | Test SE: 18.252
+[TempCheck] GPU:79°C
+Epoch: 99 | Time: 0:01:11.297821 | Train SE: 18.090 | Test SE: 18.147
+[TempCheck] GPU:80°C
+Epoch: 100 | Time: 0:01:11.243921 | Train SE: 18.217 | Test SE: 18.307
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:78°C
+Epoch: 101 | Time: 0:01:11.622209 | Train SE: 17.897 | Test SE: 17.703
+[TempCheck] GPU:79°C
+Epoch: 102 | Time: 0:01:11.319558 | Train SE: 17.686 | Test SE: 18.012
+[TempCheck] GPU:79°C
+Epoch: 103 | Time: 0:01:11.224098 | Train SE: 17.943 | Test SE: 18.064
+[TempCheck] GPU:79°C
+Epoch: 104 | Time: 0:01:11.510925 | Train SE: 18.000 | Test SE: 18.156
+[TempCheck] GPU:79°C
+Epoch: 105 | Time: 0:01:11.368575 | Train SE: 18.163 | Test SE: 18.351
+[TempCheck] GPU:79°C
+Epoch: 106 | Time: 0:01:11.233952 | Train SE: 17.850 | Test SE: 17.947
+[TempCheck] GPU:79°C
+Epoch: 107 | Time: 0:01:11.239726 | Train SE: 17.987 | Test SE: 18.165
+[TempCheck] GPU:80°C
+Epoch: 108 | Time: 0:01:11.510603 | Train SE: 18.156 | Test SE: 18.325
+[TempCheck] GPU:79°C
+Epoch: 109 | Time: 0:01:11.564938 | Train SE: 18.218 | Test SE: 18.263
+[TempCheck] GPU:79°C
+Epoch: 110 | Time: 0:01:11.186462 | Train SE: 18.206 | Test SE: 18.341
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:79°C
+Epoch: 111 | Time: 0:01:11.600897 | Train SE: 18.221 | Test SE: 18.257
+[TempCheck] GPU:79°C
+Epoch: 112 | Time: 0:01:11.379253 | Train SE: 18.219 | Test SE: 18.274
+[TempCheck] GPU:79°C
+Epoch: 113 | Time: 0:01:11.239479 | Train SE: 18.275 | Test SE: 18.405
+[TempCheck] GPU:79°C
+Epoch: 114 | Time: 0:01:11.379152 | Train SE: 18.148 | Test SE: 18.338
+[TempCheck] GPU:80°C
+Epoch: 115 | Time: 0:01:11.438987 | Train SE: 18.367 | Test SE: 18.520
+[TempCheck] GPU:79°C
+Epoch: 116 | Time: 0:01:11.275654 | Train SE: 18.432 | Test SE: 18.481
+[TempCheck] GPU:79°C
+Epoch: 117 | Time: 0:01:11.169805 | Train SE: 18.416 | Test SE: 18.528
+[TempCheck] GPU:79°C
+Epoch: 118 | Time: 0:01:11.506002 | Train SE: 18.347 | Test SE: 18.433
+[TempCheck] GPU:79°C
+Epoch: 119 | Time: 0:01:11.305098 | Train SE: 18.194 | Test SE: 18.231
+[TempCheck] GPU:80°C
+Epoch: 120 | Time: 0:01:11.183705 | Train SE: 18.283 | Test SE: 18.494
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:79°C
+Epoch: 121 | Time: 0:01:11.576156 | Train SE: 18.389 | Test SE: 18.515
+[TempCheck] GPU:79°C
+Epoch: 122 | Time: 0:01:11.604234 | Train SE: 18.479 | Test SE: 18.649
+[TempCheck] GPU:79°C
+Epoch: 123 | Time: 0:01:11.276407 | Train SE: 18.473 | Test SE: 18.552
+[TempCheck] GPU:79°C
+Epoch: 124 | Time: 0:01:11.298299 | Train SE: 18.442 | Test SE: 18.575
+[TempCheck] GPU:80°C
+Epoch: 125 | Time: 0:01:11.544939 | Train SE: 18.496 | Test SE: 18.574
+[TempCheck] GPU:79°C
+Epoch: 126 | Time: 0:01:11.275412 | Train SE: 18.529 | Test SE: 18.679
+[TempCheck] GPU:79°C
+Epoch: 127 | Time: 0:01:11.196779 | Train SE: 18.496 | Test SE: 18.655
+[TempCheck] GPU:79°C
+Epoch: 128 | Time: 0:01:11.564444 | Train SE: 18.541 | Test SE: 18.683
+[TempCheck] GPU:79°C
+Epoch: 129 | Time: 0:01:11.398137 | Train SE: 18.618 | Test SE: 18.674
+[TempCheck] GPU:79°C
+Epoch: 130 | Time: 0:01:11.194665 | Train SE: 18.631 | Test SE: 18.740
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:77°C
+Epoch: 131 | Time: 0:01:11.553773 | Train SE: 18.482 | Test SE: 18.667
+[TempCheck] GPU:80°C
+Epoch: 132 | Time: 0:01:11.414319 | Train SE: 18.656 | Test SE: 18.816
+New best model saved with Test SE: 18.8164
+[TempCheck] GPU:79°C
+Epoch: 133 | Time: 0:01:11.316611 | Train SE: 18.726 | Test SE: 18.710
+[TempCheck] GPU:79°C
+Epoch: 134 | Time: 0:01:11.534592 | Train SE: 18.616 | Test SE: 18.619
+[TempCheck] GPU:79°C
+Epoch: 135 | Time: 0:01:11.553924 | Train SE: 18.526 | Test SE: 18.517
+[TempCheck] GPU:79°C
+Epoch: 136 | Time: 0:01:11.289704 | Train SE: 18.362 | Test SE: 18.648
+[TempCheck] GPU:80°C
+Epoch: 137 | Time: 0:01:11.186048 | Train SE: 18.663 | Test SE: 18.795
+[TempCheck] GPU:79°C
+Epoch: 138 | Time: 0:01:11.435499 | Train SE: 18.812 | Test SE: 18.883
+New best model saved with Test SE: 18.8831
+[TempCheck] GPU:79°C
+Epoch: 139 | Time: 0:01:11.343265 | Train SE: 18.785 | Test SE: 18.756
+[TempCheck] GPU:80°C
+Epoch: 140 | Time: 0:01:11.288265 | Train SE: 18.635 | Test SE: 18.660
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:79°C
+Epoch: 141 | Time: 0:01:11.543144 | Train SE: 18.441 | Test SE: 18.293
+[TempCheck] GPU:79°C
+Epoch: 142 | Time: 0:01:11.462154 | Train SE: 17.832 | Test SE: 17.575
+[TempCheck] GPU:79°C
+Epoch: 143 | Time: 0:01:11.209954 | Train SE: 17.637 | Test SE: 18.049
+[TempCheck] GPU:79°C
+Epoch: 144 | Time: 0:01:11.215429 | Train SE: 18.032 | Test SE: 18.359
+[TempCheck] GPU:79°C
+Epoch: 145 | Time: 0:01:11.486863 | Train SE: 18.216 | Test SE: 18.444
+[TempCheck] GPU:80°C
+Epoch: 146 | Time: 0:01:11.328486 | Train SE: 18.297 | Test SE: 18.618
+[TempCheck] GPU:79°C
+Epoch: 147 | Time: 0:01:11.398945 | Train SE: 18.327 | Test SE: 18.530
+[TempCheck] GPU:79°C
+Epoch: 148 | Time: 0:01:11.514379 | Train SE: 18.373 | Test SE: 18.385
+[TempCheck] GPU:78°C
+Epoch: 149 | Time: 0:01:11.286753 | Train SE: 18.218 | Test SE: 18.607
+[TempCheck] GPU:79°C
+Epoch: 150 | Time: 0:01:11.257703 | Train SE: 18.572 | Test SE: 18.729
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:77°C
+Epoch: 151 | Time: 0:01:11.473346 | Train SE: 18.601 | Test SE: 18.691
+[TempCheck] GPU:80°C
+Epoch: 152 | Time: 0:01:11.398431 | Train SE: 18.621 | Test SE: 18.745
+[TempCheck] GPU:79°C
+Epoch: 153 | Time: 0:01:11.223796 | Train SE: 18.669 | Test SE: 18.806
+[TempCheck] GPU:79°C
+Epoch: 154 | Time: 0:01:11.275649 | Train SE: 18.705 | Test SE: 18.736
+[TempCheck] GPU:80°C
+Epoch: 155 | Time: 0:01:11.521096 | Train SE: 18.693 | Test SE: 18.797
+[TempCheck] GPU:79°C
+Epoch: 156 | Time: 0:01:11.350237 | Train SE: 18.741 | Test SE: 18.870
+[TempCheck] GPU:79°C
+Epoch: 157 | Time: 0:01:11.199596 | Train SE: 18.791 | Test SE: 18.849
+[TempCheck] GPU:79°C
+Epoch: 158 | Time: 0:01:11.469997 | Train SE: 18.734 | Test SE: 18.857
+[TempCheck] GPU:80°C
+Epoch: 159 | Time: 0:01:11.358561 | Train SE: 18.701 | Test SE: 18.815
+[TempCheck] GPU:79°C
+Epoch: 160 | Time: 0:01:11.490382 | Train SE: 18.675 | Test SE: 18.873
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:78°C
+Epoch: 161 | Time: 0:01:11.599808 | Train SE: 18.783 | Test SE: 18.887
+New best model saved with Test SE: 18.8867
+[TempCheck] GPU:79°C
+Epoch: 162 | Time: 0:01:11.521414 | Train SE: 18.839 | Test SE: 18.817
+[TempCheck] GPU:79°C
+Epoch: 163 | Time: 0:01:11.238161 | Train SE: 18.742 | Test SE: 18.795
+[TempCheck] GPU:79°C
+Epoch: 164 | Time: 0:01:11.168624 | Train SE: 18.751 | Test SE: 18.855
+[TempCheck] GPU:80°C
+Epoch: 165 | Time: 0:01:11.460516 | Train SE: 18.808 | Test SE: 18.897
+New best model saved with Test SE: 18.8973
+[TempCheck] GPU:79°C
+Epoch: 166 | Time: 0:01:11.327293 | Train SE: 18.758 | Test SE: 18.852
+[TempCheck] GPU:79°C
+Epoch: 167 | Time: 0:01:11.180432 | Train SE: 18.487 | Test SE: 18.544
+[TempCheck] GPU:80°C
+Epoch: 168 | Time: 0:01:11.345093 | Train SE: 18.454 | Test SE: 18.524
+[TempCheck] GPU:79°C
+Epoch: 169 | Time: 0:01:11.403090 | Train SE: 18.521 | Test SE: 18.623
+[TempCheck] GPU:80°C
+Epoch: 170 | Time: 0:01:11.251916 | Train SE: 18.510 | Test SE: 18.610
+
+<Figure size 640x480 with 1 Axes>
+[TempCheck] GPU:77°C
+Epoch: 171 | Time: 0:01:11.445485 | Train SE: 18.536 | Test SE: 18.621
+[TempCheck] GPU:79°C
+Epoch: 172 | Time: 0:01:11.725198 | Train SE: 18.488 | Test SE: 18.651
+[TempCheck] GPU:80°C
+Epoch: 173 | Time: 0:01:11.311653 | Train SE: 18.559 | Test SE: 18.607
+[TempCheck] GPU:79°C
+Epoch: 174 | Time: 0:01:11.183378 | Train SE: 18.496 | Test SE: 18.466
+[TempCheck] GPU:79°C
+Epoch: 175 | Time: 0:01:11.498341 | Train SE: 18.510 | Test SE: 18.598
+[TempCheck] GPU:78°C
+Epoch: 176 | Time: 0:01:11.255500 | Train SE: 18.474 | Test SE: 18.424
+[TempCheck] GPU:79°C
+Epoch: 177 | Time: 0:01:11.255173 | Train SE: 18.504 | Test SE: 18.640
+[TempCheck] GPU:79°C
+Epoch: 178 | Time: 0:01:11.344364 | Train SE: 18.607 | Test SE: 18.697
+[TempCheck] GPU:79°C
+Epoch: 179 | Time: 0:01:11.468723 | Train SE: 18.617 | Test SE: 18.615
+
+<Figure size 640x480 with 1 Axes>
+The best SE is: 18.897
+[10.45289266 11.85221798 12.39736252 13.27599764 15.51801527 16.17796428
+ 16.65887418 17.13942928 17.53612871 17.38362703 17.58586292 17.69273019
+ 17.84421034 17.76289225 17.87748199 17.93469086 17.88264732 17.90355668
+ 17.79040232 18.0486618  18.18404541 17.80219717 18.20436687 18.02077999
+ 18.44270043 18.28632145 17.94385996 17.40648279 17.7513772  17.88687692
+ 17.4777626  16.70480623 17.28030052 17.48131347 17.74935555 18.040623
+ 17.94698739 18.32723804 18.17570028 18.01845021 18.13500295 18.39176917
+ 18.32914248 18.34763675 18.41859813 18.47225776 18.13977008 18.00628977
+ 18.35354609 18.16035414 18.17090125 18.23930087 18.1224299  18.38581538
+ 18.22328968 18.22692299 18.46953139 18.26429224 18.6166276  18.53221354
+ 17.83559613 18.1664444  17.56415386 17.90183573 18.06300602 18.1464551
+ 18.42444134 18.4793252  18.40530248 18.55246153 18.26871719 17.97260985
+ 18.1209661  18.1402626  18.24474959 18.50936103 18.49018807 18.50153713
+ 18.38393998 18.25935135 17.95925698 18.42199302 18.29331784 18.35911517
+ 18.5599287  18.50270734 18.50249715 18.42122593 18.48394589 18.44543958
+ 18.62827573 18.75381103 18.64021473 18.49157906 18.71108074 18.49191742
+ 18.58110557 18.26753263 18.25235534 18.14743195 18.30666203 17.70250268
+ 18.01232743 18.06371078 18.15633483 18.35135708 17.94696989 18.16515079
+ 18.32511888 18.2625299  18.34106083 18.25740523 18.27367001 18.40509605
+ 18.33831763 18.51974373 18.4812223  18.52838674 18.43267241 18.23088803
+ 18.49440303 18.5146348  18.64872718 18.55172453 18.5749897  18.57439437
+ 18.67895689 18.65538545 18.68340874 18.67416439 18.73951597 18.66692214
+ 18.81642909 18.70970397 18.6190361  18.51659155 18.64775472 18.79529905
+ 18.88305159 18.75603356 18.66000276 18.29297218 17.57510161 18.04886904
+ 18.3587347  18.44363832 18.61765499 18.53006811 18.3853374  18.60737619
+ 18.72915735 18.69052525 18.74516263 18.80573969 18.73592615 18.79708939
+ 18.87043533 18.84877105 18.85741525 18.81476812 18.87269692 18.88671265
+ 18.8168221  18.79476552 18.85528893 18.89725275 18.85239987 18.54392428
+ 18.52384071 18.62349424 18.60998039 18.62139015 18.65055747 18.60688019
+ 18.46619487 18.59833241 18.42359166 18.64014058 18.69705729 18.6146606 ]
+
+
+```
