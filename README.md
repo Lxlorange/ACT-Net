@@ -3300,3 +3300,17 @@ The best SE is: 18.897
 
 
 ```
+
+
+
+
+## MO
+
+--- Final Simulation Results ---
+Number of samples processed: 50
+SNR: 10 dB
+------------------------------
+Scenario 1 (Perfect CSI):    Average Sum Rate = 7.4993 bps/Hz
+Scenario 2 (Estimated CSI):  Average Sum Rate = 2.7813 bps/Hz
+Scenario 3 (Limited Fdbk):   Average Sum Rate = 2.6656 bps/Hz
+Simulating Samples: 100%|██████████| 50/50 [09:05<00:00, 10.91s/it]
