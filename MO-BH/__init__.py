@@ -11,7 +11,7 @@ NRF = K
 
 Nc = 32
 
-SNR_dB = np.arange(5, 16, 5)
+SNR_dB = np.arange(-35, 26, 5)
 SNR_lin = 10**(SNR_dB / 10)
 
 data = loadmat("../data/H_UPA_4.mat")
@@ -89,4 +89,6 @@ plt.title('MO-AltMin Performance in DL Context')
 plt.legend()
 plt.show()
 
-
+# [ 0.02627088  0.08170846  0.24631593  0.68966175  1.68875647  3.46226212
+#   5.95672621  8.9160498  12.10091956 15.37571945 18.68223939 21.99923778
+#  25.31960098]

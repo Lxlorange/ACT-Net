@@ -27,10 +27,6 @@ def sig_manif(Fopt, FRF, FBB):
     Nt = FRF[0].shape[0]
     _, _, K = FBB.shape
 
-    # --- 1. 预计算代价函数和梯度的常数项 (对应 MATLAB L7-L18) ---
-    # 为了并行化，可以先在循环外初始化
-    # 若要实现并行，可以使用 joblib 或 multiprocessing 库，但会增加代码复杂性。
-    # 这里我们先用串行循环来实现，逻辑上是等价的。
     C1_list = []
     C2_list = []
     C3_list = []
@@ -57,7 +53,7 @@ def sig_manif(Fopt, FRF, FBB):
     # 定义流形， Pymanopt 中直接使用矩阵维度
     manifold = Product([ComplexCircle(Nt) for _ in range(NRF)])
 
-    # 定义代价函数和欧几里得梯度（使用预计算的B1-B4）
+    # 定义代价函数和欧几里得梯度
     # @pymanopt.function.numpy 是一个装饰器，用于告知pymanopt这是一个基于numpy的函数
     @pymanopt.function.numpy(manifold)
     def cost(x1, x2):
