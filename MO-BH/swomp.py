@@ -76,7 +76,9 @@ def swomp_channel_estimation(Y, X, At, L):
     # G_est_final 的维度会是 (K, Nc, L), 为了匹配 reconstruct_channel, permute一下
     G_est_final = G_est_final.transpose(0, 2, 1)  # -> (K, L, Nc)
 
-    return A_est, G_est_final
+    path_indices = np.array(estimated_paths_indices, dtype=int)
+
+    return A_est, G_est_final, path_indices
 
 def reconstruct_channel(A_est, G_est, L):
     """
