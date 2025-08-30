@@ -1,9 +1,9 @@
 # swomp.py
 
 import numpy as np
+from util import get_angles_from_index
 
-
-def swomp_channel_estimation(Y, X, At, L):
+def swomp_channel_estimation(Y, X, At, L, n_angle):
     """
     使用SW-OMP算法估计稀疏毫米波信道的参数。
     该函数模拟UE端的信道估计过程。
@@ -32,6 +32,8 @@ def swomp_channel_estimation(Y, X, At, L):
 
     # 初始化
     estimated_paths_indices = []
+    estimated_phis = []
+    estimated_thetas = []
     A_est = np.empty((Nt, 0), dtype=np.complex128)
 
     # 将残差初始化为接收信号
@@ -49,6 +51,11 @@ def swomp_channel_estimation(Y, X, At, L):
 
         # 记录选中的路径索引并更新导向矢量矩阵 A_est
         estimated_paths_indices.append(best_atom_idx)
+
+        phi, theta = get_angles_from_index(best_atom_idx, n_angle)
+        estimated_phis.append(phi)
+        estimated_thetas.append(theta)
+
         selected_atom = At[:, best_atom_idx].reshape(-1, 1)
         A_est = np.hstack([A_est, selected_atom])
 
@@ -78,7 +85,7 @@ def swomp_channel_estimation(Y, X, At, L):
 
     path_indices = np.array(estimated_paths_indices, dtype=int)
 
-    return A_est, G_est_final, path_indices
+    return G_est_final, np.array(estimated_phis), np.array(estimated_thetas)
 
 def reconstruct_channel(A_est, G_est, L):
     """

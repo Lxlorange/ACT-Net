@@ -78,3 +78,53 @@ def calculate_sum_rate(H_true, FRF, FBB, W, snr_val, K, Ns, Nc):
 
     # 返回所有子载波的平均速率
     return np.real(rate) / Nc
+
+def generate_steering_vector(Nt_params, phi, theta):
+    """
+    根据给定的方位角(phi)和俯仰角(theta)，为UPA阵列生成一个方向向量。
+
+    Args:
+        Nt_params (tuple): (Nt_y, Nt_z) 每个轴上的天线数。
+        phi (float): 方位角 (azimuth) in radians.
+        theta (float): 俯仰角 (elevation) in radians.
+
+    Returns:
+        np.ndarray: 归一化后的方向向量, shape (Nt_y * Nt_z, 1)。
+    """
+    Nt_y, Nt_z = Nt_params
+    N_t = Nt_y * Nt_z
+
+    p_indices, q_indices = np.meshgrid(np.arange(Nt_y), np.arange(Nt_z))
+    p_flat = p_indices.flatten()
+    q_flat = q_indices.flatten()
+
+    # 论文中公式(4)的指数部分，假设天线间距 d = lambda / 2
+    exponent = 1j * np.pi * (p_flat * np.sin(phi) * np.sin(theta) + q_flat * np.cos(theta))
+    atom = np.exp(exponent)
+
+    # 归一化
+    normalized_atom = atom / np.sqrt(N_t)
+
+    return normalized_atom.reshape(-1, 1)
+
+
+def get_angles_from_index(index, n_angles_per_dim):
+    """
+    根据字典中的索引，反向计算出对应的phi和theta角。
+
+    Args:
+        index (int): 字典中的原子索引。
+        n_angles_per_dim (int): 每个角度维度上的采样点数。
+
+    Returns:
+        tuple: (phi, theta) in radians.
+    """
+    # 角度的生成范围
+    phi_values = np.linspace(-np.pi / 2, np.pi / 2, n_angles_per_dim)
+    theta_values = np.linspace(0, np.pi, n_angles_per_dim)
+
+    # 从一维索引恢复二维索引
+    phi_idx = index // n_angles_per_dim
+    theta_idx = index % n_angles_per_dim
+
+    return phi_values[phi_idx], theta_values[theta_idx]
