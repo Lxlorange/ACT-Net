@@ -30,7 +30,7 @@ Nt_params = (8, 8)
 # MODIFIED: 固定SNR，设置B的范围
 FIXED_SNR_DB = 10  # 在这个信噪比下进行测试
 snr_val = 10 ** (FIXED_SNR_DB / 10)
-B_values = [8, 16, 24, 36, 48, 64, 70]  # 要测试的总比特数范围
+B_values = [1,3,16,24,32,48,64]  # 要测试的总比特数范围
 
 # --- 数据与码本加载 ---
 try:
