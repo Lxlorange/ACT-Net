@@ -5,10 +5,10 @@ import os
 
 # 导入您项目中的自定义函数
 from mano import MO_AltMin
-from codebook import generate_upa_codebook
-from swomp import swomp_channel_estimation, reconstruct_channel
+from codebook import gen_upa_cb
+from swomp import *
 from util import *
-from quantization import FeedbackQuantizer
+from quantization import AGQuantizer
 
 # --- 仿真参数设置 ---
 Nt = 64
@@ -35,7 +35,7 @@ H_dataset = H_dataset[:, :K, :, :]  # (BATCH, K, Nc, Nt)
 # --- 码本和导频生成 ---
 Nt_params = (8, 8)
 angle_samples = 64
-At_codebook = generate_upa_codebook(Nt_params, angle_samples)
+At_codebook = gen_upa_cb(Nt_params, angle_samples)
 random_phases = 2 * np.pi * np.random.rand(Q, Nt)
 N_atoms = At_codebook.shape[1]
 X_pilot = (1 / np.sqrt(Nt)) * np.exp(1j * random_phases)
@@ -45,14 +45,14 @@ print(f"导频生成完毕，维度: {X_pilot.shape}")
 print("正在生成用于训练量化器的增益样本...")
 training_gain_samples = []
 for i in range(min(10, BATCH_SIZE)): # 取10个样本进行训练
-    _, G_est_sample, _ = swomp_channel_estimation(
+    _, G_est_sample, _ = estimate_swomp(
         np.tensordot(H_dataset[i].reshape(K*Nr, Nc, Nt), X_pilot.T, axes=([2],[0])),
         X_pilot, At_codebook, L=L
     )
     training_gain_samples.append(G_est_sample)
 training_gains = np.concatenate(training_gain_samples, axis=0)
 # 创建量化器实例，它会自动完成比特分配和码本训练
-quantizer = FeedbackQuantizer(B, L, K, Nc, N_atoms, training_gains)
+quantizer = AGQuantizer(B, L, K, Nc, N_atoms, training_gains)
 
 
 sumRatePerfect = np.zeros((len(SNR_dB), BATCH_SIZE))
@@ -66,7 +66,7 @@ for si in range(BATCH_SIZE):
     H_sample_system_view = H_sample_user_view.reshape(K * Nr, Nc, Nt)
 
     # --- 路径1: 完美CSI下的波束赋形 ---
-    Fopt_p, Wopt_p = get_Fopt_Wopt(H_sample_system_view, K, Nr, Ns)
+    Fopt_p, Wopt_p = getChannel(H_sample_system_view, K, Nr, Ns)
     FRF_p, FBB_p = MO_AltMin(Fopt_p, NRF)
 
     # 在计算速率前，对整个批次的预编码器进行功率归一化
@@ -81,7 +81,7 @@ for si in range(BATCH_SIZE):
 
         # --- 路径1的速率计算 ---
         # 使用修正后的函数，传入Wopt_p
-        sumRatePerfect[s_idx, si] = calculate_sum_rate(H_sample_user_view, FRF_p, FBB_p, Wopt_p, snr_val, K, Ns, Nc)
+        sumRatePerfect[s_idx, si] = calc_rate(H_sample_user_view, FRF_p, FBB_p, Wopt_p, snr_val, K, Ns, Nc)
 
         # --- 信道估计过程 ---
         # 1. 生成无噪声的接收导频
@@ -99,12 +99,12 @@ for si in range(BATCH_SIZE):
         # 3. UE端进行信道估计
         # Y_noisy需要是(K, Nc, Q)，因为swomp内部是按用户处理的
         # 这里假设Nr=1，所以 K*Nr = K
-        A_est, G_est, path_indices = swomp_channel_estimation(Y_noisy, X_pilot, At_codebook, L=L)
+        A_est, G_est, path_indices = estimate_swomp(Y_noisy, X_pilot, At_codebook, L=L)
         # 4. BS端基于估计参数重构信道
-        H_hat_system_view = reconstruct_channel(A_est, G_est, L=L)  # (K*Nr, Nc, Nt)
+        H_hat_system_view = recon_chan(A_est, G_est, L=L)  # (K*Nr, Nc, Nt)
 
         # --- 路径2: 估计CSI下的波束赋形 ---
-        Fopt_e, Wopt_e = get_Fopt_Wopt(H_hat_system_view, K, Nr, Ns)
+        Fopt_e, Wopt_e = getChannel(H_hat_system_view, K, Nr, Ns)
         FRF_e, FBB_e = MO_AltMin(Fopt_e, NRF)
 
         # 对估计CSI得到的预编码器进行功率归一化
@@ -112,7 +112,7 @@ for si in range(BATCH_SIZE):
             norm_f = np.linalg.norm(FRF_e @ FBB_e[:, :, k], 'fro')
             if norm_f > 1e-9:
                 FBB_e[:, :, k] = (np.sqrt(Ns) / norm_f) * FBB_e[:, :, k]
-        sumRateEstimated[s_idx, si] = calculate_sum_rate(
+        sumRateEstimated[s_idx, si] = calc_rate(
         H_sample_user_view, FRF_e, FBB_e, Wopt_e, snr_val, K, Ns, Nc)
 
         # --- 路径3: 估计CSI + 有限反馈 ---
@@ -124,10 +124,10 @@ for si in range(BATCH_SIZE):
 
         # c. BS端根据有损参数重构信道
         A_quant = At_codebook[:, dq_indices]  # 从码本中恢复方向向量
-        H_quant_system_view = reconstruct_channel(A_quant, G_quant, L=L)
+        H_quant_system_view = recon_chan(A_quant, G_quant, L=L)
 
         # d. BS端基于量化后的信道进行波束赋形
-        Fopt_q, Wopt_q = get_Fopt_Wopt(H_quant_system_view, K, Nr, Ns)
+        Fopt_q, Wopt_q = getChannel(H_quant_system_view, K, Nr, Ns)
         FRF_q, FBB_q = MO_AltMin(Fopt_q, NRF)
         for k in range(Nc):
             norm_f = np.linalg.norm(FRF_q @ FBB_q[:, :, k], 'fro')
@@ -135,7 +135,7 @@ for si in range(BATCH_SIZE):
                 FBB_q[:, :, k] = (np.sqrt(Ns) / norm_f) * FBB_q[:, :, k]
 
         # e. 使用真实信道和量化设计的波束赋形计算速率
-        sumRateFeedback[s_idx, si] = calculate_sum_rate(
+        sumRateFeedback[s_idx, si] = calc_rate(
             H_sample_user_view, FRF_q, FBB_q, Wopt_q, snr_val, K, Ns, Nc)
 
 # --- 结果处理与绘图 ---

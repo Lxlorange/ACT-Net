@@ -1,9 +1,9 @@
 # swomp.py
 
 import numpy as np
-from util import get_angles_from_index
+from util import idx_to_angles
 
-def swomp_channel_estimation(Y, X, At, L, n_angle):
+def estimate_swomp(Y, X, At, L, n_angle):
     """
     使用SW-OMP算法估计稀疏毫米波信道的参数。
     该函数模拟UE端的信道估计过程。
@@ -23,41 +23,34 @@ def swomp_channel_estimation(Y, X, At, L, n_angle):
     """
     K, Nc, Q = Y.shape
     Nt, N_atoms = At.shape
-
-    Phi = X @ At  # Shape: (Q, Nt) @ (Nt, N_atoms) -> (Q, N_atoms)
-
+    Phi = X @ At # Shape: (Q, Nt) @ (Nt, N_atoms) -> (Q, N_atoms)
     # OMP算法现在是求解 Y ≈ G @ Phi.T
     # 为了匹配维度，我们将问题看作求解 Y.T ≈ Phi @ G.T
     # 即 y_k_n ≈ Phi @ g_k_n, 其中 y_k_n 是 Qx1, g_k_n 是 N_atoms x 1 (稀疏)
-
-    # 初始化
-    estimated_paths_indices = []
-    estimated_phis = []
-    estimated_thetas = []
+    path_idx = []
+    est_phi = []
+    est_theta = []
     A_est = np.empty((Nt, 0), dtype=np.complex128)
-
-    # 将残差初始化为接收信号
-    residual = Y.copy()  # Shape: (K, Nc, Q)
+    res = Y.copy() # Shape: (K, Nc, Q)
 
     for _ in range(L):
         # 匹配: 将残差投影到感知矩阵 Phi 上
         # residual shape (K, Nc, Q), Phi.conj() shape (Q, N_atoms)
         # P shape will be (K, Nc, N_atoms)
-        P = np.tensordot(residual, Phi.conj(), axes=([2], [0]))
+        P = np.tensordot(res, Phi.conj(), axes=([2], [0]))
 
-        # 识别: 找到在所有用户和子载波上能量总和最大的原子
-        objective = np.sum(np.abs(P) ** 2, axis=(0, 1))
-        best_atom_idx = np.argmax(objective)
+        # 找到在所有用户和子载波上能量总和最大的原子
+        obj = np.sum(np.abs(P) ** 2, axis=(0, 1))
+        best_idx = np.argmax(obj)
 
         # 记录选中的路径索引并更新导向矢量矩阵 A_est
-        estimated_paths_indices.append(best_atom_idx)
+        path_idx.append(best_idx)
+        phi, theta = idx_to_angles(best_idx, n_angle)
+        est_phi.append(phi)
+        est_theta.append(theta)
 
-        phi, theta = get_angles_from_index(best_atom_idx, n_angle)
-        estimated_phis.append(phi)
-        estimated_thetas.append(theta)
-
-        selected_atom = At[:, best_atom_idx].reshape(-1, 1)
-        A_est = np.hstack([A_est, selected_atom])
+        sel_atom = At[:, best_idx].reshape(-1, 1)
+        A_est = np.hstack([A_est, sel_atom])
 
         # 从原始接收信号 Y 中求解
         # Y ≈ (G @ A_est.T) @ X.T = G @ (X @ A_est).T
@@ -68,26 +61,19 @@ def swomp_channel_estimation(Y, X, At, L, n_angle):
         # 一个更稳健的LS求解方法
         Phi_L = X @ A_est
         Phi_L_pinv = np.linalg.pinv(Phi_L)
-
         # G_est_current shape (K, Nc, L)
-        G_est_current = np.tensordot(Y, Phi_L_pinv.conj().T, axes=([2], [0]))
+        g_curr = np.tensordot(Y, Phi_L_pinv.conj().T, axes=([2], [0]))
 
-        # 更新残差
-        Y_recon = np.tensordot(G_est_current, Phi_L.T, axes=([2], [0]))
-        residual = Y - Y_recon
+        Y_recon = np.tensordot(g_curr, Phi_L.T, axes=([2], [0]))
+        res = Y - Y_recon
 
-    # 最终使用所有选定的路径来计算最终的增益
-    Phi_L_final = X @ A_est
-    G_est_final = np.tensordot(Y, np.linalg.pinv(Phi_L_final).conj().T, axes=([2], [0]))
+    Phi_L = X @ A_est
+    g_est = np.tensordot(Y, np.linalg.pinv(Phi_L).conj().T, axes=([2], [0]))
+    g_est = g_est.transpose(0, 2, 1)
 
-    # G_est_final 的维度会是 (K, Nc, L), 为了匹配 reconstruct_channel, permute一下
-    G_est_final = G_est_final.transpose(0, 2, 1)  # -> (K, L, Nc)
+    return g_est, np.array(est_phi), np.array(est_theta)
 
-    path_indices = np.array(estimated_paths_indices, dtype=int)
-
-    return G_est_final, np.array(estimated_phis), np.array(estimated_thetas)
-
-def reconstruct_channel(A_est, G_est, L):
+def recon_chan(A_est, G_est, L):
     """
     使用估计出的导向矢量和增益重构信道矩阵。
     该函数模拟BS端的信道重构过程。
