@@ -77,3 +77,61 @@ class AGQuantizer:
         phi_q = dequantize(q_data['phis'], self.phi_cb)
         theta_q = dequantize(q_data['thetas'], self.theta_cb)
         return g_q_avg, phi_q, theta_q
+
+
+class IdxGainQuantizer:
+    """
+    一个封装了信道参数量化和反馈全过程的类。
+    策略：量化路径索引 (Index) 和 平均信道增益 (Gain)。
+    """
+
+    def __init__(self, B, L, K, n_atoms, train_g):
+        self.B = B
+        self.L = L
+        self.K = K
+        self.n_atoms = n_atoms
+
+        self._alloc_bits()
+
+        if self.b_g > 0:
+            g_r = train_g.real.flatten()
+            g_i = train_g.imag.flatten()
+            self.g_cb_r = lloyd_max(g_r, self.b_g)
+            self.g_cb_i = lloyd_max(g_i, self.b_g)
+        else:
+            self.g_cb_r = np.array([0.0])
+            self.g_cb_i = np.array([0.0])
+
+    def _alloc_bits(self):
+        """为路径索引和平均增益分配比特。"""
+        self.b_idx = math.ceil(math.log2(self.n_atoms))
+        B_idx = self.L * self.b_idx
+        B_g = self.B - B_idx
+        if B_g < 0:
+            B_g = 0
+
+        n_g_vals = 2 * self.L * self.K  # 实部 + 虚部
+        self.b_g = B_g // n_g_vals if n_g_vals > 0 else 0
+
+    def quantize(self, path_idx, g_est):
+        """UE端执行：量化路径索引和计算出的平均增益。"""
+        g_avg = np.mean(g_est, axis=2)
+        q_data = {
+            'path_idx': path_idx,
+            'g_r_idx': quantize(g_avg.real, self.g_cb_r),
+            'g_i_idx': quantize(g_avg.imag, self.g_cb_i)
+        }
+        return q_data
+
+    def dequantize(self, q_data, Nc):
+        """BS端执行：恢复索引和增益，并将平均增益扩展至所有子载波。"""
+        path_idx = q_data['path_idx']
+
+        g_r = dequantize(q_data['g_r_idx'], self.g_cb_r)
+        g_i = dequantize(q_data['g_i_idx'], self.g_cb_i)
+        g_q_avg = g_r + 1j * g_i
+
+        # 将平均增益扩展(广播)至所有Nc个子载波
+        g_q = np.tile(np.expand_dims(g_q_avg, axis=2), (1, 1, Nc))
+
+        return path_idx, g_q

@@ -8,7 +8,7 @@ from mano import MO_AltMin
 from codebook import gen_upa_cb
 from swomp import estimate_swomp, recon_chan
 from util import *
-from quantization import AGQuantizer
+from quantization import AGQuantizer, IdxGainQuantizer
 
 # --- Simulation Parameters ---
 Nt = 64
@@ -31,7 +31,7 @@ H_data = data['H_UPA']
 N_BATCH = H_data.shape[0]
 H_data = H_data[:, :K, :, :]
 
-omp_ang_n = 64
+omp_ang_n = 16
 At = gen_upa_cb(nt_dims, omp_ang_n)
 Xp = (1 / np.sqrt(Nt)) * np.exp(1j * 2 * np.pi * np.random.rand(Q, Nt))
 
@@ -65,7 +65,7 @@ for si in range(N_BATCH):
     n_var = 1 / snr
     noise = np.sqrt(n_var / 2) * (np.random.randn(*Y_clean.shape) + 1j * np.random.randn(*Y_clean.shape))
     Y = Y_clean + noise
-    g, phi, theta = estimate_swomp(Y, Xp, At, L, omp_ang_n)
+    g, phi, theta, path_idx = estimate_swomp(Y, Xp, At, L, omp_ang_n)
     A_est = np.hstack([gen_steer_vec(nt_dims, phi[l], theta[l]) for l in range(L)])
     H_hat = recon_chan(A_est, g, L)
     Fopt, Wopt = getChannel(H_hat, K, Nr, Ns)
@@ -78,17 +78,23 @@ for si in range(N_BATCH):
 
     # --- Path 3: Estimated CSI with Limited Feedback ---
     for b_idx, b_val in enumerate(B_vals):
-        qtz = AGQuantizer(b_val, L, K, train_g, train_phi, train_theta)
 
+        # AG
+        qtz = AGQuantizer(b_val, L, K, train_g, train_phi, train_theta)
         g_avg = np.mean(g, axis=2)
         q_data = qtz.quantize(g_avg, phi, theta)
-
         g_q_avg, phi_q, theta_q = qtz.dequantize(q_data)
-
         g_q = np.tile(np.expand_dims(g_q_avg, axis=2), (1, 1, Nc))
         A_q = np.hstack([gen_steer_vec(nt_dims, phi_q[l], theta_q[l]) for l in range(L)])
-        H_q = recon_chan(A_q, g_q, L)
 
+        # Idx
+        # n_atoms = omp_ang_n * omp_ang_n
+        # qtz = IdxGainQuantizer(b_val,L,K,n_atoms,train_g)
+        # q_data = qtz.quantize(path_idx,g)
+        # path_idx_q, g_q = qtz.dequantize(q_data, Nc)
+        # A_q = At[:, path_idx_q]
+
+        H_q = recon_chan(A_q, g_q, L)
         Fopt_q, Wopt_q = getChannel(H_q, K, Nr, Ns)
         FRF_q, FBB_q = MO_AltMin(Fopt_q, NRF)
         for k in range(Nc):

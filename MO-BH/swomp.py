@@ -27,7 +27,7 @@ def estimate_swomp(Y, X, At, L, n_angle):
     # OMP算法现在是求解 Y ≈ G @ Phi.T
     # 为了匹配维度，我们将问题看作求解 Y.T ≈ Phi @ G.T
     # 即 y_k_n ≈ Phi @ g_k_n, 其中 y_k_n 是 Qx1, g_k_n 是 N_atoms x 1 (稀疏)
-    path_idx = []
+    path_idx_list = []
     est_phi = []
     est_theta = []
     A_est = np.empty((Nt, 0), dtype=np.complex128)
@@ -44,7 +44,7 @@ def estimate_swomp(Y, X, At, L, n_angle):
         best_idx = np.argmax(obj)
 
         # 记录选中的路径索引并更新导向矢量矩阵 A_est
-        path_idx.append(best_idx)
+        path_idx_list.append(best_idx)
         phi, theta = idx_to_angles(best_idx, n_angle)
         est_phi.append(phi)
         est_theta.append(theta)
@@ -71,7 +71,9 @@ def estimate_swomp(Y, X, At, L, n_angle):
     g_est = np.tensordot(Y, np.linalg.pinv(Phi_L).conj().T, axes=([2], [0]))
     g_est = g_est.transpose(0, 2, 1)
 
-    return g_est, np.array(est_phi), np.array(est_theta)
+    path_idx = np.array(path_idx_list, dtype=int)
+
+    return g_est, np.array(est_phi), np.array(est_theta), path_idx
 
 def recon_chan(A_est, G_est, L):
     """
