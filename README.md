@@ -97,8 +97,9 @@ import Network_FDD_f as FDD
 - `Network_FDD.py` / `Network_FDD_f.py` / `Network_FDD_Conformer.py`：不同网络变体实现，可用于对比实验
 - `channel.py`：信道生成与数据处理代码
 - `convert_to_npy.py`：用于将 `.pt` 数据转换为 `.npy` 或其他格式的辅助脚本
+- `MO-BH/`：基线仿真。详见仓库[MO-AltMin](https://github.com/Lxlorange/MO-AltMin)
 - `saved_models/`：训练得到的模型权重文件
-- `data/` / `data2/`：信道样本数据集
+- `data/`：信道样本数据集
 
 ## 依赖环境
 
