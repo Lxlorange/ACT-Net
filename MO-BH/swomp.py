@@ -33,7 +33,11 @@ def estimate_swomp(Y, X, At, L, n_angle):
     A_est = np.empty((Nt, 0), dtype=np.complex128)
     res = Y.copy() # Shape: (K, Nc, Q)
 
+    tol = 1e-6
     for _ in range(L):
+        # if np.linalg.norm(res) < tol:
+        #     break
+
         # 匹配: 将残差投影到感知矩阵 Phi 上
         # residual shape (K, Nc, Q), Phi.conj() shape (Q, N_atoms)
         # P shape will be (K, Nc, N_atoms)

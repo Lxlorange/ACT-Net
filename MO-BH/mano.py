@@ -56,9 +56,9 @@ def sig_manif(Fopt, FRF, FBB):
     # 定义代价函数和欧几里得梯度
     # @pymanopt.function.numpy 是一个装饰器，用于告知pymanopt这是一个基于numpy的函数
     @pymanopt.function.numpy(manifold)
-    def cost(x1, x2):
-        X_list = [x1, x2]
-        X_matrix = np.hstack(X_list)
+    def cost(*x):
+        # X_list = [x1, x2]
+        X_matrix = np.hstack(x)
         x_vec = X_matrix.flatten(order='F')
         cost_val = -B1 @ x_vec - x_vec.conj().T @ B2 + np.trace(
             B3 @ x_vec.reshape(-1, 1) @ x_vec.conj().T.reshape(1, -1)) + B4
@@ -67,10 +67,10 @@ def sig_manif(Fopt, FRF, FBB):
         return np.real(cost_val)
 
     @pymanopt.function.numpy(manifold)
-    def egrad(x1,x2):
+    def egrad(*x):
         # 从列向量列表中重组出FRF矩阵
-        X_list = [x1,x2]
-        X_matrix = np.hstack(X_list)
+        # X_list = [x1,x2]
+        X_matrix = np.hstack(x)
         x_vec = X_matrix.flatten(order='F')
         grad_vec = -2 * B2 + 2 * (B3 @ x_vec)
 

@@ -7,3 +7,5 @@ saved_models2/
 results/
 results2/
 data_chunks/
+
+__pycache__
